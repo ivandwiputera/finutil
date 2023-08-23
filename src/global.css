@@ -1,0 +1,87 @@
+/* MARK: Fonts */
+@font-face {
+  font-family: "PoppinsRegular";
+  src: local("Poppins-Regular"), url("assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: local("Poppins-Medium"), url("assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsSemibold";
+  src: local("Poppins-Semibold"), url("assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+/* MARK: Global Variables */
+
+:root {
+  --header-height: 3rem;
+
+  /* Colors */
+  --hue-val: 150;
+
+  --color-primary         : hsl(var(--hue-val), 69%, 55%);
+  --color-primary-alt     : hsl(var(--hue-val), 57%, 53%);
+  --color-primary-light   : hsl(var(--hue-val), 92%, 85%);
+  --color-title           : hsl(var(--hue-val), 8%, 15%);
+  --color-text            : hsl(var(--hue-val), 8%, 35%);
+  --color-text-light      : hsl(var(--hue-val), 8%, 55%);
+  --color-input           : hsl(var(--hue-val), 70%, 96%);
+  --color-background      : hsl(var(--hue-val), 60%, 99%);
+  --color-container       : #fff;
+  --color-container-alt   : #f3f3f3;
+  --color-shadow          : #ccccccb7;
+
+  /* Fonts */
+  --font-name: 'Poppins', sans-serif;
+
+  --font-size-large   : 2.5rem;
+  --font-size-h1      : 1.5rem;
+  --font-size-h2      : 1.25rem;
+  --font-size-h3      : 1.125rem;
+  --font-size-normal  : .938rem;
+  --font-size-small   : .813rem;
+  --font-size-tiny    : .75rem;
+
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+/* MARK: Base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin            : 0 0 var(--header-height) 0;
+  font-family       : var(--font-name);
+  font-size         : var(--font-size-normal);
+  background-color  : var(--color-background);
+  color             : var(--color-text);
+}
+
+h1,h2,h3,h4 {
+  color: var(--color-title);
+  font-weight: var(--font-weight-semibold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

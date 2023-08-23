@@ -1,0 +1,8 @@
+.img-masking-blobs {
+  border-radius: 58% 42% 57% 43% / 42% 55% 45% 58%;
+  box-shadow: 0.5rem 0.5rem 0.5rem var(--color-shadow);
+}
+
+.user-interaction-disabled {
+  pointer-events: none;
+}

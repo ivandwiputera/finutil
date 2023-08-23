@@ -1,4 +1,5 @@
-import UIButton from "uicomponents/UIButton";
+import UIButton from "uicomponents/UIButton/UIButton";
+import "./UIImageTextColumn.css"
 
 const UIImageTextColumn = (props) => {
   const title = props.title
@@ -13,11 +14,11 @@ const UIImageTextColumn = (props) => {
     textAlign: props.textAlignment
   }
   
-  const imageClassNames = "ui-image-text-column__image" + " " + imageClassModifiers
+  const imageClassNames = `ui-image-text-column__image ${imageClassModifiers}`
 
   return (
     <div className="ui-image-text-column" style={containerStyle}>
-      { imageSrc && <img className={imageClassNames} src={imageSrc}/> }
+      { imageSrc && <img className={imageClassNames} src={imageSrc} alt=""/> }
       <div className="ui-image-text-column__text-container">
         { title && <h1 className="ui-image-text-column__title">{title}</h1> }
         { subtitle && <h3 className="ui-image-text-column__subtitle">{subtitle}</h3> }

@@ -1,4 +1,4 @@
-import Home from "scenes/Home";
+import Home from "scenes/Home/Home";
 
 function App() {
   return (

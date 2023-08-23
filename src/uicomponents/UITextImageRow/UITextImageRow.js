@@ -1,4 +1,5 @@
-import UIButton from "uicomponents/UIButton";
+import UIButton from "uicomponents/UIButton/UIButton";
+import "./UITextImageRow.css"
 
 const UITextImageRow = (props) => {
   const title = props.title

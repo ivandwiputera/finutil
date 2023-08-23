@@ -1,4 +1,5 @@
-import UIIcon from "./UIIcon"
+import UIIcon from "uicomponents/UIIcon/UIIcon"
+import "./UIButton.css"
 
 const UIButton = (props) => {
   const title = props.title
@@ -13,7 +14,7 @@ const UIButton = (props) => {
             style={style} 
             onClick={onClick}>
       {title}
-      {icon && <UIIcon className="icon-16" icon={icon}/>}
+      {icon && <UIIcon className="ui-icon-16" icon={icon}/>}
     </button>
   );
 }

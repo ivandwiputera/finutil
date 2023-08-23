@@ -1,0 +1,41 @@
+.ui-image-text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.ui-image-text-column__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+.ui-image-text-column__title {
+  font-size: var(--font-size-large);
+  line-height: 1.1;
+}
+
+.ui-image-text-column__subtitle {
+  margin-top: 0.5rem;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.ui-image-text-column__description {
+  margin-top: 0.5rem;
+  font-size: var(--font-size-normal);
+  color: var(--color-text-light);
+}
+
+.ui-image-text-column__button {
+  margin-top: 1.5rem;
+}
+
+.ui-image-text-column__image {
+  margin: 1rem;
+  object-fit: cover;
+}

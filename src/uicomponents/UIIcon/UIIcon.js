@@ -1,3 +1,4 @@
+import { AtSymbolIcon } from '@heroicons/react/24/outline'
 import { BanknotesIcon } from '@heroicons/react/24/outline'
 import { BuildingLibraryIcon } from '@heroicons/react/24/outline'
 import { ChartPieIcon } from '@heroicons/react/24/outline'
@@ -10,7 +11,8 @@ import { HomeIcon } from '@heroicons/react/24/outline'
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
 import { RocketLaunchIcon } from '@heroicons/react/24/outline'
 import { ShieldCheckIcon } from '@heroicons/react/24/outline'
-
+import { UserIcon } from '@heroicons/react/24/outline'
+import "./UIIcon.css"
 
 const UIIcon = (props) => {
   const className = props.className
@@ -18,44 +20,50 @@ const UIIcon = (props) => {
 
   var component = null
   switch (icon) {
+    case UIIconType.atSymbol:
+      component = <AtSymbolIcon />
+      break
     case UIIconType.bank:
-      component = <BuildingLibraryIcon/>
+      component = <BuildingLibraryIcon />
       break
     case UIIconType.banknotes:
-      component = <BanknotesIcon/>
+      component = <BanknotesIcon />
       break
     case UIIconType.chartPie:
-      component = <ChartPieIcon/>
+      component = <ChartPieIcon />
       break
     case UIIconType.currencyDollar:
-      component = <CurrencyDollarIcon/>
+      component = <CurrencyDollarIcon />
       break
     case UIIconType.envelope:
-      component = <EnvelopeIcon/>
+      component = <EnvelopeIcon />
       break
     case UIIconType.exclamationTriangle:
-      component = <ExclamationTriangleIcon/>
+      component = <ExclamationTriangleIcon />
       break
     case UIIconType.faceSmile:
-      component = <FaceSmileIcon/>
+      component = <FaceSmileIcon />
       break
     case UIIconType.flag:
-      component = <FlagIcon/>
+      component = <FlagIcon />
       break
     case UIIconType.home:
-      component = <HomeIcon/>
+      component = <HomeIcon />
       break
     case UIIconType.paperAirplane:
-      component = <PaperAirplaneIcon/>
+      component = <PaperAirplaneIcon />
       break
     case UIIconType.rocketLaunch:
-      component = <RocketLaunchIcon/>
+      component = <RocketLaunchIcon />
       break
     case UIIconType.shieldCheck:
-      component = <ShieldCheckIcon/>
+      component = <ShieldCheckIcon />
+      break
+    case UIIconType.user:
+      component = <UserIcon />
       break
     default:
-      component = <div/>
+      component = <div />
       break
   }
 
@@ -67,6 +75,7 @@ const UIIcon = (props) => {
 }
 
 const UIIconType = {
+  atSymbol: 'atSymbol',
   bank: 'bank',
   banknotes: 'banknotes',
   chartPie: 'chartPie',
@@ -78,7 +87,8 @@ const UIIconType = {
   home: 'home',
   paperAirplane: 'paperAirplane',
   rocketLaunch: 'rocketLaunch',
-  shieldCheck: 'shieldCheck'
+  shieldCheck: 'shieldCheck',
+  user: 'user'
 }
- 
+
 export default UIIcon;

@@ -1,3 +1,5 @@
+import "./UICard.css"
+
 const UICard = (props) => {
   const className = props.className
   const children = props.children

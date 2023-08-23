@@ -1,0 +1,4 @@
+.ui-divider {
+  height: 1px;
+  background-color: var(--color-container-alt);
+}
