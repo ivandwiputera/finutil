@@ -6,11 +6,16 @@ import HomeTools from "./HomeTools/HomeTools";
 const Home = () => {
   return (  
     <div className="home-container">
-      <HomeIntroduction />
+      <HomeIntroduction onButtonClick={onButtonClick} />
       <HomeTools />
-      <div ><HomeContact /></div>
+      <HomeContact />
     </div>
   );
 }
+
+function onButtonClick() {
+  document.getElementById("home-contact").scrollIntoView()
+}
  
 export default Home;
+

@@ -1,7 +1,9 @@
-import UIButton from "uicomponents/UIButton/UIButton";
 import "./UIImageTextColumn.css"
+import UIButton from "uicomponents/UIButton/UIButton";
+import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
 
 const UIImageTextColumn = (props) => {
+  const className = props.className
   const title = props.title
   const subtitle = props.subtitle
   const description = props.description
@@ -10,25 +12,26 @@ const UIImageTextColumn = (props) => {
   const buttonTitle = props.buttonTitle
   const buttonIcon = props.buttonIcon
   const buttonOnClick = props.buttonOnClick
-  const containerStyle = {
-    textAlign: props.textAlignment
-  }
-  
-  const imageClassNames = `ui-image-text-column__image ${imageClassModifiers}`
 
   return (
-    <div className="ui-image-text-column" style={containerStyle}>
-      { imageSrc && <img className={imageClassNames} src={imageSrc} alt=""/> }
+    <div className={`ui-image-text-column ${className}`}>
+      {imageSrc && <img className={`ui-image-text-column__image m-100 ${imageClassModifiers}`} src={imageSrc} alt="" />}
       <div className="ui-image-text-column__text-container">
-        { title && <h1 className="ui-image-text-column__title">{title}</h1> }
-        { subtitle && <h3 className="ui-image-text-column__subtitle">{subtitle}</h3> }
-        { description && <p className="ui-image-text-column__description">{description}</p> }
-        { buttonTitle && <div className="ui-image-text-column__button">
+
+        <UIHeaderText
+          title={title}
+          subtitle={subtitle}
+          description={description}
+        />
+
+        {buttonTitle &&
           <UIButton
-            title={buttonTitle} 
+            className="mt-150"
+            title={buttonTitle}
             icon={buttonIcon}
-            onClick={buttonOnClick}/>
-        </div> }
+            onClick={buttonOnClick}
+          />
+        }
       </div>
     </div>
   );

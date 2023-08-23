@@ -1,0 +1,22 @@
+.ui-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.ui-header-text__title {
+  font-size: var(--font-size-large);
+  line-height: 1.1;
+}
+
+.ui-header-text__subtitle {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.ui-header-text__description {
+  font-size: var(--font-size-normal);
+  color: var(--color-text-light);
+}

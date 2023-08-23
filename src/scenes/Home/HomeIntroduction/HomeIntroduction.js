@@ -2,7 +2,8 @@ import "./HomeIntroduction.css"
 import UIImageTextColumn from "uicomponents/UIImageTextColumn/UIImageTextColumn";
 import image from "assets/images/img-profile.jpg"
 
-const HomeIntroduction = () => {
+const HomeIntroduction = (props) => {
+  const onButtonClick = props.onButtonClick
   return (
     <div>
       <UIImageTextColumn
@@ -13,9 +14,7 @@ const HomeIntroduction = () => {
         imageClassModifiers="img-masking-blobs"
         buttonTitle="Contact me"
         buttonIcon="envelope"
-        buttonOnClick={() => {
-          document.getElementById("home-contact").scrollIntoView()
-        }}
+        buttonOnClick={onButtonClick}
       />
     </div>
   );

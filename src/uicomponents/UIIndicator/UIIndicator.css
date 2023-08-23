@@ -1,0 +1,6 @@
+.ui-indicator {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+}

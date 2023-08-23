@@ -37,7 +37,7 @@
   /* Fonts */
   --font-name: 'Poppins', sans-serif;
 
-  --font-size-large   : 2.5rem;
+  --font-size-large   : 2.0rem;
   --font-size-h1      : 1.5rem;
   --font-size-h2      : 1.25rem;
   --font-size-h3      : 1.125rem;
@@ -54,6 +54,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 
 html {

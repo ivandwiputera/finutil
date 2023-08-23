@@ -1,4 +1,4 @@
-import UIIcon from "../UIIcon/UIIcon";
+import UIIcon from "uicomponents/UIIcon/UIIcon";
 import "./UIIconText.css"
 
 const UIIconText = (props) => {
