@@ -5,15 +5,3 @@
   justify-content: flex-start;
   align-items: stretch;
 }
-
-.ui-icon-text-card__icon {
-  color: var(--color-primary);
-}
-
-.ui-icon-text-card__text {
-  margin-top: 0.5rem;
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-  text-align: left;
-}

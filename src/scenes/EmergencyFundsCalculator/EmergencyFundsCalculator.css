@@ -1,11 +1,7 @@
-.ui-image-text-column {
+.emergency-funds-calculator-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  padding: 1rem;
-}
-
-.ui-image-text-column__image {
-  object-fit: cover;
+  padding: 2rem;
 }

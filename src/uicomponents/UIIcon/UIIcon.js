@@ -74,7 +74,7 @@ const UIIcon = (props) => {
   )
 }
 
-const UIIconType = {
+export const UIIconType = {
   atSymbol: 'atSymbol',
   bank: 'bank',
   banknotes: 'banknotes',

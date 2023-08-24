@@ -1,4 +1,4 @@
-import "./UIImageTextColumn.css"
+import "uicomponents/UIImageText/UIImageText.css"
 import UIButton from "uicomponents/UIButton/UIButton";
 import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
 
@@ -14,11 +14,12 @@ const UIImageTextColumn = (props) => {
   const buttonOnClick = props.buttonOnClick
 
   return (
-    <div className={`ui-image-text-column ${className}`}>
-      {imageSrc && <img className={`ui-image-text-column__image m-100 ${imageClassModifiers}`} src={imageSrc} alt="" />}
-      <div className="ui-image-text-column__text-container">
+    <div className={`ui-image-text ${className}`}>
+      {imageSrc && <img className={`ui-image-text__image m-100 ${imageClassModifiers}`} src={imageSrc} alt="" />}
+      <div className="ui-image-text__text-container">
 
         <UIHeaderText
+          className="mt-100 ml-25"
           title={title}
           subtitle={subtitle}
           description={description}

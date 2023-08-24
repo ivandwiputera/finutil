@@ -8,11 +8,11 @@ const UIIconText = (props) => {
 
   return (
     <div className="ui-icon-text">
-      {icon && <UIIcon className="ui-icon-text__icon ui-icon-24" icon={icon} />}
+      {icon && <UIIcon className="color-primary ui-icon-24" icon={icon} />}
       {(title || label) &&
         <div className="ui-icon-text__text-container">
-          {label && <div className="ui-icon-text__label">{label}</div>}
-          {title && <div className="ui-icon-text__title">{title}</div>}
+          {label && <div className="font-size-small color-text-light">{label}</div>}
+          {title && <p className="font-weight-medium">{title}</p>}
         </div>
       }
     </div>
