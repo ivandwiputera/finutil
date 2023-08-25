@@ -14,72 +14,72 @@ const HomeTools = (props) => {
         title={HomeToolsCopy.title}
         description={HomeToolsCopy.description}
       />
-      <div className="home-tools-grid mt-100">
+      <div className="home-tools-grid">
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.chartPie}
           text={HomeToolsCopy.toolsBudgeting503020Calculator}
           onClick={() => { onItemClick(ScreenType.budget503020Calculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.exclamationTriangle}
           text={HomeToolsCopy.toolsEmergencyFundsCalculator}
           onClick={() => { onItemClick(ScreenType.emergencyFundsCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.rocketLaunch}
           text={HomeToolsCopy.toolsInvestmentReturnCalculator}
           onClick={() => { onItemClick(ScreenType.investmentReturnCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.currencyDollar}
           text={HomeToolsCopy.toolsFinancialFreedomCalculator}
           onClick={() => { onItemClick(ScreenType.financialFreedomCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.faceSmile}
           text={HomeToolsCopy.toolsRetirementCalculator}
           onClick={() => { onItemClick(ScreenType.retirementCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.flag}
           text={HomeToolsCopy.toolsGoalSettingCalculator}
           onClick={() => { onItemClick(ScreenType.goalSettingCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.bank}
           text={HomeToolsCopy.toolsMortgageCalculator}
           onClick={() => { onItemClick(ScreenType.mortgageCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.home}
           text={HomeToolsCopy.toolsHouseAffordabilityCalculator}
           onClick={() => { onItemClick(ScreenType.houseAffordabilityCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.shieldCheck}
           text={HomeToolsCopy.toolsLifeInsuranceCoverageCalculator}
           onClick={() => { onItemClick(ScreenType.lifeInsuranceCoverageCalculator) }}
         />
 
         <UIIconTextCard
-          className="m-37"
+          className="home-tools-grid-item"
           icon={UIIconType.banknotes}
           text={HomeToolsCopy.toolsNetSalaryCalculator}
           onClick={() => { onItemClick(ScreenType.netSalaryCalculator) }}

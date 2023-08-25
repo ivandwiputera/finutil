@@ -13,10 +13,10 @@ const Budget503020CalculatorResult = (props) => {
       <div className="font-weight-semibold">{BudgetCalculatorResultCopy.needsLabel}</div>
       <h2 className="color-text-colored">{needs}</h2>
       <div className="mt-50 color-text-light font-size-small">{BudgetCalculatorResultCopy.needsDescription}</div>
-      <div className="mt-100 font-weight-semibold">{BudgetCalculatorResultCopy.wantsLabel}</div>
+      <div className="mt-150 font-weight-semibold">{BudgetCalculatorResultCopy.wantsLabel}</div>
       <h2 className="color-text-colored">{wants}</h2>
       <div className="mt-50 color-text-light font-size-small">{BudgetCalculatorResultCopy.wantsDescription}</div>
-      <div className="mt-100 font-weight-semibold">{BudgetCalculatorResultCopy.savingsLabel}</div>
+      <div className="mt-150 font-weight-semibold">{BudgetCalculatorResultCopy.savingsLabel}</div>
       <h2 className="color-text-colored">{savings}</h2>
       <div className="mt-50 color-text-light font-size-small">{BudgetCalculatorResultCopy.savingsDescription}</div>
     </div>

@@ -9,7 +9,7 @@
   background-color: var(--color-primary);
   font-weight: var(--font-weight-semibold);
   font-family: var(--font-name);
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-body);
   color: #FFF;
   box-shadow: 0.125rem 0.125rem 0.125rem var(--color-shadow);
 }

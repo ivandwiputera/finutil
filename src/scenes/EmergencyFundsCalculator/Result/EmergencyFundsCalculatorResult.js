@@ -12,10 +12,10 @@ const EmergencyFundsCalculatorResult = (props) => {
 
   return ( 
     <div className="emergency-funds-calculator-result-container">
-      <div>{EmergencyFundsCalculatorResultCopy.title}</div>
-      <h1 className="mt-50 color-text-colored">{totalEmergencyFundsDisplayText}</h1>
+      <div className="font-size-body font-weight-medium">{EmergencyFundsCalculatorResultCopy.title}</div>
+      <h1 className="mt-25 color-text-colored">{totalEmergencyFundsDisplayText}</h1>
       <p className="mt-100">{EmergencyFundsCalculatorResultCopy.description}</p>
-      <div className="mt-100 font-size-small">{EmergencyFundsCalculatorResultCopy.numMonthsToCoverLabel}</div>
+      <div className="mt-150 font-size-small">{EmergencyFundsCalculatorResultCopy.numMonthsToCoverLabel}</div>
       <div className="color-text font-weight-semibold">{numMonthsToCoverDisplayText}</div>
     </div>
   );

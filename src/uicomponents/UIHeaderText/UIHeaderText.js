@@ -9,8 +9,8 @@ const UIHeaderText = (props) => {
   return (
     <div className={`ui-header-text ${className}`}>
       {title && <h1>{title}</h1>}
-      {subtitle && <h3>{subtitle}</h3>}
-      {description && <p>{description}</p>}
+      {subtitle && <div className="ui-header-subtitle">{subtitle}</div>}
+      {description && <div className="ui-header-description">{description}</div>}
     </div>
   );
 }

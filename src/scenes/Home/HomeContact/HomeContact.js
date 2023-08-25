@@ -13,7 +13,7 @@ const HomeContact = () => {
         title={HomeContactCopy.title}
         description={HomeContactCopy.description}
       />
-      <UICard className="home-contact-card user-interaction-disabled mt-100">
+      <UICard className="home-contact-card">
         <UIIconText icon={UIIconType.envelope} label={HomeContactCopy.emailLabel} title={HomeContactCopy.emailValue} />
         <UIDivider />
         <UIIconText icon={UIIconType.atSymbol} label={HomeContactCopy.instagramLabel} title={HomeContactCopy.instagramValue} />

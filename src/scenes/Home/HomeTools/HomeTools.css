@@ -9,4 +9,9 @@
 .home-tools-grid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  margin-top: 1.5rem;
+}
+
+.home-tools-grid-item {
+  margin: 0.375rem;
 }
