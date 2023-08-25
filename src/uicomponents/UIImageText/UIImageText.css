@@ -1,14 +1,13 @@
-.ui-image-text__image {
-  max-width: 240px;
-  height: auto;
-  object-fit: cover;
-}
-
 .ui-image-text {
   display: flex;
   justify-content: stretch;
   align-items: center;
-  padding: 1rem;
+}
+
+.ui-image-text__image {
+  width: 240px;
+  height: auto;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {

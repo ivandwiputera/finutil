@@ -14,6 +14,6 @@ const EmergencyFundsCalculatorIntroduction = () => {
  
 const EmergencyFundsCalculatorIntroductionCopy = {
   title: "Emergency Funds Calculator",
-  description: "To calculate how much emergency funds we need to have. Emergency funds is the money stashed away that we can use in times of financial distress such as job lost, family member sudden illness, etc. Emergency funds will act like a safety net that will cover those kind of expenses."
+  description: "Emergency funds are the funds that we set aside to use in times of financial distress, such as job loss or sudden illness of a family member. These funds act as a safety net to help us cover unexpected expenses."
 }
 export default EmergencyFundsCalculatorIntroduction;

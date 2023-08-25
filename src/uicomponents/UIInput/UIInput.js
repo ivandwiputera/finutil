@@ -1,18 +1,54 @@
-import "./UIInput.css"
+import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput"
+import UITextInput from "uicomponents/UIInput/UITextInput"
+import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput"
 
 const UIInput = (props) => {
+  const type = props.type
   const label = props.label
   const note = props.note
   const error = props.error
+  const placeholder = props.placeholder
+  const defaultValue = props.defaultValue
+  const onChange = props.onChange
 
-  return ( 
-    <div className="ui-input">
-      <div className="font-size-body font-weight-medium ml-25">{label}</div>
-      <input className="ui-input-field" type="text"/>
-      {note && <div className="font-size-tiny color-text-light ml-25">{note}</div>}
-      {error && <div className="ui-input-error font-size-tiny color-error ml-25">{error}</div>}
-    </div>
-  );
+  switch (type) {
+    case UIInputType.currency:
+      return (
+        <UICurrencyInput
+          defaultValue={defaultValue}
+          placeholder={placeholder}
+          label={label}
+          note={note}
+          error={error}
+          onChange={onChange} />
+      )
+    case UIInputType.dropdown:
+      return (
+        <UIDropdownInput
+          defaultValue={defaultValue}
+          placeholder={placeholder}
+          label={label}
+          note={note}
+          error={error}
+          onChange={onChange} />
+      )
+    default:
+      return (
+        <UITextInput
+          defaultValue={defaultValue}
+          placeholder={placeholder}
+          label={label}
+          note={note}
+          error={error} />
+      )
+  }
 }
- 
+
 export default UIInput;
+
+export const UIInputType = {
+  text: 'text',
+  currency: 'currency',
+  number: 'number',
+  dropdown: 'dropdown'
+}

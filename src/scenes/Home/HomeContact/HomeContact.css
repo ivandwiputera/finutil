@@ -1,8 +1,9 @@
 .home-contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: stretch;
+  justify-content: flex-start;
+  padding: 1rem;
 }
 
 .home-contact-card {

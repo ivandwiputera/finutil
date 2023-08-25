@@ -12,7 +12,7 @@ const UIIconTextCard = (props) => {
     <UICard className={className} onClick={onClick}>
       <div className="ui-icon-text-card">
         {icon && <UIIcon className="color-primary ui-icon-32" icon={icon} />}
-        {text && <div className="text-align-left font-weight-medium font-size-small color-text mt-50">{text}</div>}
+        {text && <div className="ui-icon-text-card__label">{text}</div>}
       </div>
     </UICard>
 

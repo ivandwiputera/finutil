@@ -6,7 +6,7 @@ import { UIIconType } from "uicomponents/UIIcon/UIIcon";
 const HomeIntroduction = (props) => {
   const onButtonClick = props.onButtonClick
   return (
-    <div>
+    <div className="home-introduction-container">
       <UIImageTextColumn
         title={HomeIntroductionCopy.title}
         subtitle={HomeIntroductionCopy.subtitle}

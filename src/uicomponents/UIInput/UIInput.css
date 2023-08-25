@@ -9,15 +9,16 @@
   color: var(--color-text);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-medium);
+  margin-left: 0.25rem;
 }
 
 .ui-input-field {
   padding: 0.5rem;
   border-width: 0.125rem;
   border-radius: 0.5rem;
-  border-style: solid;
-  border-color: var(--color-text-super-light);
-  font-size: var(--font-size-body);
+  border-color: var(--color-border);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semibold);
   color: var(--color-text);
 }
 
@@ -25,6 +26,14 @@
   outline-color: var(--color-primary);
 }
 
-.ui-input-field:focus ~ .ui-input-error {
-  display: none;
+.ui-input-note {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light); 
+  margin-left: 0.25rem;
+}
+
+.ui-input-error {
+  font-size: var(--font-size-small);
+  color: var(--color-error);
+  margin-left: 0.25rem;
 }

@@ -1,7 +1,15 @@
 .ui-icon-text-card {
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+}
+
+.ui-icon-text-card__label {
+  text-align: left;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-text);
+  margin-top: 0.5rem;
 }

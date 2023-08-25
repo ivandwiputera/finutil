@@ -9,7 +9,7 @@ const HomeContact = () => {
   return (
     <div id="home-contact" className="home-contact-container">
       <UIHeaderText
-        className="text-align-center ml-200 mr-200"
+        className="text-align-center"
         title={HomeContactCopy.title}
         description={HomeContactCopy.description}
       />
