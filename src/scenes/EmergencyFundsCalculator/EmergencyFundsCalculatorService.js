@@ -2,8 +2,8 @@ import { OccupationRiskType } from "./EmergencyFundsConstants"
 
 export class EmergencyFundsCalculatorService {
   static calculateEmergencyFunds = (input) => {
-    if (input.monthlyExpenses == null) { return null }
-    if (input.occupationRisk == null) { return null }
+    if (input?.monthlyExpenses == null) { return null }
+    if (input?.occupationRisk == null) { return null }
 
     const numMonthsToCover = this.getNumMonthsToCover(input.occupationRisk)
     const totalEmergencyFunds = numMonthsToCover * input.monthlyExpenses

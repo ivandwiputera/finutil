@@ -1,0 +1,9 @@
+.budget-503020-calculator-result-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  border-radius: 0.5rem;
+  background-color: var(--color-background-alt);
+}

@@ -1,5 +1,5 @@
 import "./EmergencyFundsCalculator.css"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import EmergencyFundsCalculatorForm from "./Form/EmergencyFundsCalculatorForm";
 import EmergencyFundsCalculatorIntroduction from "./Introduction/EmergencyFundsCalculatorIntroduction";
 import { EmergencyFundsCalculatorService } from "./EmergencyFundsCalculatorService";

@@ -1,0 +1,8 @@
+.budget-503020-calculator-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
