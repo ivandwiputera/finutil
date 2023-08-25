@@ -16,7 +16,7 @@
 }
 
 .ui-dropdown-li {
-  background-color: var(--color-container);
+  background-color: var(--color-background);
   border: 0;
   border-top: 1px;
   border-color: var(--color-border);
@@ -24,7 +24,7 @@
 }
 
 .ui-dropdown-li:hover {
-  background-color: var(--color-container-alt);
+  background-color: var(--color-background-alt);
 }
 
 .ui-dropdown-li:first-child {
