@@ -14,9 +14,9 @@
   --color-text              : hsl(var(--hue-val), 0%, 35%);
   --color-text-light        : hsl(var(--hue-val), 0%, 55%);
   --color-text-super-light  : hsl(var(--hue-val), 0%, 75%);
+  --color-text-colored      : hsl(var(--hue-val), 55%, 40%);
   --color-background        : hsl(var(--hue-val), 0%, 100%);
-  --color-container         : hsl(var(--hue-val), 0%, 100%);
-  --color-container-alt     : hsl(var(--hue-val), 0%, 95%);
+  --color-background-alt    : hsl(var(--hue-val), 0%, 95%);
   --color-border            : hsl(var(--hue-val), 0%, 75%);
   --color-shadow            : hsl(var(--hue-val), 0%, 85%);
   --color-error             : hsl(var(--hue-error-val), 69%, 50%);
@@ -185,6 +185,10 @@ p {
 
 .color-text-light {
   color: var(--color-text-light);
+}
+
+.color-text-colored {
+  color: var(--color-text-colored)
 }
 
 .color-error {

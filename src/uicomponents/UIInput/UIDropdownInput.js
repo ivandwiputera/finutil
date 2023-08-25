@@ -23,6 +23,10 @@ const UIDropdownInput = (props) => {
     setIsExpanded(!isExpanded)
   }
 
+  const onFocus = () => {
+    setIsExpanded(true)
+  }
+
   const onItemClick = (item) => {
     setIsExpanded(false)
     setSelectedItem(item)
@@ -38,6 +42,7 @@ const UIDropdownInput = (props) => {
           type="text"
           value={selectedItem ? selectedItem.label : ""}
           placeholder={placeholder}
+          onFocus={onFocus}
           readOnly={true} />
       </div>
       {isExpanded &&

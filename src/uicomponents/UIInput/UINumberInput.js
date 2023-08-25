@@ -1,9 +1,8 @@
 import "uicomponents/UIInput/UIInput.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { isNumber } from "utils/DataTypeUtils"
 
-const UICurrencyInput = (props) => {
+const UINumberInput = (props) => {
   const label = props.label
   const note = props.note
   const error = props.error
@@ -11,21 +10,10 @@ const UICurrencyInput = (props) => {
   const defaultValue = props.defaultValue
   const onChange = props.onChange
 
-  const [inputValue, setInputValue] = useState(undefined)
-
-  useEffect(() => {
-    // Set as null if not a number
-    if (!isValidNumber(defaultValue)) {
-      setInputValue(null)
-      return
-    }
-
-    const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, defaultValue)
-    setInputValue(cleanNumber)
-  }, [defaultValue]);
+  const [inputValue, setInputValue] = useState(defaultValue)
 
   const onInputChange = (value) => {
-    const number = CurrencyFormatter.getValue(value)
+    const number = Number(value)
 
     // Set as null if not a number
     if (!isValidNumber(number)) {
@@ -34,9 +22,8 @@ const UICurrencyInput = (props) => {
       return
     }
 
-    const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
-    setInputValue(cleanNumber)
-    onChange(cleanNumber)
+    setInputValue(number)
+    onChange(number)
   }
   
   const isValidNumber = (number) => {
@@ -49,7 +36,7 @@ const UICurrencyInput = (props) => {
       <input
         className="ui-input-field"
         type="text"
-        value={inputValue != null ? CurrencyFormatter.getDisplayText(inputValue) : ""}
+        value={inputValue != null ? inputValue : ""}
         placeholder={placeholder}
         onChange={(e) => {onInputChange(e.target.value)}} />
       {note && <div className="ui-input-note">{note}</div>}
@@ -58,8 +45,4 @@ const UICurrencyInput = (props) => {
   );
 }
 
-const UICurrencyInputConfiguration = {
-  maxCurrencyValue: 999999999999999
-}
-
-export default UICurrencyInput;
+export default UINumberInput;

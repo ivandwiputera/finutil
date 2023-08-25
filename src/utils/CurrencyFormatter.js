@@ -32,8 +32,13 @@ export class CurrencyFormatter {
       return null
     }
 
+    // Returns null if text is empty after removing all unneeded chars
+    const cleanText = displayText.replace(/[^0-9.-]+/g, "")
+    if (cleanText === "") {
+      return null
+    }
+
     // Convert to numbers
-    const cleanText = displayText.replace(/[^0-9-.]+/g, "")
     const result = Number(cleanText)
     return !isNaN(result) ? result : null
   }
