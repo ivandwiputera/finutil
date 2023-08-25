@@ -11,51 +11,31 @@ const UICurrencyInput = (props) => {
   const defaultValue = props.defaultValue
   const onChange = props.onChange
 
-  const [displayText, setDisplayText] = useState("")
+  const [inputValue, setInputValue] = useState(undefined)
 
   useEffect(() => {
-    const number = CurrencyFormatter.getValue(defaultValue)
-
-    // Set as empty if not a number
-    if (!isValidNumber(number)) {
-      setDisplayText("")
+    // Set as null if not a number
+    if (!isValidNumber(defaultValue)) {
+      setInputValue(null)
       return
     }
 
-    // Format currency then display
-    const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
-    const text = CurrencyFormatter.getDisplayText(cleanNumber)
-    setDisplayText(text)
+    const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, defaultValue)
+    setInputValue(cleanNumber)
   }, [defaultValue]);
 
   const onInputChange = (value) => {
     const number = CurrencyFormatter.getValue(value)
-    setDisplayTextWithValue(number)
-    triggerOnChangeCallback(number)
-  }
 
-  const setDisplayTextWithValue = (number) => {
-    // Set as empty if not a number
+    // Set as null if not a number
     if (!isValidNumber(number)) {
-      setDisplayText("")
-      return
-    }
-
-    // Format currency then display
-    const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
-    const text = CurrencyFormatter.getDisplayText(cleanNumber)
-    setDisplayText(text)
-  }
-
-  const triggerOnChangeCallback = (number) => {
-    // Set as empty if not a number
-    if (!isValidNumber(number)) {
+      setInputValue(null)
       onChange(null)
       return
     }
 
-    // Trigger on change callback
     const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
+    setInputValue(cleanNumber)
     onChange(cleanNumber)
   }
   
@@ -69,7 +49,7 @@ const UICurrencyInput = (props) => {
       <input
         className="ui-input-field"
         type="text"
-        value={displayText}
+        value={inputValue ? CurrencyFormatter.getDisplayText(inputValue) : ""}
         placeholder={placeholder}
         onChange={(e) => {onInputChange(e.target.value)}} />
       {note && <div className="ui-input-note">{note}</div>}
