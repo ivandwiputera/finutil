@@ -6,7 +6,7 @@ import Budget503020Calculator from "scenes/Budget503020Calculator/Budget503020Ca
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" baseName={process.env.PUBLIC_URL}>
       <div className="app-container">
         <Router>
           <Routes>
