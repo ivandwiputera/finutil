@@ -35,6 +35,11 @@ export class TVMCalculator {
   ///   - pv: present value
   /// - Returns: future value
   static fv = ({ i, nper, pmt, pv, isBeginning }) => {
+    // CASE: No duration
+    if (nper === 0.0) {
+      return pv
+    }
+
     // CASE: No Interest
     if (i === 0.0) {
       return -1 * (pv + nper * pmt)

@@ -27,12 +27,13 @@ const UINumberInput = (props) => {
     }
 
     // Set input value
-    setInputValue(number)
+    const cleanNumber = Math.min(UINumberInputConfiguration.maxValue, number)
+    setInputValue(cleanNumber)
   }, [defaultValue]);
 
   const onInputChange = (value) => {
     const trimmedValue = value.replace(/ /g,'')
-    const cleanValue = trimmedValue.replaceAll("00", "0")
+    const cleanValue = trimmedValue.replace(/^0+/, '0');
 
     // Set as null if value is empty
     if (cleanValue === "") {
@@ -41,9 +42,15 @@ const UINumberInput = (props) => {
     }
 
     // Don't allow input if not a number
-    const number = Number(value)
+    const number = Number(cleanValue)
     if (!isValidNumber(number)) {
       setInputValue(inputValue)
+      return
+    }
+
+    // Set input value as max value if greater than max value
+    if (number > UINumberInputConfiguration.maxValue) {
+      setInputValue(UINumberInputConfiguration.maxValue)
       return
     }
 
@@ -52,10 +59,8 @@ const UINumberInput = (props) => {
   }
 
   const onBlur = () => {
-    const cleanValue = inputValue?.replace(/ /g,'')
-
     // Trigger on change null if empty
-    if (cleanValue == null || cleanValue === "" ) {
+    if (inputValue == null || inputValue === "" ) {
       onChange(null)
       return
     }
@@ -68,7 +73,8 @@ const UINumberInput = (props) => {
     }
 
     // Trigger on change with valid number
-    onChange(number)
+    const cleanNumber = Math.min(UINumberInputConfiguration.maxValue, number)
+    onChange(cleanNumber)
   }
   
   const isValidNumber = (number) => {
@@ -90,6 +96,10 @@ const UINumberInput = (props) => {
       {error && <div className="ui-input-error">{error}</div>}
     </div>
   );
+}
+
+const UINumberInputConfiguration = {
+  maxValue: 999999999999999
 }
 
 export default UINumberInput;
