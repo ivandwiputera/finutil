@@ -13,9 +13,14 @@ const UINumberInput = (props) => {
   const [inputValue, setInputValue] = useState(undefined)
 
   useEffect(() => {
-    const number = Number(defaultValue)
-
+    // Set as null if empty or null
+    if (defaultValue == null || defaultValue === "") {
+      setInputValue(null)
+      return
+    }
+  
     // Set as null if not a number
+    const number = Number(defaultValue)
     if (!isValidNumber(number)) {
       setInputValue(null)
       return
@@ -26,22 +31,24 @@ const UINumberInput = (props) => {
   }, [defaultValue]);
 
   const onInputChange = (value) => {
-    const number = Number(value)
+    const trimmedValue = value.replace(/ /g,'')
+    const cleanValue = trimmedValue.replaceAll("00", "0")
 
     // Set as null if value is empty
-    if (value === "") {
+    if (cleanValue === "") {
       setInputValue(null)
       return
     }
 
     // Don't allow input if not a number
+    const number = Number(value)
     if (!isValidNumber(number)) {
       setInputValue(inputValue)
       return
     }
 
     // Allow set input value by default
-    setInputValue(value)
+    setInputValue(cleanValue)
   }
 
   const onBlur = () => {
