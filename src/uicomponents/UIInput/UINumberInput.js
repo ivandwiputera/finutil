@@ -52,9 +52,16 @@ const UINumberInput = (props) => {
   }
 
   const onBlur = () => {
-    const number = Number(inputValue)
+    const cleanValue = inputValue?.replace(/ /g,'')
+
+    // Trigger on change null if empty
+    if (cleanValue == null || cleanValue === "" ) {
+      onChange(null)
+      return
+    }
 
     // Trigger on change null if number is invalid
+    const number = Number(inputValue)
     if (!isValidNumber(number)) {
       onChange(null)
       return
