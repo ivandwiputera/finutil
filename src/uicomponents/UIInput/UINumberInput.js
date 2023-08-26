@@ -1,5 +1,5 @@
 import "uicomponents/UIInput/UIInput.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { isNumber } from "utils/DataTypeUtils"
 
 const UINumberInput = (props) => {
@@ -10,19 +10,50 @@ const UINumberInput = (props) => {
   const defaultValue = props.defaultValue
   const onChange = props.onChange
 
-  const [inputValue, setInputValue] = useState(defaultValue)
+  const [inputValue, setInputValue] = useState(undefined)
 
-  const onInputChange = (value) => {
-    const number = Number(value)
+  useEffect(() => {
+    const number = Number(defaultValue)
 
     // Set as null if not a number
     if (!isValidNumber(number)) {
       setInputValue(null)
+      return
+    }
+
+    // Set input value
+    setInputValue(number)
+  }, [defaultValue]);
+
+  const onInputChange = (value) => {
+    const number = Number(value)
+
+    // Set as null if value is empty
+    if (value === "") {
+      setInputValue(null)
+      return
+    }
+
+    // Don't allow input if not a number
+    if (!isValidNumber(number)) {
+      setInputValue(inputValue)
+      return
+    }
+
+    // Allow set input value by default
+    setInputValue(value)
+  }
+
+  const onBlur = () => {
+    const number = Number(inputValue)
+
+    // Trigger on change null if number is invalid
+    if (!isValidNumber(number)) {
       onChange(null)
       return
     }
 
-    setInputValue(number)
+    // Trigger on change with valid number
     onChange(number)
   }
   
@@ -36,10 +67,11 @@ const UINumberInput = (props) => {
       <input
         className="ui-input-field"
         type="text"
-        inputMode="numeric"
+        inputMode="decimal"
         value={inputValue != null ? inputValue : ""}
         placeholder={placeholder}
-        onChange={(e) => {onInputChange(e.target.value)}} />
+        onChange={(e) => {onInputChange(e.target.value)}}
+        onBlur={onBlur} />
       {note && <div className="ui-input-note">{note}</div>}
       {error && <div className="ui-input-error">{error}</div>}
     </div>

@@ -20,6 +20,7 @@ const UICurrencyInput = (props) => {
       return
     }
 
+    // Set input value
     const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, defaultValue)
     setInputValue(cleanNumber)
   }, [defaultValue]);
@@ -27,15 +28,34 @@ const UICurrencyInput = (props) => {
   const onInputChange = (value) => {
     const number = CurrencyFormatter.getValue(value)
 
-    // Set as null if not a number
-    if (!isValidNumber(number)) {
+    // Set as null if currency symbol left or empty
+    if (value === UICurrencyInputConfiguration.currencySymbol || value === "") {
       setInputValue(null)
+      return
+    }
+
+    // Don't allow input if not a number
+    if (!isValidNumber(number)) {
+      setInputValue(inputValue)
+      return
+    }
+
+    // Allow set input value by default
+    const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
+    setInputValue(cleanNumber)
+  }
+
+  const onBlur = () => {
+    const number = CurrencyFormatter.getValue(inputValue)
+
+    // Trigger on change null if number is invalid
+    if (!isValidNumber(number)) {
       onChange(null)
       return
     }
 
+    // Trigger on change with valid number
     const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
-    setInputValue(cleanNumber)
     onChange(cleanNumber)
   }
   
@@ -52,7 +72,8 @@ const UICurrencyInput = (props) => {
         inputMode="numeric"
         value={inputValue != null ? CurrencyFormatter.getDisplayText(inputValue) : ""}
         placeholder={placeholder}
-        onChange={(e) => {onInputChange(e.target.value)}} />
+        onChange={(e) => {onInputChange(e.target.value)}}
+        onBlur={onBlur} />
       {note && <div className="ui-input-note">{note}</div>}
       {error && <div className="ui-input-error">{error}</div>}
     </div>
@@ -60,6 +81,7 @@ const UICurrencyInput = (props) => {
 }
 
 const UICurrencyInputConfiguration = {
+  currencySymbol: "$",
   maxCurrencyValue: 999999999999999
 }
 
