@@ -4,32 +4,31 @@ import UIDivider from "uicomponents/UIDivider/UIDivider";
 import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
 import UIIconText from "uicomponents/UIIconText/UIIconText";
 import { UIIconType } from "uicomponents/UIIcon/UIIcon";
+import Localise from "localisation/Localise";
+import { LocaliseKey } from "localisation/Localise";
 
 const HomeContact = () => {
   return (
     <div id="home-contact" className="home-contact-container">
       <UIHeaderText
         className="text-align-center"
-        title={HomeContactCopy.title}
-        description={HomeContactCopy.description}
+        title={Localise(LocaliseKey.homeContactTitle)}
+        description={Localise(LocaliseKey.homeContactDescription)}
       />
       <UICard className="home-contact-card">
-        <UIIconText icon={UIIconType.envelope} label={HomeContactCopy.emailLabel} title={HomeContactCopy.emailValue} />
+        <UIIconText
+          icon={UIIconType.envelope}
+          label={Localise(LocaliseKey.homeContactEmailLabel)}
+          title={Localise(LocaliseKey.homeContactEmailValue)} />
         <UIDivider />
-        <UIIconText icon={UIIconType.atSymbol} label={HomeContactCopy.instagramLabel} title={HomeContactCopy.instagramValue} />
+        <UIIconText
+          icon={UIIconType.atSymbol}
+          label={Localise(LocaliseKey.homeContactInstagramLabel)}
+          title={Localise(LocaliseKey.homeContactInstagramValue)} />
       </UICard>
     </div>
 
   );
-}
-
-const HomeContactCopy = {
-  title: "Contact Me",
-  description: "Feel free to contact me to talk about personal finance and budgeting.",
-  emailLabel: "Email",
-  emailValue: "ivan.dwiputera@gmail.com",
-  instagramLabel: "Instagram",
-  instagramValue: "@ivandwiputera"
 }
 
 export default HomeContact;

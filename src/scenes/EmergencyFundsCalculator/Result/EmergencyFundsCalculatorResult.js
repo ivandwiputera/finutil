@@ -1,5 +1,7 @@
 import "./EmergencyFundsCalculatorResult.css"
 import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import Localise from "localisation/Localise";
+import { LocaliseKey } from "localisation/Localise";
 
 const EmergencyFundsCalculatorResult = (props) => {
   const result = props.result
@@ -8,24 +10,17 @@ const EmergencyFundsCalculatorResult = (props) => {
   const numMonthsToCover = result?.numMonthsToCover
 
   const totalEmergencyFundsDisplayText = CurrencyFormatter.getDisplayText(totalEmergencyFunds)
-  const numMonthsToCoverDisplayText = `${numMonthsToCover} ${EmergencyFundsCalculatorResultCopy.numMonthsToCoverUnit}`
+  const numMonthsToCoverDisplayText = `${numMonthsToCover} ${Localise(LocaliseKey.emergencyFundsCalculatorResultNumMonthsToCoverUnit)}`
 
   return ( 
     <div className="emergency-funds-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{EmergencyFundsCalculatorResultCopy.title}</div>
+      <div className="font-size-body font-weight-medium">{Localise(LocaliseKey.emergencyFundsCalculatorResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{totalEmergencyFundsDisplayText}</h1>
-      <p className="mt-100">{EmergencyFundsCalculatorResultCopy.description}</p>
-      <div className="mt-150 font-size-small">{EmergencyFundsCalculatorResultCopy.numMonthsToCoverLabel}</div>
+      <p className="mt-100">{Localise(LocaliseKey.emergencyFundsCalculatorResultDescription)}</p>
+      <div className="mt-150 font-size-small">{Localise(LocaliseKey.emergencyFundsCalculatorResultNumMonthsToCoverLabel)}</div>
       <div className="color-text font-weight-semibold">{numMonthsToCoverDisplayText}</div>
     </div>
   );
-}
- 
-const EmergencyFundsCalculatorResultCopy = {
-  title: "You need to save at least:",
-  description: "Above amount is the total amount you need to put away for emergency. Remember to only use the money when you are in emergency situation such as loss of income and emergency financial situations.",
-  numMonthsToCoverLabel: "Number of covered monthly expenses:",
-  numMonthsToCoverUnit: "months"
 }
 
 export default EmergencyFundsCalculatorResult;

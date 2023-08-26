@@ -4,6 +4,8 @@ import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput";
 import { useCallback, useEffect, useState } from "react";
 import { OccupationRiskType } from "scenes/EmergencyFundsCalculator/EmergencyFundsConstants";
 import { Validation } from "utils/Validation";
+import Localise from "localisation/Localise";
+import { LocaliseKey } from "localisation/Localise";
 
 const EmergencyFundsCalculatorForm = (props) => {
   const monthlyExpensesParam = props.monthlyExpenses
@@ -11,9 +13,9 @@ const EmergencyFundsCalculatorForm = (props) => {
   const onChange = props.onChange
 
   const occupationRiskOptions = [
-    { value: OccupationRiskType.low, label: EmergencyFundsCalculatorFormCopy.occupationRiskOptionLow },
-    { value: OccupationRiskType.medium, label: EmergencyFundsCalculatorFormCopy.occupationRiskOptionMedium },
-    { value: OccupationRiskType.high, label: EmergencyFundsCalculatorFormCopy.occupationRiskOptionHigh }
+    { value: OccupationRiskType.low, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionLow)},
+    { value: OccupationRiskType.medium, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionMedium) },
+    { value: OccupationRiskType.high, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionHigh) }
   ]
 
   const [monthlyExpenses, setMonthlyExpenses] = useState(monthlyExpensesParam)
@@ -34,7 +36,7 @@ const EmergencyFundsCalculatorForm = (props) => {
 
   const validateMonthlyExpenses = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return EmergencyFundsCalculatorFormCopy.errorMonthlyExpensesEmpty
+      return Localise(LocaliseKey.emergencyFundsCalculatorFormErrorMonthlyExpensesEmpty)
     } else {
       return null
     }
@@ -42,7 +44,7 @@ const EmergencyFundsCalculatorForm = (props) => {
 
   const validateOccupationRisk = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return EmergencyFundsCalculatorFormCopy.errorOccupationRiskEmpty
+      return Localise(LocaliseKey.emergencyFundsCalculatorFormErrorOccupationRiskEmpty)
     } else {
       return null
     }
@@ -61,35 +63,22 @@ const EmergencyFundsCalculatorForm = (props) => {
     <div className="emergency-funds-calculator-form-container">
       <UICurrencyInput
         defaultValue={monthlyExpenses}
-        label={EmergencyFundsCalculatorFormCopy.monthlyExpensesLabel}
-        note={EmergencyFundsCalculatorFormCopy.monthlyExpensesHelperText}
+        label={Localise(LocaliseKey.emergencyFundsCalculatorFormMonthlyExpensesLabel)}
+        note={Localise(LocaliseKey.emergencyFundsCalculatorFormMonthlyExpensesHelperText)}
         error={validateMonthlyExpenses(monthlyExpenses)}
         onChange={(e) => { onMonthlyExpensesChanged(e) }}
       />
 
       <UIDropdownInput
         defaultValue={occupationRisk}
-        label={EmergencyFundsCalculatorFormCopy.occupationRiskLabel}
-        note={EmergencyFundsCalculatorFormCopy.occupationRiskHelperText}
+        label={Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskLabel)}
+        note={Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskHelperText)}
         options={occupationRiskOptions}
         error={validateOccupationRisk(occupationRisk)}
         onChange={(e) => { onOccupationRiskChanged(e) }}
       />
     </div>
   );
-}
-
-const EmergencyFundsCalculatorFormCopy = {
-  monthlyExpensesLabel: "How much do you usually spend in a month?",
-  monthlyExpensesHelperText: "This includes all your living costs, necessities, mortgage payments, and other debt repayments.",
-  occupationRiskLabel: "How many dependencies do you have?",
-  occupationRiskHelperText: "Dependencies can be having kids, parents to support, unemployed wife, mortgage to repay, etc.",
-  occupationRiskOptionLow: "No dependency",
-  occupationRiskOptionMedium: "1 dependency",
-  occupationRiskOptionHigh: "At least 2 or more dependencies",
-  errorMonthlyExpensesEmpty: "Monthly expenses cannot be empty",
-  errorMonthlyExpensesNegative: "Monthly expenses must be greater or equal to zero",
-  errorOccupationRiskEmpty: "Occupation risk cannot be empty",
 }
 
 export default EmergencyFundsCalculatorForm;

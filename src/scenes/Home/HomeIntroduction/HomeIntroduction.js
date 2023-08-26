@@ -2,30 +2,25 @@ import "./HomeIntroduction.css"
 import UIImageTextColumn from "uicomponents/UIImageText/UIImageText";
 import image from "assets/images/img-profile.jpg"
 import { UIIconType } from "uicomponents/UIIcon/UIIcon";
+import Localise from "localisation/Localise";
+import { LocaliseKey } from "localisation/Localise";
 
 const HomeIntroduction = (props) => {
   const onButtonClick = props.onButtonClick
   return (
     <div className="home-introduction-container">
       <UIImageTextColumn
-        title={HomeIntroductionCopy.title}
-        subtitle={HomeIntroductionCopy.subtitle}
-        description={HomeIntroductionCopy.description}
+        title={Localise(LocaliseKey.homeIntroductionTitle)}
+        subtitle={Localise(LocaliseKey.homeIntroductionSubtitle)}
+        description={Localise(LocaliseKey.homeIntroductionDescription)}
         imageSrc={image}
         imageClassModifiers="img-masking-blobs"
-        buttonTitle={HomeIntroductionCopy.buttonTitle}
+        buttonTitle={Localise(LocaliseKey.homeIntroductionButtonTitle)}
         buttonIcon={UIIconType.envelope}
         buttonOnClick={onButtonClick}
       />
     </div>
   );
-}
-
-const HomeIntroductionCopy = {
-  title: "Hi, I'm Ivan",
-  subtitle: "Personal Finance Enthusiasts",
-  description: "Someone who loves and cares about personal finance & budgeting. Send me a message to talk about personal finance.",
-  buttonTitle: "Contact me"
 }
 
 export default HomeIntroduction

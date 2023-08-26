@@ -1,0 +1,118 @@
+const Localise = (key) => {
+  return LocaliseTranslation[key] ? LocaliseTranslation[key] : key
+}
+
+export const LocaliseKey = {
+  homeIntroductionTitle: "homeIntroductionTitle",
+  homeIntroductionSubtitle: "homeIntroductionSubtitle",
+  homeIntroductionDescription: "homeIntroductionDescription",
+  homeIntroductionButtonTitle: "homeIntroductionButtonTitle",
+
+  homeToolsTitle: "homeToolsTitle",
+  homeToolsDescription: "homeToolsDescription",
+  homeToolsBudgeting503020Calculator: "homeToolsBudgeting503020Calculator",
+  homeToolsEmergencyFundsCalculator: "homeToolsEmergencyFundsCalculator",
+  homeToolsInvestmentReturnCalculator: "homeToolsInvestmentReturnCalculator",
+  homeToolsFinancialFreedomCalculator: "homeToolsFinancialFreedomCalculator",
+  homeToolsRetirementCalculator: "homeToolsRetirementCalculator",
+  homeToolsGoalSettingCalculator: "homeToolsGoalSettingCalculator",
+  homeToolsMortgageCalculator: "homeToolsMortgageCalculator",
+  homeToolsHouseAffordabilityCalculator: "homeToolsHouseAffordabilityCalculator",
+  homeToolsLifeInsuranceCoverageCalculator: "homeToolsLifeInsuranceCoverageCalculator",
+  homeToolsNetSalaryCalculator: "homeToolsNetSalaryCalculator",
+
+  homeContactTitle: "homeContactTitle",
+  homeContactDescription: "homeContactDescription",
+  homeContactEmailLabel: "homeContactEmailLabel",
+  homeContactEmailValue: "homeContactEmailValue",
+  homeContactInstagramLabel: "homeContactInstagramLabel",
+  homeContactInstagramValue: "homeContactInstagramValue",
+
+  budget503020CalculatorTitle: "budget503020CalculatorTitle",
+  budget503020CalculatorDescription: "budget503020CalculatorDescription",
+  budget503020CalculatorFormMonthlyIncomeLabel: "budget503020CalculatorFormMonthlyIncomeLabel",
+  budget503020CalculatorFormMonthlyIncomeHelperText: "budget503020CalculatorFormMonthlyIncomeHelperText",
+  budget503020CalculatorFormErrorMonthlyIncomeEmpty: "budget503020CalculatorFormErrorMonthlyIncomeEmpty",
+  budget503020CalculatorResultNeedsLabel: "budget503020CalculatorResultNeedsLabel",
+  budget503020CalculatorResultNeedsDescription: "budget503020CalculatorResultNeedsDescription",
+  budget503020CalculatorResultWantsLabel: "budget503020CalculatorResultWantsLabel",
+  budget503020CalculatorResultWantsDescription: "budget503020CalculatorResultWantsDescription",
+  budget503020CalculatorResultSavingsLabel: "budget503020CalculatorResultSavingsLabel",
+  budget503020CalculatorResultSavingsDescription: "budget503020CalculatorResultSavingsDescription",
+
+  emergencyFundsCalculatorTitle: "emergencyFundsCalculatorTitle",
+  emergencyFundsCalculatorDescription: "emergencyFundsCalculatorDescription",
+  emergencyFundsCalculatorFormMonthlyExpensesLabel: "emergencyFundsCalculatorFormMonthlyExpensesLabel",
+  emergencyFundsCalculatorFormMonthlyExpensesHelperText: "emergencyFundsCalculatorFormMonthlyExpensesHelperText",
+  emergencyFundsCalculatorFormOccupationRiskLabel: "emergencyFundsCalculatorFormOccupationRiskLabel",
+  emergencyFundsCalculatorFormOccupationRiskHelperText: "emergencyFundsCalculatorFormOccupationRiskHelperText",
+  emergencyFundsCalculatorFormOccupationRiskOptionLow: "emergencyFundsCalculatorFormOccupationRiskOptionLow",
+  emergencyFundsCalculatorFormOccupationRiskOptionMedium: "emergencyFundsCalculatorFormOccupationRiskOptionMedium",
+  emergencyFundsCalculatorFormOccupationRiskOptionHigh: "emergencyFundsCalculatorFormOccupationRiskOptionHigh",
+  emergencyFundsCalculatorFormErrorMonthlyExpensesEmpty: "emergencyFundsCalculatorFormErrorMonthlyExpensesEmpty",
+  emergencyFundsCalculatorFormErrorMonthlyExpensesNegative: "emergencyFundsCalculatorFormErrorMonthlyExpensesNegative",
+  emergencyFundsCalculatorFormErrorOccupationRiskEmpty: "emergencyFundsCalculatorFormErrorOccupationRiskEmpty",
+  emergencyFundsCalculatorResultTitle: "emergencyFundsCalculatorResultTitle",
+  emergencyFundsCalculatorResultDescription: "emergencyFundsCalculatorResultDescription",
+  emergencyFundsCalculatorResultNumMonthsToCoverLabel: "emergencyFundsCalculatorResultNumMonthsToCoverLabel",
+  emergencyFundsCalculatorResultNumMonthsToCoverUnit: "emergencyFundsCalculatorResultNumMonthsToCoverUnit"
+}
+
+const LocaliseTranslation = {
+
+  homeIntroductionTitle: "Hi, I'm Ivan",
+  homeIntroductionSubtitle: "Personal Finance Enthusiasts",
+  homeIntroductionDescription: "Someone who loves and cares about personal finance & budgeting. Send me a message to talk about personal finance.",
+  homeIntroductionButtonTitle: "Contact me",
+
+  homeToolsTitle: "Tools",
+  homeToolsDescription: "Use these tools to help with your budgeting and managing your finance.",
+  homeToolsBudgeting503020Calculator: "Budgeting 50-30-20 Calculator",
+  homeToolsEmergencyFundsCalculator: "Emergency Funds Calculator",
+  homeToolsInvestmentReturnCalculator: "Investment Return Calculator",
+  homeToolsFinancialFreedomCalculator: "Financial Freedom Calculator",
+  homeToolsRetirementCalculator: "Retirement 4% Calculator",
+  homeToolsGoalSettingCalculator: "Goal Setting Calculator",
+  homeToolsMortgageCalculator: "Mortgage Calculator",
+  homeToolsHouseAffordabilityCalculator: "House Affordability Calculator",
+  homeToolsLifeInsuranceCoverageCalculator: "Life Insurance Coverage Calculator",
+  homeToolsNetSalaryCalculator: "Net Salary Calculator",
+
+  homeContactTitle: "Contact Me",
+  homeContactDescription: "Feel free to contact me to talk about personal finance and budgeting.",
+  homeContactEmailLabel: "Email",
+  homeContactEmailValue: "ivan.dwiputera@gmail.com",
+  homeContactInstagramLabel: "Instagram",
+  homeContactInstagramValue: "@ivandwiputera",
+
+  budget503020CalculatorTitle: "Budget 50-30-20 Calculator",
+  budget503020CalculatorDescription: "50-30-20 budgeting rule is a simple and intuitive way to manage your finance. The rule suggests that you divide your after-tax income into three categories of spending: 50% on needs, 30% on wants, and 20% on savings.",
+  budget503020CalculatorFormMonthlyIncomeLabel: "How much is your average monthly income?",
+  budget503020CalculatorFormMonthlyIncomeHelperText: "This includes both your active income and also income from side-hustles.",
+  budget503020CalculatorFormErrorMonthlyIncomeEmpty: "Monthly income cannot be empty",
+  budget503020CalculatorResultNeedsLabel: "Needs (50%):",
+  budget503020CalculatorResultNeedsDescription: "This category includes expenses that are essential for survival, such as rent or mortgage payments, groceries, utilities, insurance, and minimum debt payments. The rule suggests that you should spend up to 50% of your after-tax income on these needs and obligations.",
+  budget503020CalculatorResultWantsLabel: "Wants (30%):",
+  budget503020CalculatorResultWantsDescription: "This category includes expenses that are not essential but add value to your life, such as dining out, entertainment, travel, and shopping. The rule suggests that you should spend up to 30% of your after-tax income on these discretionary expenses.",
+  budget503020CalculatorResultSavingsLabel: "Savings (20%):",
+  budget503020CalculatorResultSavingsDescription: "This category includes money that you save for emergencies, retirement, or other long-term goals. The rule suggests that you should allocate at least 20% of your after-tax income to savings and investments.",
+
+  emergencyFundsCalculatorTitle: "Emergency Funds Calculator",
+  emergencyFundsCalculatorDescription: "Emergency funds are the funds that we set aside to use in times of financial distress, such as job loss or sudden illness of a family member. These funds act as a safety net to help us cover unexpected expenses.",
+  emergencyFundsCalculatorFormMonthlyExpensesLabel: "How much do you usually spend in a month?",
+  emergencyFundsCalculatorFormMonthlyExpensesHelperText: "This includes all your living costs, necessities, mortgage payments, and other debt repayments.",
+  emergencyFundsCalculatorFormOccupationRiskLabel: "How many dependencies do you have?",
+  emergencyFundsCalculatorFormOccupationRiskHelperText: "Dependencies can be having kids, parents to support, unemployed wife, mortgage to repay, etc.",
+  emergencyFundsCalculatorFormOccupationRiskOptionLow: "No dependency",
+  emergencyFundsCalculatorFormOccupationRiskOptionMedium: "1 dependency",
+  emergencyFundsCalculatorFormOccupationRiskOptionHigh: "At least 2 or more dependencies",
+  emergencyFundsCalculatorFormErrorMonthlyExpensesEmpty: "Monthly expenses cannot be empty",
+  emergencyFundsCalculatorFormErrorMonthlyExpensesNegative: "Monthly expenses must be greater or equal to zero",
+  emergencyFundsCalculatorFormErrorOccupationRiskEmpty: "Occupation risk cannot be empty",
+  emergencyFundsCalculatorResultTitle: "You need to save at least:",
+  emergencyFundsCalculatorResultDescription: "Above amount is the total amount you need to put away for emergency. Remember to only use the money when you are in emergency situation such as loss of income and emergency financial situations.",
+  emergencyFundsCalculatorResultNumMonthsToCoverLabel: "Number of covered monthly expenses:",
+  emergencyFundsCalculatorResultNumMonthsToCoverUnit: "months"
+}
+ 
+export default Localise
