@@ -24,7 +24,7 @@ const HomeIntroduction = (props) => {
 const HomeIntroductionCopy = {
   title: "Hi, I'm Ivan",
   subtitle: "Personal Finance Enthusiasts",
-  description: "A person who loves and cares about personal finance & budgeting. Feel free to send me message to talk about personal finance.",
+  description: "Someone who loves and cares about personal finance & budgeting. Send me a message to talk about personal finance.",
   buttonTitle: "Contact me"
 }
 

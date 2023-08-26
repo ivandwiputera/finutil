@@ -92,7 +92,7 @@ const HomeTools = (props) => {
 
 const HomeToolsCopy = {
   title: "Tools",
-  description: "Feel free to use these tools to help with your budgeting and planning your financial goals.",
+  description: "Use these tools to help with your budgeting and managing your finance.",
   toolsBudgeting503020Calculator: "Budgeting 50-30-20 Calculator",
   toolsEmergencyFundsCalculator: "Emergency Funds Calculator",
   toolsInvestmentReturnCalculator: "Investment Return Calculator",

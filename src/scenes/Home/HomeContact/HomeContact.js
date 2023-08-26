@@ -25,7 +25,7 @@ const HomeContact = () => {
 
 const HomeContactCopy = {
   title: "Contact Me",
-  description: "Feel free to contact me to discuss about personal finance and budgeting.",
+  description: "Feel free to contact me to talk about personal finance and budgeting.",
   emailLabel: "Email",
   emailValue: "ivan.dwiputera@gmail.com",
   instagramLabel: "Instagram",

@@ -3,6 +3,7 @@
   border: 1px solid #e0e0e0a1;
   border-radius: 0.5rem;
   box-shadow: 0.125rem 0.125rem 0.125rem var(--color-shadow);
+  transition: background-color 200ms
 }
 
 .ui-card:hover {

@@ -20,6 +20,7 @@
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text);
+  transition: all 200ms;
 }
 
 .ui-input-field:focus {
