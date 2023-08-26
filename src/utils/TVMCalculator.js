@@ -1,4 +1,4 @@
-class TVMCalculator {
+export class TVMCalculator {
 
   /// Calculate present value (TVM)
   /// Formula:
@@ -22,7 +22,7 @@ class TVMCalculator {
 
     // CASE: Default
     let k = (isBeginning === true) ? 1.0 + i : 1.0
-    return ((pmt * k / i - fv) * 1 / pow(1 + i, nper)) - (pmt * k / i)
+    return ((pmt * k / i - fv) * 1 / Math.pow(1 + i, nper)) - (pmt * k / i)
   }
 
   /// Calculate future value (TVM)
@@ -42,7 +42,7 @@ class TVMCalculator {
 
     // CASE: Default
     let k = isBeginning === true ? 1.0 + i : 1.0
-    return (pmt * k / i) - pow(1 + i, nper) * (pv + pmt * k / i)
+    return (pmt * k / i) - Math.pow(1 + i, nper) * (pv + pmt * k / i)
   }
 
   /// Calculate payment (TVM)
@@ -67,6 +67,6 @@ class TVMCalculator {
 
     // CASE: Default
     let k = isBeginning === true ? 1.0 + i : 1.0
-    return (pv + (pv + fv) / (pow(1 + i, nper) - 1)) * -i / k
+    return (pv + (pv + fv) / (Math.pow(1 + i, nper) - 1)) * -i / k
   }
 }
