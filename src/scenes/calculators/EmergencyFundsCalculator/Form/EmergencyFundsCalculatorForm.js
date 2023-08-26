@@ -1,8 +1,8 @@
 import "./EmergencyFundsCalculatorForm.css"
+import { OccupationRiskType } from "../EmergencyFundsConstants";
 import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
 import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput";
 import { useCallback, useEffect, useState } from "react";
-import { OccupationRiskType } from "scenes/EmergencyFundsCalculator/EmergencyFundsConstants";
 import { Validation } from "utils/Validation";
 import Localise from "localisation/Localise";
 import { LocaliseKey } from "localisation/Localise";
@@ -13,7 +13,7 @@ const EmergencyFundsCalculatorForm = (props) => {
   const onChange = props.onChange
 
   const occupationRiskOptions = [
-    { value: OccupationRiskType.low, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionLow)},
+    { value: OccupationRiskType.low, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionLow) },
     { value: OccupationRiskType.medium, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionMedium) },
     { value: OccupationRiskType.high, label: Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskOptionHigh) }
   ]

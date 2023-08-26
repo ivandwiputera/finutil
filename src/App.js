@@ -1,8 +1,8 @@
 import Home from "scenes/Home/Home";
 import { HashRouter  as Router, Routes, Route } from "react-router-dom";
 import { ScreenType } from "ScreenType";
-import EmergencyFundsCalculator from "scenes/EmergencyFundsCalculator/EmergencyFundsCalculator";
-import Budget503020Calculator from "scenes/Budget503020Calculator/Budget503020Calculator";
+import EmergencyFundsCalculator from "scenes/calculators/EmergencyFundsCalculator/EmergencyFundsCalculator";
+import Budget503020Calculator from "scenes/calculators/Budget503020Calculator/Budget503020Calculator";
 
 function App() {
   return (
