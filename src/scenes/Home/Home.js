@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   const onButtonClick = () => {
-    document.getElementById("home-contact").scrollIntoView()
+    document.getElementById("home-contact").scrollIntoView({behavior: 'smooth'})
   }
 
   const onItemClick = (screenType) => {

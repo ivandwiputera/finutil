@@ -42,10 +42,6 @@
   user-select: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 div {
   white-space: pre-wrap
 }
