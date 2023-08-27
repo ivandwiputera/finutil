@@ -2,8 +2,7 @@ import "./InvestmentReturnCalculatorForm.css"
 import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
 import { useCallback, useEffect, useState } from "react";
 import { Validation } from "utils/Validation";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 import UINumberInput from "uicomponents/UIInput/UINumberInput";
 
 const InvestmentReturnCalculatorForm = (props) => {

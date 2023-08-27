@@ -4,6 +4,7 @@ import { ScreenType } from "ScreenType";
 import EmergencyFundsCalculator from "scenes/calculators/EmergencyFundsCalculator/EmergencyFundsCalculator";
 import Budget503020Calculator from "scenes/calculators/Budget503020Calculator/Budget503020Calculator";
 import InvestmentReturnCalculator from "scenes/calculators/InvestmentReturnCalculator/InvestmentReturnCalculator";
+import RetirementCalculator from "scenes/calculators/RetirementCalculator/RetirementCalculator";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path={ScreenType.budget503020Calculator} element={<Budget503020Calculator />} />
             <Route path={ScreenType.emergencyFundsCalculator} element={<EmergencyFundsCalculator />} />
             <Route path={ScreenType.investmentReturnCalculator} element={<InvestmentReturnCalculator />} />
+            <Route path={ScreenType.retirementCalculator} element={<RetirementCalculator />} />
             <Route path={ScreenType.home} element={<Home />} />
           </Routes>
         </Router>

@@ -1,7 +1,6 @@
 import "./EmergencyFundsCalculatorResult.css"
 import { CurrencyFormatter } from "utils/CurrencyFormatter";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const EmergencyFundsCalculatorResult = (props) => {
   const result = props.result

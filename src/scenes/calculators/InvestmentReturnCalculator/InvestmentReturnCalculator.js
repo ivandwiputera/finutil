@@ -2,8 +2,9 @@ import "./InvestmentReturnCalculator.css"
 import InvestmentReturnCalculatorIntroduction from "./Introduction/InvestmentReturnCalculatorIntroduction";
 import InvestmentReturnCalculatorForm from "./Form/InvestmentReturnCalculatorForm";
 import { InvestmentReturnCalculatorService } from "./InvestmentReturnCalculatorService";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import InvestmentReturnCalculatorResult from "./Result/InvestmentReturnCalculatorResult";
+import { UIUtils } from "utils/UIUtils";
 
 const InvestmentReturnCalculator = () => {
 
@@ -36,6 +37,10 @@ const InvestmentReturnCalculator = () => {
   const onInputChange = (input) => {
     calculateResult(input)
   }
+
+  useEffect(() => {
+    UIUtils.scrollToTop()
+  }, []);
   
   return (
     <div className="investment-return-calculator-container">

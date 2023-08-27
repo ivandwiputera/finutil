@@ -4,8 +4,7 @@ import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
 import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput";
 import { useCallback, useEffect, useState } from "react";
 import { Validation } from "utils/Validation";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const EmergencyFundsCalculatorForm = (props) => {
   const monthlyExpensesParam = props.monthlyExpenses

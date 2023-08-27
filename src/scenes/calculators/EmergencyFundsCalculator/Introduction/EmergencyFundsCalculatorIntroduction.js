@@ -1,7 +1,6 @@
 import "./EmergencyFundsCalculatorIntroduction.css"
 import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const EmergencyFundsCalculatorIntroduction = () => {
   return ( 

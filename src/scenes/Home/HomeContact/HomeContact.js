@@ -4,8 +4,7 @@ import UIDivider from "uicomponents/UIDivider/UIDivider";
 import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
 import UIIconText from "uicomponents/UIIconText/UIIconText";
 import { UIIconType } from "uicomponents/UIIcon/UIIcon";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const HomeContact = () => {
   return (

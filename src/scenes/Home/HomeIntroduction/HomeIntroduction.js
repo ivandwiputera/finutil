@@ -2,8 +2,7 @@ import "./HomeIntroduction.css"
 import UIImageTextColumn from "uicomponents/UIImageText/UIImageText";
 import image from "assets/images/img-profile.jpg"
 import { UIIconType } from "uicomponents/UIIcon/UIIcon";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const HomeIntroduction = (props) => {
   const onButtonClick = props.onButtonClick

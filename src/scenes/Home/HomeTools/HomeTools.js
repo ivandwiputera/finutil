@@ -3,8 +3,7 @@ import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
 import UIIconTextCard from "uicomponents/UIIconTextCard/UIIconTextCard";
 import { UIIconType } from "uicomponents/UIIcon/UIIcon";
 import { ScreenType } from "ScreenType";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const HomeTools = (props) => {
   const onItemClick = props.onItemClick
@@ -36,13 +35,6 @@ const HomeTools = (props) => {
           icon={UIIconType.rocketLaunch}
           text={Localise(LocaliseKey.homeToolsInvestmentReturnCalculator)}
           onClick={() => { onItemClick(ScreenType.investmentReturnCalculator) }}
-        />
-
-        <UIIconTextCard
-          className="home-tools-grid-item"
-          icon={UIIconType.currencyDollar}
-          text={Localise(LocaliseKey.homeToolsFinancialFreedomCalculator)}
-          onClick={() => { onItemClick(ScreenType.financialFreedomCalculator) }}
         />
 
         <UIIconTextCard

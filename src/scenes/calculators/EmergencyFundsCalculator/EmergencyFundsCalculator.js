@@ -1,9 +1,10 @@
 import "./EmergencyFundsCalculator.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EmergencyFundsCalculatorForm from "./Form/EmergencyFundsCalculatorForm";
 import EmergencyFundsCalculatorIntroduction from "./Introduction/EmergencyFundsCalculatorIntroduction";
 import { EmergencyFundsCalculatorService } from "./EmergencyFundsCalculatorService";
 import EmergencyFundsCalculatorResult from "./Result/EmergencyFundsCalculatorResult";
+import { UIUtils } from "utils/UIUtils";
 const EmergencyFundsCalculator = () => {
 
   const [result, setResult] = useState(undefined)
@@ -29,6 +30,10 @@ const EmergencyFundsCalculator = () => {
   const onInputChange = (input) => {
     calculateResult(input)
   }
+
+  useEffect(() => {
+    UIUtils.scrollToTop()
+  }, []);
 
   return (
     <div className="emergency-funds-calculator-container">

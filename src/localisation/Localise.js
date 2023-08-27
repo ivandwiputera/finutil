@@ -13,7 +13,6 @@ export const LocaliseKey = {
   homeToolsBudgeting503020Calculator: "homeToolsBudgeting503020Calculator",
   homeToolsEmergencyFundsCalculator: "homeToolsEmergencyFundsCalculator",
   homeToolsInvestmentReturnCalculator: "homeToolsInvestmentReturnCalculator",
-  homeToolsFinancialFreedomCalculator: "homeToolsFinancialFreedomCalculator",
   homeToolsRetirementCalculator: "homeToolsRetirementCalculator",
   homeToolsGoalSettingCalculator: "homeToolsGoalSettingCalculator",
   homeToolsMortgageCalculator: "homeToolsMortgageCalculator",
@@ -75,6 +74,14 @@ export const LocaliseKey = {
   investmentReturnCalculatorResultDescription: "investmentReturnCalculatorResultDescription",
   investmentReturnCalculatorResultTotalPrincipalLabel: "investmentReturnCalculatorResultTotalPrincipalLabel",
   investmentReturnCalculatorResultTotalInterestGainLabel: "investmentReturnCalculatorResultTotalInterestGainLabel",
+
+  retirementCalculatorTitle: "retirementCalculatorTitle",
+  retirementCalculatorDescription: "retirementCalculatorDescription",
+  retirementCalculatorFormMonthlyExpensesLabel: "retirementCalculatorFormMonthlyExpensesLabel",retirementCalculatorFormMonthlyExpensesHelperText: "retirementCalculatorFormMonthlyExpensesHelperText",
+  retirementCalculatorResultTitle: "retirementCalculatorResultTitle",
+  retirementCalculatorResultDescription: "retirementCalculatorResultDescription",
+  retirementCalculatorResultWithdrawalAmountLabel: "retirementCalculatorResultWithdrawalAmountLabel",
+
 }
 
 const LocaliseTranslation = {
@@ -89,7 +96,6 @@ const LocaliseTranslation = {
   homeToolsBudgeting503020Calculator: "Budgeting 50-30-20 Calculator",
   homeToolsEmergencyFundsCalculator: "Emergency Funds Calculator",
   homeToolsInvestmentReturnCalculator: "Investment Return Calculator",
-  homeToolsFinancialFreedomCalculator: "Financial Freedom Calculator",
   homeToolsRetirementCalculator: "Retirement 4% Calculator",
   homeToolsGoalSettingCalculator: "Goal Setting Calculator",
   homeToolsMortgageCalculator: "Mortgage Calculator",
@@ -151,6 +157,14 @@ const LocaliseTranslation = {
   investmentReturnCalculatorResultDescription: "Compound interest is a powerful tool that can help investors grow their wealth over time. Unlike simple interest, which is calculated only on the principal amount, compound interest is calculated on both the initial principal and the accumulated interest from previous periods. This means that the interest earned in one period is added to the principal amount, and the interest for the next period is calculated on the new total. This process continues for each period, resulting in exponential growth of your investment.",
   investmentReturnCalculatorResultTotalPrincipalLabel: "Total money you invest during investment period:",
   investmentReturnCalculatorResultTotalInterestGainLabel: "Total money you get from interests:",
+
+  retirementCalculatorTitle: "Retirement 4% Calculator",
+  retirementCalculatorDescription: "The 4% rule is a guideline used by some financial planners and retirees to estimate a comfortable but safe income for retirement. It suggests that retirees are safe to withdraw 4% from retirement savings each year.",
+  retirementCalculatorFormMonthlyExpensesLabel: "How much do you usually spend in a month?",
+  retirementCalculatorFormMonthlyExpensesHelperText: "This will be the amount you withdraw from retirement savings during your retirement",
+  retirementCalculatorResultTitle: "You will need:",
+  retirementCalculatorResultDescription: "The sum of money mentioned above is an estimated amount that you will require for your retirement. You can withdraw 4% of this amount every month, which should last you for approximately 25 to 50 years of retirement.",
+  retirementCalculatorResultWithdrawalAmountLabel: "Monthly withdrawal amount:"
 }
  
 export default Localise

@@ -1,7 +1,8 @@
-.budget-503020-calculator-container {
+.retirement-calculator-form-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: stretch;
+  justify-content: flex-start;
   padding: 1rem;
+  gap: 1rem;
 }

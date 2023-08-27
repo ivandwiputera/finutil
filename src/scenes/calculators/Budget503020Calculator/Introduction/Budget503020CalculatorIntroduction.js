@@ -1,7 +1,6 @@
 import "./Budget503020CalculatorIntroduction.css"
 import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
-import Localise from "localisation/Localise";
-import { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "localisation/Localise";
 
 const Budget503020CalculatorIntroduction = () => {
   return ( 
