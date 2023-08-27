@@ -102,6 +102,25 @@ export const LocaliseKey = {
   goalSettingCalculatorResultTitle: "goalSettingCalculatorResultTitle",
   goalSettingCalculatorResultDescription: "goalSettingCalculatorResultDescription",
   goalSettingCalculatorResultGoalAmountInFutureLabel: "goalSettingCalculatorResultGoalAmountInFutureLabel",
+
+  mortgageCalculatorTitle: "mortgageCalculatorTitle",
+  mortgageCalculatorDescription: "mortgageCalculatorDescription",
+  mortgageCalculatorFormHousePriceLabel: "mortgageCalculatorFormHousePriceLabel",
+  mortgageCalculatorFormHousePriceHelperText: "mortgageCalculatorFormHousePriceHelperText",
+  mortgageCalculatorFormDownPaymentLabel: "mortgageCalculatorFormDownPaymentLabel",
+  mortgageCalculatorFormDownPaymentHelperText: "mortgageCalculatorFormDownPaymentHelperText",
+  mortgageCalculatorFormMortgageTenorLabel: "mortgageCalculatorFormMortgageTenorLabel",
+  mortgageCalculatorFormMortgageTenorHelperText: "mortgageCalculatorFormMortgageTenorHelperText",
+  mortgageCalculatorFormMortgageInterestLabel: "mortgageCalculatorFormMortgageInterestLabel",
+  mortgageCalculatorFormMortgageInterestHelperText: "mortgageCalculatorFormMortgageInterestHelperText",
+  mortgageCalculatorFormErrorHousePriceEmpty: "mortgageCalculatorFormErrorHousePriceEmpty",
+  mortgageCalculatorFormErrorDownPaymentEmpty: "mortgageCalculatorFormErrorDownPaymentEmpty",
+  mortgageCalculatorFormErrorMortgageTenorEmpty: "mortgageCalculatorFormErrorMortgageTenorEmpty",
+  mortgageCalculatorFormErrorMortgageInterestEmpty: "mortgageCalculatorFormErrorMortgageInterestEmpty",
+  mortgageCalculatorResultTitle: "mortgageCalculatorResultTitle",
+  mortgageCalculatorResultDescription: "mortgageCalculatorResultDescription",
+  mortgageCalculatorResultTotalMortgageAmountLabel: "mortgageCalculatorResultTotalMortgageAmountLabel",
+  mortgageCalculatorResultTotalAmountLabel: "mortgageCalculatorResultTotalAmountLabel",
 }
 
 const LocaliseTranslation = {
@@ -206,6 +225,25 @@ const LocaliseTranslation = {
   goalSettingCalculatorResultTitle: "You must make a monthly contribution of at least:",
   goalSettingCalculatorResultDescription: "Achieving a big financial goal can be challenging, stay consistent and focus contributing each month and you will achieve it one day. You can extend and give more time if you think the amount is not managable.",
   goalSettingCalculatorResultGoalAmountInFutureLabel: "Goal amount after inflation:",
+
+  mortgageCalculatorTitle: "Mortgage Calculator",
+  mortgageCalculatorDescription: "Estimate your monthly mortgage payments by considering the principal amount, interest rate, loan term, and other factors.",
+  mortgageCalculatorFormHousePriceLabel: "What is the cost of the home? ($)",
+  mortgageCalculatorFormHousePriceHelperText: "This is the price of the house you're going to buy.",
+  mortgageCalculatorFormDownPaymentLabel: "What percentage you're going to pay upfront as down payment? (%)",
+  mortgageCalculatorFormDownPaymentHelperText: "Generally it is best to do at least 20% of the house price as down payment.",
+  mortgageCalculatorFormMortgageTenorLabel: "What is the duration of your mortgage? (#)",
+  mortgageCalculatorFormMortgageTenorHelperText: "The usual duration of a mortgage can vary between 5 and 30 years.",
+  mortgageCalculatorFormMortgageInterestLabel: "What is the interest rate for the mortgage? (%)",
+  mortgageCalculatorFormMortgageInterestHelperText: "This depends on the bank of which you are applying mortgage.",
+  mortgageCalculatorFormErrorHousePriceEmpty: "House price cannot be empty",
+  mortgageCalculatorFormErrorDownPaymentEmpty: "Down payment cannot be empty",
+  mortgageCalculatorFormErrorMortgageTenorEmpty: "Mortgage tenor cannot be empty",
+  mortgageCalculatorFormErrorMortgageInterestEmpty: "Mortgage interest cannot be empty",
+  mortgageCalculatorResultTitle: "You must make a monthly payment of:",
+  mortgageCalculatorResultDescription: "To maintain a healthy cash flow, it is advisable to keep the amount mentioned above below 30% of your monthly income.",
+  mortgageCalculatorResultTotalMortgageAmountLabel: "Total mortgage amount:",
+  mortgageCalculatorResultTotalAmountLabel: "Total amount of both your house price and mortgage:",
 }
  
 export default Localise
