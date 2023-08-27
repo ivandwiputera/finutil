@@ -20,7 +20,7 @@ const RetirementCalculatorForm = (props) => {
 
   const validateMonthlyExpenses = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.emergencyFundsCalculatorFormErrorMonthlyExpensesEmpty)
+      return Localise(LocaliseKey.retirementCalculatorFormErrorMonthlyExpensesEmpty)
     } else {
       return null
     }

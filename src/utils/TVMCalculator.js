@@ -59,7 +59,7 @@ export class TVMCalculator {
   ///   - pmt: payment per period
   ///   - pv: present value
   /// - Returns: future value
-  static pmt = (i, nper, pv, fv, isBeginning) => {
+  static pmt = ({i, nper, pv, fv, isBeginning}) => {
     // CASE: No nper
     if (nper === 0.0) {
       return -fv - pv

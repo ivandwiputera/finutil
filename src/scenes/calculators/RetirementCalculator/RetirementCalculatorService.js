@@ -5,6 +5,6 @@ export class RetirementCalculatorService {
     const withdrawalRate = 4
     const withdrawalAmount = input.monthlyExpenses
     const totalRetirementSavings = withdrawalAmount * 12 * (100 / withdrawalRate)
-    return {totalRetirementSavings, withdrawalAmount}
+    return { totalRetirementSavings, withdrawalAmount }
   }
 }
