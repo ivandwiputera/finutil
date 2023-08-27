@@ -15,7 +15,7 @@ export class InvestmentReturnCalculatorService {
       isBeginning: false
     }
     const totalInvestmentAmount = TVMCalculator.fv(params) * -1
-    const totalPrincipalAmount = input.initialAmount + input.duration * input.contribution
+    const totalPrincipalAmount = input.initialAmount + input.duration * input.contribution * 12
     const totalInterestGain = totalInvestmentAmount - totalPrincipalAmount
     return { totalInvestmentAmount, totalPrincipalAmount, totalInterestGain }
   }
