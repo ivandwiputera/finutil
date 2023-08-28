@@ -7,6 +7,7 @@ import InvestmentReturnCalculator from "scenes/calculators/InvestmentReturnCalcu
 import RetirementCalculator from "scenes/calculators/RetirementCalculator/RetirementCalculator";
 import GoalSettingCalculator from "scenes/calculators/GoalSettingCalculator/GoalSettingCalculator";
 import MortgageCalculator from "scenes/calculators/MortgageCalculator/MortgageCalculator";
+import HouseAffordabilityCalculator from "scenes/calculators/HouseAffordabilityCalculator/HouseAffordabilityCalculator";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path={ScreenType.retirementCalculator} element={<RetirementCalculator />} />
             <Route path={ScreenType.goalSettingCalculator} element={<GoalSettingCalculator />} />
             <Route path={ScreenType.mortgageCalculator} element={<MortgageCalculator />}/>
+            <Route path={ScreenType.houseAffordabilityCalculator} element={<HouseAffordabilityCalculator />}/>
             <Route path={ScreenType.home} element={<Home />} />
           </Routes>
         </Router>

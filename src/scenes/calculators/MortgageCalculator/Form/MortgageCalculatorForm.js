@@ -1,9 +1,9 @@
 import "./MortgageCalculatorForm.css"
 import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
+import UINumberInput from "uicomponents/UIInput/UINumberInput";
 import { useCallback, useEffect, useState } from "react";
 import { Validation } from "utils/Validation";
 import Localise, { LocaliseKey } from "localisation/Localise";
-import UINumberInput from "uicomponents/UIInput/UINumberInput";
 
 const MortgageCalculatorForm = (props) => {
   const housePriceParam = props.housePrice
