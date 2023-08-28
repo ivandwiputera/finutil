@@ -32,11 +32,12 @@ const RetirementCalculatorForm = (props) => {
       monthlyExpenses: monthlyExpenses
     }
     onChange(result)
-  }, [monthlyExpenses, onChange, validateInput]);
+  }, [monthlyExpenses, validateInput]);
 
   return (
     <div className="retirement-calculator-form-container">
       <UICurrencyInput
+        id="monthlyExpenses"
         defaultValue={monthlyExpenses}
         label={Localise(LocaliseKey.retirementCalculatorFormMonthlyExpensesLabel)}
         note={Localise(LocaliseKey.retirementCalculatorFormMonthlyExpensesHelperText)}

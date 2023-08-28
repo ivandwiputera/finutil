@@ -4,6 +4,7 @@ import "uicomponents/UIInput/UIDropdownInput.css"
 import { useEffect, useState } from "react"
 
 const UIDropdownInput = (props) => {
+  const id = props.id
   const label = props.label
   const note = props.note
   const error = props.error
@@ -38,6 +39,7 @@ const UIDropdownInput = (props) => {
       <div className="ui-input-label">{label}</div>
       <div className="ui-dropdown-input-wrapper-div" onClick={onClick}>
         <input
+          id={id ? id : ""}
           className="ui-input-field user-interaction-disabled"
           type="text"
           value={selectedItem ? selectedItem.label : ""}
@@ -80,7 +82,7 @@ const UIDropdownItemView = (props) => {
   const onItemClick = props.onItemClick
 
   return (
-    <div className="ui-dropdown-item-view" onClick={() => {onItemClick(option)}}>
+    <div className="ui-dropdown-item-view" onClick={() => { onItemClick(option) }}>
       {option.label}
     </div>
   )

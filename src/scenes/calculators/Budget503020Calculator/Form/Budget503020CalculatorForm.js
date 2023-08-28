@@ -32,11 +32,12 @@ const Budget503020CalculatorForm = (props) => {
       monthlyIncome: monthlyIncome
     }
     onChange(result)
-  }, [monthlyIncome, onChange, validateInput]);
+  }, [monthlyIncome, validateInput]);
 
   return (
     <div className="budget-503020-calculator-form-container">
       <UICurrencyInput
+        id="monthlyIncome"
         defaultValue={monthlyIncome}
         label={Localise(LocaliseKey.budget503020CalculatorFormMonthlyIncomeLabel)}
         note={Localise(LocaliseKey.budget503020CalculatorFormMonthlyIncomeHelperText)}

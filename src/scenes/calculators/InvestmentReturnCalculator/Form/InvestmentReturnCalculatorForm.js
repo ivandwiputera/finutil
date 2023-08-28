@@ -81,11 +81,12 @@ const InvestmentReturnCalculatorForm = (props) => {
       contribution: contribution
     }
     onChange(result)
-  }, [initialAmount, duration, rateOfReturn, contribution, onChange, validateInput]);
+  }, [initialAmount, duration, rateOfReturn, contribution, validateInput]);
 
   return (
     <div className="investment-return-calculator-form-container">
       <UICurrencyInput
+        id="initialAmount"
         defaultValue={initialAmount}
         label={Localise(LocaliseKey.investmentReturnCalculatorFormInitialAmountLabel)}
         note={Localise(LocaliseKey.investmentReturnCalculatorFormInitialAmountHelperText)}
@@ -94,6 +95,7 @@ const InvestmentReturnCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="duration"
         defaultValue={duration}
         label={Localise(LocaliseKey.investmentReturnCalculatorFormDurationLabel)}
         note={Localise(LocaliseKey.investmentReturnCalculatorFormDurationHelperText)}
@@ -102,6 +104,7 @@ const InvestmentReturnCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="rateOfReturn"
         defaultValue={rateOfReturn}
         label={Localise(LocaliseKey.investmentReturnCalculatorFormRateOfReturnLabel)}
         note={Localise(LocaliseKey.investmentReturnCalculatorFormRateOfReturnHelperText)}
@@ -110,6 +113,7 @@ const InvestmentReturnCalculatorForm = (props) => {
       />
 
       <UICurrencyInput
+        id="contribution"
         defaultValue={contribution}
         label={Localise(LocaliseKey.investmentReturnCalculatorFormContributionLabel)}
         note={Localise(LocaliseKey.investmentReturnCalculatorFormContributionHelperText)}

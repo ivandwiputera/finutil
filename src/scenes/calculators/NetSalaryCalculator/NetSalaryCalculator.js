@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { UIUtils } from "utils/UIUtils";
 import NetSalaryCalculatorIntroduction from "./Introduction/NetSalaryCalculatorIntroduction";
 import NetSalaryCalculatorForm from "./Form/NetSalaryCalculatorForm";
-import { NetSalaryCalculatorService, PTKPType } from "./NetSalaryCalculatorService";
+import { NetSalaryCalculatorService } from "./NetSalaryCalculatorService";
 import NetSalaryCalculatorResult from "./Result/NetSalaryCalculatorResult";
 
 const NetSalaryCalculator = () => {

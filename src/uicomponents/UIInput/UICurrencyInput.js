@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { isNumber } from "utils/DataTypeUtils"
 
 const UICurrencyInput = (props) => {
+  const id = props.id
   const label = props.label
   const note = props.note
   const error = props.error
@@ -67,6 +68,7 @@ const UICurrencyInput = (props) => {
     <div className="ui-input">
       <div className="ui-input-label">{label}</div>
       <input
+        id={id ? id : ""}
         className="ui-input-field"
         type="text"
         inputMode="numeric"

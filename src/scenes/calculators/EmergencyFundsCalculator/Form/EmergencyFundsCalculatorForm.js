@@ -56,11 +56,12 @@ const EmergencyFundsCalculatorForm = (props) => {
       occupationRisk: occupationRisk?.value
     }
     onChange(result)
-  }, [monthlyExpenses, occupationRisk, onChange, validateInput]);
+  }, [monthlyExpenses, occupationRisk, validateInput]);
 
   return (
     <div className="emergency-funds-calculator-form-container">
       <UICurrencyInput
+        id="monthlyExpenses"
         defaultValue={monthlyExpenses}
         label={Localise(LocaliseKey.emergencyFundsCalculatorFormMonthlyExpensesLabel)}
         note={Localise(LocaliseKey.emergencyFundsCalculatorFormMonthlyExpensesHelperText)}
@@ -69,6 +70,7 @@ const EmergencyFundsCalculatorForm = (props) => {
       />
 
       <UIDropdownInput
+        id="occupationRisk"
         defaultValue={occupationRisk}
         label={Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskLabel)}
         note={Localise(LocaliseKey.emergencyFundsCalculatorFormOccupationRiskHelperText)}

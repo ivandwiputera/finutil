@@ -81,11 +81,12 @@ const NetSalaryCalculatorForm = (props) => {
       maritalStatus: maritalStatus
     }
     onChange(result)
-  }, [monthlyBasicSalary, monthlyAllowances, maritalStatus, onChange, validateInput]);
+  }, [monthlyBasicSalary, monthlyAllowances, maritalStatus, validateInput]);
 
   return (
     <div className="net-salary-calculator-form-container">
       <UICurrencyInput
+        id="monthlyBasicSalary"
         defaultValue={monthlyBasicSalary}
         label={Localise(LocaliseKey.netSalaryCalculatorFormMonthlyBasicSalaryLabel)}
         note={Localise(LocaliseKey.netSalaryCalculatorFormMonthlyBasicSalaryHelperText)}
@@ -94,6 +95,7 @@ const NetSalaryCalculatorForm = (props) => {
       />
 
       <UICurrencyInput
+        id="monthlyAllowances"
         defaultValue={monthlyAllowances}
         label={Localise(LocaliseKey.netSalaryCalculatorFormMonthlyAllowanceLabel)}
         note={Localise(LocaliseKey.netSalaryCalculatorFormMonthlyAllowanceHelperText)}
@@ -102,6 +104,7 @@ const NetSalaryCalculatorForm = (props) => {
       />
 
       <UIDropdownInput
+        id="maritalStatus"
         defaultValue={maritalStatus}
         label={Localise(LocaliseKey.netSalaryCalculatorFormMaritalStatusLabel)}
         error={validateMaritalStatus(maritalStatus)}

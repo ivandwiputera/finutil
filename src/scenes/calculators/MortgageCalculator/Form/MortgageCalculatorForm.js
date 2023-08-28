@@ -38,7 +38,7 @@ const MortgageCalculatorForm = (props) => {
       && validateDownPayment(downPayment) == null
       && validateMortgageTenor(mortgageTenor) == null
       && validateMortgageInterestRate(mortgageInterestRate) == null
-    }, [housePrice, downPayment, mortgageTenor, mortgageInterestRate])
+  }, [housePrice, downPayment, mortgageTenor, mortgageInterestRate])
 
   const validateHousePrice = (value) => {
     if (!Validation.validateNotEmpty(value)) {
@@ -81,11 +81,12 @@ const MortgageCalculatorForm = (props) => {
       mortgageInterestRate: mortgageInterestRate
     }
     onChange(result)
-  }, [housePrice, downPayment, mortgageTenor, mortgageInterestRate, onChange, validateInput]);
+  }, [housePrice, downPayment, mortgageTenor, mortgageInterestRate, validateInput]);
 
   return (
     <div className="goal-setting-calculator-form-container">
       <UICurrencyInput
+        id="housePrice"
         defaultValue={housePrice}
         label={Localise(LocaliseKey.mortgageCalculatorFormHousePriceLabel)}
         note={Localise(LocaliseKey.mortgageCalculatorFormHousePriceHelperText)}
@@ -94,6 +95,7 @@ const MortgageCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="downPayment"
         defaultValue={downPayment}
         label={Localise(LocaliseKey.mortgageCalculatorFormDownPaymentLabel)}
         note={Localise(LocaliseKey.mortgageCalculatorFormDownPaymentHelperText)}
@@ -102,6 +104,7 @@ const MortgageCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="mortgageTenor"
         defaultValue={mortgageTenor}
         label={Localise(LocaliseKey.mortgageCalculatorFormMortgageTenorLabel)}
         note={Localise(LocaliseKey.mortgageCalculatorFormMortgageTenorHelperText)}
@@ -110,6 +113,7 @@ const MortgageCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="mortgageInterestRate"
         defaultValue={mortgageInterestRate}
         label={Localise(LocaliseKey.mortgageCalculatorFormMortgageInterestLabel)}
         note={Localise(LocaliseKey.mortgageCalculatorFormMortgageInterestHelperText)}

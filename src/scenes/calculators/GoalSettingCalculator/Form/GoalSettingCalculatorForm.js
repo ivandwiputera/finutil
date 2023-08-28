@@ -97,11 +97,12 @@ const GoalSettingCalculatorForm = (props) => {
       savedAmount: savedAmount
     }
     onChange(result)
-  }, [goalAmount, duration, rateOfReturn, inflation, savedAmount, onChange, validateInput]);
+  }, [goalAmount, duration, rateOfReturn, inflation, savedAmount, validateInput]);
 
   return (
     <div className="goal-setting-calculator-form-container">
       <UICurrencyInput
+        id="goalAmount"
         defaultValue={goalAmount}
         label={Localise(LocaliseKey.goalSettingCalculatorFormGoalAmountLabel)}
         note={Localise(LocaliseKey.goalSettingCalculatorFormGoalAmountHelperText)}
@@ -110,6 +111,7 @@ const GoalSettingCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="duration"
         defaultValue={duration}
         label={Localise(LocaliseKey.goalSettingCalculatorFormDurationLabel)}
         note={Localise(LocaliseKey.goalSettingCalculatorFormDurationHelperText)}
@@ -118,6 +120,7 @@ const GoalSettingCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="rateOfReturn"
         defaultValue={rateOfReturn}
         label={Localise(LocaliseKey.goalSettingCalculatorFormRateOfReturnLabel)}
         note={Localise(LocaliseKey.goalSettingCalculatorFormRateOfReturnHelperText)}
@@ -126,6 +129,7 @@ const GoalSettingCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="inflation"
         defaultValue={inflation}
         label={Localise(LocaliseKey.goalSettingCalculatorFormInflationLabel)}
         note={Localise(LocaliseKey.goalSettingCalculatorFormInflationHelperText)}
@@ -134,6 +138,7 @@ const GoalSettingCalculatorForm = (props) => {
       />
 
       <UICurrencyInput
+        id="savedAmount"
         defaultValue={savedAmount}
         label={Localise(LocaliseKey.goalSettingCalculatorFormSavedAmountLabel)}
         error={validateSavedAmount(savedAmount)}

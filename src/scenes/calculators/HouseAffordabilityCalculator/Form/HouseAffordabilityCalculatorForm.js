@@ -81,11 +81,12 @@ const HouseAffordabilityCalculatorForm = (props) => {
       savedAmount: savedAmount
     }
     onChange(result)
-  }, [monthlyIncome, mortgageTenor, mortgageInterestRate, savedAmount, onChange, validateInput]);
+  }, [monthlyIncome, mortgageTenor, mortgageInterestRate, savedAmount, validateInput]);
 
   return (
     <div className="house-affordability-calculator-form-container">
       <UICurrencyInput
+        id="monthlyIncome"
         defaultValue={monthlyIncome}
         label={Localise(LocaliseKey.houseAffordabilityCalculatorFormMonthlyIncomeLabel)}
         note={Localise(LocaliseKey.houseAffordabilityCalculatorFormMonthlyIncomeHelperText)}
@@ -94,6 +95,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="mortgageTenor"
         defaultValue={mortgageTenor}
         label={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageTenorLabel)}
         note={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageTenorHelperText)}
@@ -102,6 +104,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
       />
 
       <UINumberInput
+        id="mortgageInterestRate"
         defaultValue={mortgageInterestRate}
         label={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageInterestLabel)}
         note={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageInterestHelperText)}
@@ -110,6 +113,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
       />
 
       <UICurrencyInput
+        id="savedAmount"
         defaultValue={savedAmount}
         label={Localise(LocaliseKey.houseAffordabilityCalculatorFormSavedAmountLabel)}
         error={validateSavedAmount(savedAmount)}
