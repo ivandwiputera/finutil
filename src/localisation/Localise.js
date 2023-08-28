@@ -325,12 +325,12 @@ const LocaliseTranslation = {
   netSalaryCalculatorFormErrorMaritalStatusEmpty: "Marital status cannot be empty.",
   netSalaryCalculatorResultTitle: "You will receive an estimated salary of:",
   netSalaryCalculatorResultDescription: "The amount mentioned is an estimate and has already factored in expenses such as BPJS Kesehatan, BPJS Jaminan Pensiun, BPJS Jaminan Hari Tua, and taxes.",
-  netSalaryCalculatorResultBpjsJHTLabel: "BPJS Jaminan Hari Tua:",
-  netSalaryCalculatorResultBpjsJPLabel: "BPJS Jaminan Pensiun:",
-  netSalaryCalculatorResultBpjsKesehatanLabel: "BPJS Kesehatan:",
-  netSalaryCalculatorResultTaxableIncomeLabel: "Taxable Income:",
-  netSalaryCalculatorResultTotalTaxLabel: "Total Taxes:",
-  netSalaryCalculatorResultTotalNetSalaryLabel: "Annual Net Salary:",
+  netSalaryCalculatorResultBpjsJHTLabel: "BPJS Jaminan Hari Tua (annual):",
+  netSalaryCalculatorResultBpjsJPLabel: "BPJS Jaminan Pensiun (annual):",
+  netSalaryCalculatorResultBpjsKesehatanLabel: "BPJS Kesehatan (annual):",
+  netSalaryCalculatorResultTaxableIncomeLabel: "Taxable Income (annual):",
+  netSalaryCalculatorResultTotalTaxLabel: "Total Taxes (annual):",
+  netSalaryCalculatorResultTotalNetSalaryLabel: "Net Salary (annual):",
 }
  
 export default Localise
