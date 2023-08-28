@@ -8,6 +8,7 @@ import RetirementCalculator from "scenes/calculators/RetirementCalculator/Retire
 import GoalSettingCalculator from "scenes/calculators/GoalSettingCalculator/GoalSettingCalculator";
 import MortgageCalculator from "scenes/calculators/MortgageCalculator/MortgageCalculator";
 import HouseAffordabilityCalculator from "scenes/calculators/HouseAffordabilityCalculator/HouseAffordabilityCalculator";
+import NetSalaryCalculator from "scenes/calculators/NetSalaryCalculator/NetSalaryCalculator";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path={ScreenType.goalSettingCalculator} element={<GoalSettingCalculator />} />
             <Route path={ScreenType.mortgageCalculator} element={<MortgageCalculator />}/>
             <Route path={ScreenType.houseAffordabilityCalculator} element={<HouseAffordabilityCalculator />}/>
+            <Route path={ScreenType.netSalaryCalculator} element={<NetSalaryCalculator />}/>
             <Route path={ScreenType.home} element={<Home />} />
           </Routes>
         </Router>

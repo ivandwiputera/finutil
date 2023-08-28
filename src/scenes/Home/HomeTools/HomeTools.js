@@ -67,13 +67,6 @@ const HomeTools = (props) => {
 
         <UIIconTextCard
           className="home-tools-grid-item"
-          icon={UIIconType.shieldCheck}
-          text={Localise(LocaliseKey.homeToolsLifeInsuranceCoverageCalculator)}
-          onClick={() => { onItemClick(ScreenType.lifeInsuranceCoverageCalculator) }}
-        />
-
-        <UIIconTextCard
-          className="home-tools-grid-item"
           icon={UIIconType.banknotes}
           text={Localise(LocaliseKey.homeToolsNetSalaryCalculator)}
           onClick={() => { onItemClick(ScreenType.netSalaryCalculator) }}

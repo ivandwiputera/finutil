@@ -7,6 +7,5 @@ export const ScreenType = {
   goalSettingCalculator: '/calculators/goal-setting-calculator',
   mortgageCalculator: '/calculators/mortgage-calculator',
   houseAffordabilityCalculator: '/calculators/house-affordability-calculator',
-  lifeInsuranceCoverageCalculator: '/calculators/life-insurance-coverage-calculator',
   netSalaryCalculator: '/calculators/net-salary-calculator'
 }
