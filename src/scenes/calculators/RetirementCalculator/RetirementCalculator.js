@@ -10,9 +10,9 @@ const RetirementCalculator = () => {
 
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -28,10 +28,6 @@ const RetirementCalculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
@@ -39,8 +35,8 @@ const RetirementCalculator = () => {
   return (
     <div className="retirement-calculator-container">
       <RetirementCalculatorIntroduction />
-      <RetirementCalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      { result && <RetirementCalculatorResult result={result}/> }
+      <RetirementCalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <RetirementCalculatorResult result={result} />}
     </div>
   )
 }

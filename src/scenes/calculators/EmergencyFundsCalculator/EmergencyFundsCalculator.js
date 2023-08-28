@@ -9,9 +9,9 @@ const EmergencyFundsCalculator = () => {
 
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -27,10 +27,6 @@ const EmergencyFundsCalculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
@@ -38,8 +34,8 @@ const EmergencyFundsCalculator = () => {
   return (
     <div className="emergency-funds-calculator-container">
       <EmergencyFundsCalculatorIntroduction />
-      <EmergencyFundsCalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      { result && <EmergencyFundsCalculatorResult result={result}/> }
+      <EmergencyFundsCalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <EmergencyFundsCalculatorResult result={result} />}
     </div>
   );
 }

@@ -10,9 +10,9 @@ const Budget503020Calculator = () => {
 
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -28,10 +28,6 @@ const Budget503020Calculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
@@ -39,8 +35,8 @@ const Budget503020Calculator = () => {
   return (
     <div className="budget-503020-calculator-container">
       <Budget503020CalculatorIntroduction />
-      <Budget503020CalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      { result && <Budget503020CalculatorResult result={result}/> }
+      <Budget503020CalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <Budget503020CalculatorResult result={result} />}
     </div>
   )
 }

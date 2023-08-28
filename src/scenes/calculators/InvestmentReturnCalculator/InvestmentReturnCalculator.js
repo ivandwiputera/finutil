@@ -10,9 +10,9 @@ const InvestmentReturnCalculator = () => {
 
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -34,19 +34,15 @@ const InvestmentReturnCalculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
-  
+
   return (
     <div className="investment-return-calculator-container">
       <InvestmentReturnCalculatorIntroduction />
-      <InvestmentReturnCalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      { result && <InvestmentReturnCalculatorResult result={result}/> }
+      <InvestmentReturnCalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <InvestmentReturnCalculatorResult result={result} />}
     </div>
   )
 }

@@ -9,9 +9,9 @@ import MortgageCalculatorResult from "./Result/MortgageCalculatorResult";
 const MortgageCalculator = () => {
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -24,7 +24,7 @@ const MortgageCalculator = () => {
       mortgageInterestRate: input.mortgageInterestRate
     }
     const result = MortgageCalculatorService.calculateMortgage(params)
-    
+
     if (result == null) {
       setResult(null)
       return
@@ -34,10 +34,6 @@ const MortgageCalculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
@@ -45,8 +41,8 @@ const MortgageCalculator = () => {
   return (
     <div className="mortgage-calculator-container">
       <MortgageCalculatorIntroduction />
-      <MortgageCalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      {result && <MortgageCalculatorResult result={result}/> }
+      <MortgageCalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <MortgageCalculatorResult result={result} />}
     </div>
   )
 }

@@ -9,9 +9,9 @@ import HouseAffordabilityCalculatorResult from "./Result/HouseAffordabilityCalcu
 const HouseAffordabilityCalculator = () => {
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -24,7 +24,7 @@ const HouseAffordabilityCalculator = () => {
       savedAmount: input.savedAmount,
     }
     const result = HouseAffordabilityCalculatorService.calculateHouseAffordability(params)
-    
+
     if (result == null) {
       setResult(null)
       return
@@ -34,10 +34,6 @@ const HouseAffordabilityCalculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
@@ -45,8 +41,8 @@ const HouseAffordabilityCalculator = () => {
   return (
     <div className="house-affordability-calculator-container">
       <HouseAffordabilityCalculatorIntroduction />
-      <HouseAffordabilityCalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      {result && <HouseAffordabilityCalculatorResult result={result}/> }
+      <HouseAffordabilityCalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <HouseAffordabilityCalculatorResult result={result} />}
     </div>
   )
 }

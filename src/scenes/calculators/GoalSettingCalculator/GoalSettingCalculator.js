@@ -10,9 +10,9 @@ const GoalSettingCalculator = () => {
 
   const [result, setResult] = useState(undefined)
 
-  const calculateResult = (input) => {
+  const onInputChange = (input) => {
     // If input is invalid, set result as null to hide.
-    if (!input.isValid) { 
+    if (!input.isValid) {
       setResult(null)
       return
     }
@@ -26,7 +26,7 @@ const GoalSettingCalculator = () => {
       savedAmount: input.savedAmount
     }
     const result = GoalSettingCalculatorService.calculateGoal(params)
-    
+
     if (result == null) {
       setResult(null)
       return
@@ -36,10 +36,6 @@ const GoalSettingCalculator = () => {
     setResult(result)
   }
 
-  const onInputChange = (input) => {
-    calculateResult(input)
-  }
-
   useEffect(() => {
     UIUtils.scrollToTop()
   }, []);
@@ -47,8 +43,8 @@ const GoalSettingCalculator = () => {
   return (
     <div className="goal-setting-calculator-container">
       <GoalSettingCalculatorIntroduction />
-      <GoalSettingCalculatorForm onChange={(e) => { onInputChange(e) }}/>
-      { result && <GoalSettingCalculatorResult result={result}/> }
+      <GoalSettingCalculatorForm onChange={(e) => { onInputChange(e) }} />
+      {result && <GoalSettingCalculatorResult result={result} />}
     </div>
   )
 }
