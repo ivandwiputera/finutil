@@ -4,7 +4,7 @@ export const ScreenType = {
   emergencyFundsCalculator: '/calculators/emergency-funds-calculator',
   investmentReturnCalculator: '/calculators/investment-return-calculator',
   retirementCalculator: '/calculators/retirement-calculator',
-  goalSettingCalculator: '/calculators/goal-setting-calculator',
+  goalContributionCalculator: '/calculators/goal-contribution-calculator',
   mortgageCalculator: '/calculators/mortgage-calculator',
   houseAffordabilityCalculator: '/calculators/house-affordability-calculator',
   netSalaryCalculator: '/calculators/net-salary-calculator'

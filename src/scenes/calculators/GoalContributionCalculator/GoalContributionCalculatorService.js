@@ -1,6 +1,6 @@
 import { TVMCalculator } from "utils/TVMCalculator"
 
-export class GoalSettingCalculatorService {
+export class GoalContributionCalculatorService {
   static calculateGoal = (input) => {
     if (input?.goalAmount == null) { return null }
     if (input?.duration == null) { return null }

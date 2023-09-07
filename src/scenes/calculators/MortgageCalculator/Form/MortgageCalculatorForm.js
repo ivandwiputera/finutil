@@ -84,7 +84,7 @@ const MortgageCalculatorForm = (props) => {
   }, [housePrice, downPayment, mortgageTenor, mortgageInterestRate, validateInput]);
 
   return (
-    <div className="goal-setting-calculator-form-container">
+    <div className="goal-contribution-calculator-form-container">
       <UICurrencyInput
         id="housePrice"
         defaultValue={housePrice}

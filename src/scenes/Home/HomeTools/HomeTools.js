@@ -47,8 +47,8 @@ const HomeTools = (props) => {
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.flag}
-          text={Localise(LocaliseKey.homeToolsGoalSettingCalculator)}
-          onClick={() => { onItemClick(ScreenType.goalSettingCalculator) }}
+          text={Localise(LocaliseKey.homeToolsGoalContributionCalculator)}
+          onClick={() => { onItemClick(ScreenType.goalContributionCalculator) }}
         />
 
         <UIIconTextCard

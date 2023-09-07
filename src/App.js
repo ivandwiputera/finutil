@@ -5,7 +5,7 @@ import EmergencyFundsCalculator from "scenes/calculators/EmergencyFundsCalculato
 import Budget503020Calculator from "scenes/calculators/Budget503020Calculator/Budget503020Calculator";
 import InvestmentReturnCalculator from "scenes/calculators/InvestmentReturnCalculator/InvestmentReturnCalculator";
 import RetirementCalculator from "scenes/calculators/RetirementCalculator/RetirementCalculator";
-import GoalSettingCalculator from "scenes/calculators/GoalSettingCalculator/GoalSettingCalculator";
+import GoalContributionCalculator from "scenes/calculators/GoalContributionCalculator/GoalContributionCalculator";
 import MortgageCalculator from "scenes/calculators/MortgageCalculator/MortgageCalculator";
 import HouseAffordabilityCalculator from "scenes/calculators/HouseAffordabilityCalculator/HouseAffordabilityCalculator";
 import NetSalaryCalculator from "scenes/calculators/NetSalaryCalculator/NetSalaryCalculator";
@@ -20,7 +20,7 @@ function App() {
             <Route path={ScreenType.emergencyFundsCalculator} element={<EmergencyFundsCalculator />} />
             <Route path={ScreenType.investmentReturnCalculator} element={<InvestmentReturnCalculator />} />
             <Route path={ScreenType.retirementCalculator} element={<RetirementCalculator />} />
-            <Route path={ScreenType.goalSettingCalculator} element={<GoalSettingCalculator />} />
+            <Route path={ScreenType.goalContributionCalculator} element={<GoalContributionCalculator />} />
             <Route path={ScreenType.mortgageCalculator} element={<MortgageCalculator />}/>
             <Route path={ScreenType.houseAffordabilityCalculator} element={<HouseAffordabilityCalculator />}/>
             <Route path={ScreenType.netSalaryCalculator} element={<NetSalaryCalculator />}/>
