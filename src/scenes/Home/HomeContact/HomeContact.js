@@ -24,7 +24,8 @@ const HomeContact = () => {
         <UIIconText
           icon={UIIconType.atSymbol}
           label={Localise(LocaliseKey.homeContactInstagramLabel)}
-          title={Localise(LocaliseKey.homeContactInstagramValue)} />
+          title={Localise(LocaliseKey.homeContactInstagramValue)}
+          link={`https://www.instagram.com/_u/${Localise(LocaliseKey.homeContactInstagramValue)}`} />
       </UICard>
     </div>
 

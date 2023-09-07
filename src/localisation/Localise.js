@@ -225,7 +225,7 @@ const LocaliseTranslation = {
   homeContactEmailLabel: "Email",
   homeContactEmailValue: "ivan.dwiputera@gmail.com",
   homeContactInstagramLabel: "Instagram",
-  homeContactInstagramValue: "@ivandwiputera",
+  homeContactInstagramValue: "ivandwiputera",
 
   budget503020CalculatorTitle: "Budget 50-30-20 Calculator",
   budget503020CalculatorDescription: "50-30-20 budgeting rule is a simple and intuitive way to manage your finance.\n\nThe rule suggests that you divide your after-tax income into three categories of spending: 50% on needs, 30% on wants, and 20% on savings.",
