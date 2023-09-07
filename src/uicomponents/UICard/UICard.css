@@ -6,6 +6,6 @@
   transition: background-color 200ms
 }
 
-.ui-card:hover {
+.ui-card:not(.no-hover):hover {
   background-color: var(--color-background-alt);
 }

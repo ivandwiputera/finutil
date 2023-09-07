@@ -14,11 +14,12 @@ const HomeContact = () => {
         title={Localise(LocaliseKey.homeContactTitle)}
         description={Localise(LocaliseKey.homeContactDescription)}
       />
-      <UICard className="home-contact-card">
+      <UICard className="home-contact-card no-hover">
         <UIIconText
           icon={UIIconType.envelope}
           label={Localise(LocaliseKey.homeContactEmailLabel)}
-          title={Localise(LocaliseKey.homeContactEmailValue)} />
+          title={Localise(LocaliseKey.homeContactEmailValue)}
+          link={`mailto:${Localise(LocaliseKey.homeContactEmailValue)}`} />
         <UIDivider />
         <UIIconText
           icon={UIIconType.atSymbol}

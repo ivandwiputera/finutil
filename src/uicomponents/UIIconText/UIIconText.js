@@ -5,17 +5,18 @@ const UIIconText = (props) => {
   const icon = props.icon
   const label = props.label
   const title = props.title
+  const link = props.link
 
   return (
-    <div className="ui-icon-text">
+    <a className="ui-icon-text" href={link}>
       {icon && <UIIcon className="color-primary ui-icon-24" icon={icon} />}
       {(title || label) &&
         <div className="ui-icon-text__text-container">
           {label && <div className="font-size-small color-text-light">{label}</div>}
-          {title && <p className="font-weight-medium">{title}</p>}
+          {title && <div className="font-weight-medium color-text">{title}</div>}
         </div>
       }
-    </div>
+    </a>
   );
 }
 
