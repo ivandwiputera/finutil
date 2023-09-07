@@ -3,6 +3,11 @@ const Localise = (key) => {
 }
 
 export const LocaliseKey = {
+  formatterYear: "formatterYear",
+  formatterYears: "formatterYears",
+  formatterMonth: "formatterMonth",
+  formatterMonths: "formatterMonths",
+
   homeIntroductionTitle: "homeIntroductionTitle",
   homeIntroductionSubtitle: "homeIntroductionSubtitle",
   homeIntroductionDescription: "homeIntroductionDescription",
@@ -15,6 +20,7 @@ export const LocaliseKey = {
   homeToolsInvestmentReturnCalculator: "homeToolsInvestmentReturnCalculator",
   homeToolsRetirementCalculator: "homeToolsRetirementCalculator",
   homeToolsGoalContributionCalculator: "homeToolsGoalContributionCalculator",
+  homeToolsGoalDurationCalculator: "homeToolsGoalDurationCalculator",
   homeToolsMortgageCalculator: "homeToolsMortgageCalculator",
   homeToolsHouseAffordabilityCalculator: "homeToolsHouseAffordabilityCalculator",
   homeToolsLifeInsuranceCoverageCalculator: "homeToolsLifeInsuranceCoverageCalculator",
@@ -103,6 +109,22 @@ export const LocaliseKey = {
   goalContributionCalculatorResultDescription: "goalContributionCalculatorResultDescription",
   goalContributionCalculatorResultGoalAmountInFutureLabel: "goalContributionCalculatorResultGoalAmountInFutureLabel",
 
+  goalDurationCalculatorTitle: "goalDurationCalculatorTitle",
+  goalDurationCalculatorDescription: "goalDurationCalculatorDescription",
+  goalDurationCalculatorFormGoalAmountLabel: "goalDurationCalculatorFormGoalAmountLabel",
+  goalDurationCalculatorFormGoalAmountHelperText: "goalDurationCalculatorFormGoalAmountHelperText",
+  goalDurationCalculatorFormContributionLabel: "goalDurationCalculatorFormContributionLabel",
+  goalDurationCalculatorFormContributionHelperText: "goalDurationCalculatorFormContributionHelperText",
+  goalDurationCalculatorFormRateOfReturnLabel: "goalDurationCalculatorFormRateOfReturnLabel",
+  goalDurationCalculatorFormRateOfReturnHelperText: "goalDurationCalculatorFormRateOfReturnHelperText",
+  goalDurationCalculatorFormSavedAmountLabel: "goalDurationCalculatorFormSavedAmountLabel",
+  goalDurationCalculatorFormErrorGoalAmountEmpty: "goalDurationCalculatorFormErrorGoalAmountEmpty",
+  goalDurationCalculatorFormErrorContributionEmpty: "goalDurationCalculatorFormErrorContributionEmpty",
+  goalDurationCalculatorFormErrorRateOfReturnEmpty: "goalDurationCalculatorFormErrorRateOfReturnEmpty",
+  goalDurationCalculatorFormErrorSavedAmountEmpty: "goalDurationCalculatorFormErrorSavedAmountEmpty",
+  goalDurationCalculatorResultTitle: "goalDurationCalculatorResultTitle",
+  goalDurationCalculatorResultDescription: "goalDurationCalculatorResultDescription",
+
   mortgageCalculatorTitle: "mortgageCalculatorTitle",
   mortgageCalculatorDescription: "mortgageCalculatorDescription",
   mortgageCalculatorFormHousePriceLabel: "mortgageCalculatorFormHousePriceLabel",
@@ -175,6 +197,11 @@ export const LocaliseKey = {
 
 const LocaliseTranslation = {
 
+  formatterYear: "Year",
+  formatterYears: "Years",
+  formatterMonth: "Month",
+  formatterMonths: "Months",
+
   homeIntroductionTitle: "Hi, I'm Ivan",
   homeIntroductionSubtitle: "Personal Finance Enthusiasts",
   homeIntroductionDescription: "Someone who loves and cares about personal finance & budgeting. Send me a message if you have any feedbacks or need someone to talk about personal finance.",
@@ -187,6 +214,7 @@ const LocaliseTranslation = {
   homeToolsInvestmentReturnCalculator: "Investment Return Calculator",
   homeToolsRetirementCalculator: "Retirement 4% Calculator",
   homeToolsGoalContributionCalculator: "Goal Contribution Calculator",
+  homeToolsGoalDurationCalculator: "Goal Duration Calculator",
   homeToolsMortgageCalculator: "Mortgage Calculator",
   homeToolsHouseAffordabilityCalculator: "House Affordability Calculator",
   homeToolsLifeInsuranceCoverageCalculator: "Life Insurance Coverage Calculator",
@@ -273,8 +301,24 @@ const LocaliseTranslation = {
   goalContributionCalculatorFormErrorInflationEmpty: "Inflation cannot be empty.",
   goalContributionCalculatorFormErrorSavedAmountEmpty: "Saved amount cannot be empty.",
   goalContributionCalculatorResultTitle: "You must make a monthly contribution of at least:",
-  goalContributionCalculatorResultDescription: "It is important to note that consistency is the key to achieve your goals, especially the big one.\n\nIf the amount mentioned above is too much for you, you can extend the duration and give more time, or maybe readjust your goals.",
+  goalContributionCalculatorResultDescription: "It is important to note that consistency is the key to achieve your goals, especially the big one.\n\nIf the amount mentioned above is too much for you, you can extend the duration and give more time, or maybe readjust your goal amount.",
   goalContributionCalculatorResultGoalAmountInFutureLabel: "Goal amount after inflation:",
+
+  goalDurationCalculatorTitle: "Goal Duration Calculator",
+  goalDurationCalculatorDescription: "Achieving a big financial goal can be challenging.\n\nStart by identifying your financial goals, such as buying a house, saving for retirement, or paying off debt. Once you have identified your financial goals, break them down into smaller, more manageable steps.\n\nUse this calculator to determine how long you need to stay invested until you achieve your goal.",
+  goalDurationCalculatorFormGoalAmountLabel: "What is your financial goal amount? ($)",
+  goalDurationCalculatorFormGoalAmountHelperText: "This is the total amount you want to save.",
+  goalDurationCalculatorFormContributionLabel: "How much money you're going to save every month? ($)",
+  goalDurationCalculatorFormContributionHelperText: "This is the monthly amount you will put into investment every month.",
+  goalDurationCalculatorFormRateOfReturnLabel: "What is the expected rate of return for your investment? (%)",
+  goalDurationCalculatorFormRateOfReturnHelperText: "This is the expected annual rate of return for this investment",
+  goalDurationCalculatorFormSavedAmountLabel: "What is the amount you have already saved towards your goal? ($)",
+  goalDurationCalculatorFormErrorGoalAmountEmpty: "Goal amount cannot be empty.",
+  goalDurationCalculatorFormErrorContributionEmpty: "Contribution cannot be empty.",
+  goalDurationCalculatorFormErrorRateOfReturnEmpty: "Rate of return cannot be empty.",
+  goalDurationCalculatorFormErrorSavedAmountEmpty: "Saved amount cannot be empty.",
+  goalDurationCalculatorResultTitle: "You need to stay invested for at least:",
+  goalDurationCalculatorResultDescription: "It is important to note that consistency is the key to achieve your goals, especially the big one. If the number mentioned above is too long for you, you can contribute more, or maybe readjust your goal amount.",
 
   mortgageCalculatorTitle: "Mortgage Calculator",
   mortgageCalculatorDescription: "Estimate your monthly mortgage payments by considering the principal amount, interest rate, loan term, and other factors.",

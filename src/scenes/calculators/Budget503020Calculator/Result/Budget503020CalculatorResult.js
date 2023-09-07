@@ -1,13 +1,13 @@
 import "./Budget503020CalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const Budget503020CalculatorResult = (props) => {
   const result = props.result
 
-  const needs = CurrencyFormatter.getDisplayText(result?.needs)
-  const wants = CurrencyFormatter.getDisplayText(result?.wants)
-  const savings = CurrencyFormatter.getDisplayText(result?.savings)
+  const needs = Formatter.getCurrencyText(result?.needs)
+  const wants = Formatter.getCurrencyText(result?.wants)
+  const savings = Formatter.getCurrencyText(result?.savings)
 
   return ( 
     <div className="budget-503020-calculator-result-container">

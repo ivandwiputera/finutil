@@ -1,7 +1,7 @@
 import "uicomponents/UIInput/UIInput.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter"
+import { Formatter } from "utils/Formatter"
 import { useEffect, useState } from "react"
-import { isNumber } from "utils/DataTypeUtils"
+import { isValidNumber } from "utils/DataTypeUtils"
 
 const UICurrencyInput = (props) => {
   const id = props.id
@@ -27,7 +27,7 @@ const UICurrencyInput = (props) => {
   }, [defaultValue]);
 
   const onInputChange = (value) => {
-    const number = CurrencyFormatter.getValue(value)
+    const number = Formatter.getCurrencyValue(value)
 
     // Set as null if currency symbol left or empty
     if (value === UICurrencyInputConfiguration.currencySymbol || value === "") {
@@ -47,7 +47,7 @@ const UICurrencyInput = (props) => {
   }
 
   const onBlur = () => {
-    const number = CurrencyFormatter.getValue(inputValue)
+    const number = Formatter.getCurrencyValue(inputValue)
 
     // Trigger on change null if number is invalid
     if (!isValidNumber(number)) {
@@ -59,10 +59,6 @@ const UICurrencyInput = (props) => {
     const cleanNumber = Math.min(UICurrencyInputConfiguration.maxCurrencyValue, number)
     onChange(cleanNumber)
   }
-  
-  const isValidNumber = (number) => {
-    return number != null && isNumber(number) && !isNaN(number)
-  }
 
   return (
     <div className="ui-input">
@@ -72,7 +68,7 @@ const UICurrencyInput = (props) => {
         className="ui-input-field"
         type="text"
         inputMode="numeric"
-        value={inputValue != null ? CurrencyFormatter.getDisplayText(inputValue) : ""}
+        value={inputValue != null ? Formatter.getCurrencyText(inputValue) : ""}
         placeholder={placeholder}
         onChange={(e) => {onInputChange(e.target.value)}}
         onBlur={onBlur} />

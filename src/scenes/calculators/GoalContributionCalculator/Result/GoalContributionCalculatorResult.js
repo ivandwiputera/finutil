@@ -1,5 +1,5 @@
 import "./GoalContributionCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const GoalContributionCalculatorResult = (props) => {
@@ -7,8 +7,8 @@ const GoalContributionCalculatorResult = (props) => {
   const monthlyContribution = result?.monthlyContribution
   const goalAmountInFuture = result?.goalAmountInFuture
 
-  const monthlyContributionDisplayText = CurrencyFormatter.getDisplayText(monthlyContribution)
-  const goalAmountInFutureDisplayText = CurrencyFormatter.getDisplayText(goalAmountInFuture)
+  const monthlyContributionDisplayText = Formatter.getCurrencyText(monthlyContribution)
+  const goalAmountInFutureDisplayText = Formatter.getCurrencyText(goalAmountInFuture)
 
   return (
     <div className="goal-contribution-calculator-result-container">

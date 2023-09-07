@@ -1,7 +1,8 @@
-import { isNumber, isString } from "./DataTypeUtils"
+import Localise, { LocaliseKey } from "localisation/Localise"
+import { isNumber, isString, isValidNumber } from "./DataTypeUtils"
 
-export class CurrencyFormatter {
-  static getDisplayText = (value) => {
+export class Formatter {
+  static getCurrencyText = (value) => {
     // Returns immediately if number is not recognized
     const number = Number(value)
     if (!isNumber(number) || isNaN(number)) {
@@ -21,7 +22,7 @@ export class CurrencyFormatter {
     return formatter.format(number)
   }
 
-  static getValue = (displayText) => {
+  static getCurrencyValue = (displayText) => {
     // Returns immediately if params is number
     if (isNumber(displayText)) {
       return displayText
@@ -41,5 +42,24 @@ export class CurrencyFormatter {
     // Convert to numbers
     const result = Number(cleanText)
     return !isNaN(result) ? result : null
+  }
+
+  static getNumYearsText = (value) => {
+    // Returns immediately if value is invalid
+    if (!isValidNumber(value)) {
+      return null
+    }
+
+    var numYears = value|0;
+    var numMonths = Math.ceil(((value*10%10)/10)*12); 
+
+    var unitYears = numYears === 1 ? Localise(LocaliseKey.formatterYear) : Localise(LocaliseKey.formatterYears)
+    var unitMonths = numMonths === 1 ? Localise(LocaliseKey.formatterMonth) : Localise(LocaliseKey.formatterMonths)
+
+    var displayText = `${numYears} ${unitYears}`
+    if (numMonths > 0) {
+      displayText += ` ${numMonths} ${unitMonths}`
+    }
+    return displayText
   }
 }

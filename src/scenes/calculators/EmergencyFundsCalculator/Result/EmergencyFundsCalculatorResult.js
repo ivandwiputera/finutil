@@ -1,5 +1,5 @@
 import "./EmergencyFundsCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const EmergencyFundsCalculatorResult = (props) => {
@@ -8,7 +8,7 @@ const EmergencyFundsCalculatorResult = (props) => {
   const totalEmergencyFunds = result?.totalEmergencyFunds
   const numMonthsToCover = result?.numMonthsToCover
 
-  const totalEmergencyFundsDisplayText = CurrencyFormatter.getDisplayText(totalEmergencyFunds)
+  const totalEmergencyFundsDisplayText = Formatter.getCurrencyText(totalEmergencyFunds)
   const numMonthsToCoverDisplayText = `${numMonthsToCover} ${Localise(LocaliseKey.emergencyFundsCalculatorResultNumMonthsToCoverUnit)}`
 
   return ( 

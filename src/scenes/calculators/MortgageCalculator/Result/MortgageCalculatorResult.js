@@ -1,5 +1,5 @@
 import "./MortgageCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const MortgageCalculatorResult = (props) => {
@@ -9,9 +9,9 @@ const MortgageCalculatorResult = (props) => {
   const totalMortgageAmount = result?.totalMortgageAmount
   const totalAmount = result?.totalAmount
 
-  const monthlyMortgagePaymentDisplayText = CurrencyFormatter.getDisplayText(monthlyMortgagePayment)
-  const totalMortgageAmountDisplayText = CurrencyFormatter.getDisplayText(totalMortgageAmount)
-  const totalAmountDisplayText = CurrencyFormatter.getDisplayText(totalAmount)
+  const monthlyMortgagePaymentDisplayText = Formatter.getCurrencyText(monthlyMortgagePayment)
+  const totalMortgageAmountDisplayText = Formatter.getCurrencyText(totalMortgageAmount)
+  const totalAmountDisplayText = Formatter.getCurrencyText(totalAmount)
 
   return (
     <div className="mortgage-calculator-result-container">

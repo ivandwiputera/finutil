@@ -1,5 +1,5 @@
 import "./InvestmentReturnCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const InvestmentReturnCalculatorResult = (props) => {
@@ -8,9 +8,9 @@ const InvestmentReturnCalculatorResult = (props) => {
   const totalPrincipalAmount = result?.totalPrincipalAmount
   const totalInterestGain = result?.totalInterestGain
 
-  const totalInvestmentAmountDisplayText = CurrencyFormatter.getDisplayText(totalInvestmentAmount)
-  const totalPrincipalAmountDisplayText = CurrencyFormatter.getDisplayText(totalPrincipalAmount)
-  const totalInterestGainDisplayText = CurrencyFormatter.getDisplayText(totalInterestGain)
+  const totalInvestmentAmountDisplayText = Formatter.getCurrencyText(totalInvestmentAmount)
+  const totalPrincipalAmountDisplayText = Formatter.getCurrencyText(totalPrincipalAmount)
+  const totalInterestGainDisplayText = Formatter.getCurrencyText(totalInterestGain)
 
   return (
     <div className="investment-return-calculator-result-container">

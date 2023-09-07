@@ -5,3 +5,7 @@ export function isString(value) {
 export function isNumber(value) {
   return typeof value === "number"
 }
+
+export function isValidNumber(number) {
+  return number != null && isNumber(number) && !isNaN(number)
+}

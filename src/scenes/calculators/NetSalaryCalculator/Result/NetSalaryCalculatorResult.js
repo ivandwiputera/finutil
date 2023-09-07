@@ -1,16 +1,16 @@
 import "./NetSalaryCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const NetSalaryCalculatorResult = (props) => {
   const result = props.result
 
-  const netSalary = CurrencyFormatter.getDisplayText(result?.netSalary)
-  const bpjsJaminanHariTua = CurrencyFormatter.getDisplayText(result?.bpjsJaminanHariTua)
-  const bpjsJaminanPensiun = CurrencyFormatter.getDisplayText(result?.bpjsJaminanPensiun)
-  const bpjsKesehatan = CurrencyFormatter.getDisplayText(result?.bpjsKesehatan)
-  const totalTaxes = CurrencyFormatter.getDisplayText(result?.totalTaxes)
-  const annualNetSalary = CurrencyFormatter.getDisplayText(result?.annualNetSalary)
+  const netSalary = Formatter.getCurrencyText(result?.netSalary)
+  const bpjsJaminanHariTua = Formatter.getCurrencyText(result?.bpjsJaminanHariTua)
+  const bpjsJaminanPensiun = Formatter.getCurrencyText(result?.bpjsJaminanPensiun)
+  const bpjsKesehatan = Formatter.getCurrencyText(result?.bpjsKesehatan)
+  const totalTaxes = Formatter.getCurrencyText(result?.totalTaxes)
+  const annualNetSalary = Formatter.getCurrencyText(result?.annualNetSalary)
 
   return (
     <div className="net-salary-calculator-result-container">

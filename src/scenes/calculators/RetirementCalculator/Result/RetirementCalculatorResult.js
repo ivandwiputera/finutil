@@ -1,12 +1,12 @@
 import "./RetirementCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const RetirementCalculatorResult = (props) => {
   const result = props.result
 
-  const totalRetirementSavingsDisplayText = CurrencyFormatter.getDisplayText(result?.totalRetirementSavings)
-  const withdrawalAmountDisplayText = CurrencyFormatter.getDisplayText(result?.withdrawalAmount)
+  const totalRetirementSavingsDisplayText = Formatter.getCurrencyText(result?.totalRetirementSavings)
+  const withdrawalAmountDisplayText = Formatter.getCurrencyText(result?.withdrawalAmount)
 
   return ( 
     <div className="retirement-calculator-result-container">

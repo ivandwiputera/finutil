@@ -1,5 +1,5 @@
 import "./HouseAffordabilityCalculatorResult.css"
-import { CurrencyFormatter } from "utils/CurrencyFormatter";
+import { Formatter } from "utils/Formatter";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const HouseAffordabilityCalculatorResult = (props) => {
@@ -9,9 +9,9 @@ const HouseAffordabilityCalculatorResult = (props) => {
   const totalMortgageAmount = result?.totalMortgageAmount
   const monthlyPayment = result?.monthlyPayment
 
-  const housePriceDisplayText = CurrencyFormatter.getDisplayText(housePrice)
-  const totalMortgageAmountDisplayText = CurrencyFormatter.getDisplayText(totalMortgageAmount)
-  const monthlyPaymentDisplayText = CurrencyFormatter.getDisplayText(monthlyPayment)
+  const housePriceDisplayText = Formatter.getCurrencyText(housePrice)
+  const totalMortgageAmountDisplayText = Formatter.getCurrencyText(totalMortgageAmount)
+  const monthlyPaymentDisplayText = Formatter.getCurrencyText(monthlyPayment)
 
   return (
     <div className="house-affordability-calculator-result-container">

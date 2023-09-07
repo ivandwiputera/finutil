@@ -2,6 +2,7 @@ import { AtSymbolIcon } from '@heroicons/react/24/outline'
 import { BanknotesIcon } from '@heroicons/react/24/outline'
 import { BuildingLibraryIcon } from '@heroicons/react/24/outline'
 import { ChartPieIcon } from '@heroicons/react/24/outline'
+import { ClockIcon } from '@heroicons/react/24/outline'
 import { CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { EnvelopeIcon } from '@heroicons/react/24/outline'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
@@ -31,6 +32,9 @@ const UIIcon = (props) => {
       break
     case UIIconType.chartPie:
       component = <ChartPieIcon />
+      break
+    case UIIconType.clock:
+      component = <ClockIcon />
       break
     case UIIconType.currencyDollar:
       component = <CurrencyDollarIcon />
@@ -79,6 +83,7 @@ export const UIIconType = {
   bank: 'bank',
   banknotes: 'banknotes',
   chartPie: 'chartPie',
+  clock: 'clock',
   currencyDollar: 'currencyDollar',
   envelope: 'envelope',
   exclamationTriangle: 'exclamationTriangle',
