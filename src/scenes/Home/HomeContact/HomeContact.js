@@ -7,6 +7,13 @@ import { UIIconType } from "uicomponents/UIIcon/UIIcon";
 import Localise, { LocaliseKey } from "localisation/Localise";
 
 const HomeContact = () => {
+  const getInstagramLink = (userId) => {
+    return `https://www.instagram.com/${userId}`
+  }
+
+  const getMailToLink = (email) => {
+    return `mailto:${email}`
+  }
   return (
     <div id="home-contact" className="home-contact-container">
       <UIHeaderText
@@ -19,13 +26,13 @@ const HomeContact = () => {
           icon={UIIconType.envelope}
           label={Localise(LocaliseKey.homeContactEmailLabel)}
           title={Localise(LocaliseKey.homeContactEmailValue)}
-          link={`mailto:${Localise(LocaliseKey.homeContactEmailValue)}`} />
+          link={getMailToLink(Localise(LocaliseKey.homeContactEmailValue))} />
         <UIDivider />
         <UIIconText
           icon={UIIconType.atSymbol}
           label={Localise(LocaliseKey.homeContactInstagramLabel)}
           title={Localise(LocaliseKey.homeContactInstagramValue)}
-          link={`https://www.instagram.com/_u/${Localise(LocaliseKey.homeContactInstagramValue)}`} />
+          link={getInstagramLink(Localise(LocaliseKey.homeContactInstagramValue))} />
       </UICard>
     </div>
 
