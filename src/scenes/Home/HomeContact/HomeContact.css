@@ -12,3 +12,12 @@
   align-items: stretch;
   margin-top: 1.5rem;
 }
+
+.home-contact-card-item {
+  background-color: var(--color-background);
+  transition: background-color 200ms
+}
+
+.home-contact-card-item:hover {
+  background-color: var(--color-background-alt);
+}

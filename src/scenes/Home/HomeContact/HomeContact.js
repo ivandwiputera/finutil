@@ -22,17 +22,21 @@ const HomeContact = () => {
         description={Localise(LocaliseKey.homeContactDescription)}
       />
       <UICard className="home-contact-card no-hover">
-        <UIIconText
-          icon={UIIconType.envelope}
-          label={Localise(LocaliseKey.homeContactEmailLabel)}
-          title={Localise(LocaliseKey.homeContactEmailValue)}
-          link={getMailToLink(Localise(LocaliseKey.homeContactEmailValue))} />
+        <div className="home-contact-card-item">
+          <UIIconText
+            icon={UIIconType.envelope}
+            label={Localise(LocaliseKey.homeContactEmailLabel)}
+            title={Localise(LocaliseKey.homeContactEmailValue)}
+            link={getMailToLink(Localise(LocaliseKey.homeContactEmailValue))} />
+        </div>
         <UIDivider />
-        <UIIconText
-          icon={UIIconType.atSymbol}
-          label={Localise(LocaliseKey.homeContactInstagramLabel)}
-          title={Localise(LocaliseKey.homeContactInstagramValue)}
-          link={getInstagramLink(Localise(LocaliseKey.homeContactInstagramValue))} />
+        <div className="home-contact-card-item">
+          <UIIconText
+            icon={UIIconType.atSymbol}
+            label={Localise(LocaliseKey.homeContactInstagramLabel)}
+            title={Localise(LocaliseKey.homeContactInstagramValue)}
+            link={getInstagramLink(Localise(LocaliseKey.homeContactInstagramValue))} />
+        </div>
       </UICard>
     </div>
 
