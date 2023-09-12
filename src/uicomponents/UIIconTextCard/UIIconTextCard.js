@@ -11,7 +11,7 @@ const UIIconTextCard = (props) => {
   return (
     <UICard className={className} onClick={onClick}>
       <div className="ui-icon-text-card">
-        {icon && <UIIcon className="color-primary ui-icon-32" icon={icon} />}
+        {icon && <UIIcon className="color-primary ui-icon-large" icon={icon} />}
         {text && <div className="ui-icon-text-card__label">{text}</div>}
       </div>
     </UICard>

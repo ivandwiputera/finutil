@@ -6,12 +6,22 @@
   padding: 1rem;
 }
 
-.home-tools-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  margin-top: 1.5rem;
-}
-
 .home-tools-grid-item {
   margin: 0.375rem;
+}
+
+@media only screen and (max-width: 399px) {
+  .home-tools-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .home-tools-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 1.5rem;
+  }
 }

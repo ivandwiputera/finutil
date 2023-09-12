@@ -83,7 +83,7 @@ export const LocaliseKey = {
 
   retirementCalculatorTitle: "retirementCalculatorTitle",
   retirementCalculatorDescription: "retirementCalculatorDescription",
-  retirementCalculatorFormMonthlyExpensesLabel: "retirementCalculatorFormMonthlyExpensesLabel",retirementCalculatorFormMonthlyExpensesHelperText: "retirementCalculatorFormMonthlyExpensesHelperText",
+  retirementCalculatorFormMonthlyExpensesLabel: "retirementCalculatorFormMonthlyExpensesLabel", retirementCalculatorFormMonthlyExpensesHelperText: "retirementCalculatorFormMonthlyExpensesHelperText",
   retirementCalculatorFormErrorMonthlyExpensesEmpty: "retirementCalculatorFormErrorMonthlyExpensesEmpty",
   retirementCalculatorResultTitle: "retirementCalculatorResultTitle",
   retirementCalculatorResultDescription: "retirementCalculatorResultDescription",
@@ -376,5 +376,5 @@ const LocaliseTranslation = {
   netSalaryCalculatorResultTotalTaxLabel: "Total Taxes (annual):",
   netSalaryCalculatorResultTotalNetSalaryLabel: "Net Salary (annual):",
 }
- 
+
 export default Localise

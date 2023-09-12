@@ -154,53 +154,20 @@ p {
 .pb-150 { padding-bottom: 1.5rem; }
 .pb-100 { padding-bottom: 1.0rem; }
 
-.font-size-body {
-  font-size: var(--font-size-normal);
-}
+.font-size-body { font-size: var(--font-size-normal); }
+.font-size-small { font-size: var(--font-size-small); }
+.font-size-tiny { font-size: var(--font-size-tiny); }
+.font-weight-semibold { font-weight: var(--font-weight-semibold); }
+.font-weight-medium { font-weight: var(--font-weight-medium); }
 
-.font-size-small {
-  font-size: var(--font-size-small);
-}
+.color-primary { color: var(--color-primary); }
+.color-text { color: var(--color-text); }
+.color-text-light { color: var(--color-text-light); }
+.color-text-colored { color: var(--color-text-colored) }
+.color-error { color: var(--color-error); }
 
-.font-size-tiny {
-  font-size: var(--font-size-tiny);
-}
-
-.font-weight-semibold {
-  font-weight: var(--font-weight-semibold);
-}
-
-.font-weight-medium {
-  font-weight: var(--font-weight-medium);
-}
-
-.color-primary {
-  color: var(--color-primary);
-}
-
-.color-text {
-  color: var(--color-text);
-}
-
-.color-text-light {
-  color: var(--color-text-light);
-}
-
-.color-text-colored {
-  color: var(--color-text-colored)
-}
-
-.color-error {
-  color: var(--color-error);
-}
-
-.text-align-left {
-  text-align: left;
-}
-
-.text-align-center {
-  text-align: center;
-}
+.text-align-left { text-align: left; }
+.text-align-center { text-align: center; }
 
 .img-masking-blobs {
   border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;

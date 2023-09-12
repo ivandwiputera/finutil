@@ -9,7 +9,7 @@ const UIIconText = (props) => {
 
   return (
     <a className="ui-icon-text" href={link}>
-      {icon && <UIIcon className="color-primary ui-icon-24" icon={icon} />}
+      {icon && <UIIcon className="color-primary ui-icon-medium" icon={icon} />}
       {(title || label) &&
         <div className="ui-icon-text__text-container">
           {label && <div className="font-size-small color-text-light">{label}</div>}

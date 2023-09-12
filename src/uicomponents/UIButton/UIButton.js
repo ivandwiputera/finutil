@@ -11,7 +11,7 @@ const UIButton = (props) => {
     <button className={`ui-button ${className}`}
             onClick={onClick}>
       {title}
-      {icon && <UIIcon className="ui-icon-16" icon={icon}/>}
+      {icon && <UIIcon className="ui-icon-small" icon={icon}/>}
     </button>
   );
 }
