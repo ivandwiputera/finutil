@@ -1,6 +1,6 @@
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput"
-import UITextInput from "uicomponents/UIInput/UITextInput"
-import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput"
+import UICurrencyInput from "@components/UIInput/UICurrencyInput"
+import UITextInput from "@components/UIInput/UITextInput"
+import UIDropdownInput from "@components/UIInput/UIDropdownInput"
 
 const UIInput = (props) => {
   const type = props.type

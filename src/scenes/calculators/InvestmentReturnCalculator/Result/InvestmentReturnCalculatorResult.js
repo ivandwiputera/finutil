@@ -1,6 +1,7 @@
-import "./InvestmentReturnCalculatorResult.css"
-import { Formatter } from "utils/Formatter";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Formatter } from "@utils/Formatter";
+
+import "./InvestmentReturnCalculatorResult.css";
 
 const InvestmentReturnCalculatorResult = (props) => {
   const result = props.result

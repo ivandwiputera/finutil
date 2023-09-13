@@ -1,8 +1,9 @@
-import "./Budget503020CalculatorForm.css"
-import { useState, useEffect, useCallback } from "react";
-import { Validation } from "utils/Validation";
-import Localise, { LocaliseKey } from "localisation/Localise";
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
+import UICurrencyInput from "@components/UIInput/UICurrencyInput";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Validation } from "@utils/Validation";
+import { useCallback, useEffect, useState } from "react";
+
+import "./Budget503020CalculatorForm.css";
 
 const Budget503020CalculatorForm = (props) => {
   const montlyIncomeParam = props.monthlyIncome

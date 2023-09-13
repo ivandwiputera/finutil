@@ -1,5 +1,5 @@
-import UICard from "uicomponents/UICard/UICard";
-import UIIcon from "uicomponents/UIIcon/UIIcon";
+import UICard from "@components/UICard/UICard";
+import UIIcon from "@components/UIIcon/UIIcon";
 import "./UIIconTextCard.css"
 
 const UIIconTextCard = (props) => {

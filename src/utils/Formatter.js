@@ -1,4 +1,4 @@
-import Localise, { LocaliseKey } from "localisation/Localise"
+import Localise, { LocaliseKey } from "@localisation/Localise"
 import { isNumber, isString, isValidNumber } from "./DataTypeUtils"
 
 export class Formatter {

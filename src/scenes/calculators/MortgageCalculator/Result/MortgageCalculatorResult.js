@@ -1,6 +1,7 @@
-import "./MortgageCalculatorResult.css"
-import { Formatter } from "utils/Formatter";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Formatter } from "@utils/Formatter";
+
+import "./MortgageCalculatorResult.css";
 
 const MortgageCalculatorResult = (props) => {
   const result = props.result

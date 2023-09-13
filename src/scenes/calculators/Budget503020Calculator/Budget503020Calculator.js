@@ -1,10 +1,11 @@
-import "./Budget503020Calculator.css"
-import { useState, useEffect } from "react";
+import { UIUtils } from "@utils/UIUtils";
+import { useEffect, useState } from "react";
+
+import "./Budget503020Calculator.css";
 import { Budget503020CalculatorService } from "./Budget503020CalculatorService";
 import Budget503020CalculatorForm from "./Form/Budget503020CalculatorForm";
 import Budget503020CalculatorIntroduction from "./Introduction/Budget503020CalculatorIntroduction";
 import Budget503020CalculatorResult from "./Result/Budget503020CalculatorResult";
-import { UIUtils } from "utils/UIUtils";
 
 const Budget503020Calculator = () => {
 

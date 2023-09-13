@@ -1,10 +1,11 @@
-import "./InvestmentReturnCalculator.css"
-import InvestmentReturnCalculatorIntroduction from "./Introduction/InvestmentReturnCalculatorIntroduction";
-import InvestmentReturnCalculatorForm from "./Form/InvestmentReturnCalculatorForm";
-import { InvestmentReturnCalculatorService } from "./InvestmentReturnCalculatorService";
+import { UIUtils } from "@utils/UIUtils";
 import { useEffect, useState } from "react";
+
+import "./InvestmentReturnCalculator.css";
+import { InvestmentReturnCalculatorService } from "./InvestmentReturnCalculatorService";
+import InvestmentReturnCalculatorForm from "./Form/InvestmentReturnCalculatorForm";
+import InvestmentReturnCalculatorIntroduction from "./Introduction/InvestmentReturnCalculatorIntroduction";
 import InvestmentReturnCalculatorResult from "./Result/InvestmentReturnCalculatorResult";
-import { UIUtils } from "utils/UIUtils";
 
 const InvestmentReturnCalculator = () => {
 

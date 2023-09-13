@@ -1,8 +1,9 @@
-import "./RetirementCalculatorForm.css"
-import { useState, useEffect, useCallback } from "react";
-import { Validation } from "utils/Validation";
-import Localise, { LocaliseKey } from "localisation/Localise";
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
+import UICurrencyInput from "@components/UIInput/UICurrencyInput";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Validation } from "@utils/Validation";
+import { useCallback, useEffect, useState } from "react";
+
+import "./RetirementCalculatorForm.css";
 
 const RetirementCalculatorForm = (props) => {
   const monthlyExpensesParam = props.monthlyExpenses

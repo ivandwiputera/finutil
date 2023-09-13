@@ -1,6 +1,7 @@
-import "./GoalContributionCalculatorIntroduction.css"
-import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+
+import "./GoalContributionCalculatorIntroduction.css";
 
 const GoalContributionCalculatorIntroduction = () => {
   return ( 

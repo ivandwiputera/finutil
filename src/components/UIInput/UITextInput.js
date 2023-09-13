@@ -1,4 +1,4 @@
-import "uicomponents/UIInput/UIInput.css"
+import "@components/UIInput/UIInput.css"
 import { useState } from "react"
 
 const UITextInput = (props) => {

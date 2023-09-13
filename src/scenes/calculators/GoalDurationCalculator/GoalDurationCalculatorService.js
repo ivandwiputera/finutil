@@ -15,19 +15,19 @@ export class GoalDurationCalculatorService {
     // Case: Goal amount is invalid
     if (goalAmount <= 0) {
       const numOfYears = 0
-      return {numOfYears}
+      return { numOfYears }
     }
 
     // Case: No payment & no saved amount
     if (savedAmount <= 0 && contribution <= 0) {
       const numOfYears = 999999999
-      return {numOfYears}
+      return { numOfYears }
     }
 
     // Case: No payment & no rate
     if (rateOfReturn <= 0 && contribution <= 0) {
       const numOfYears = 0
-      return {numOfYears}
+      return { numOfYears }
     }
 
     // Case: Default
@@ -38,6 +38,6 @@ export class GoalDurationCalculatorService {
       pmt: contribution * 12,
       isBeginning: false
     })
-    return {numOfYears}
+    return { numOfYears }
   }
 }

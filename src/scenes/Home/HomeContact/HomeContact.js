@@ -1,10 +1,11 @@
-import "./HomeContact.css"
-import UICard from "uicomponents/UICard/UICard";
-import UIDivider from "uicomponents/UIDivider/UIDivider";
-import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
-import UIIconText from "uicomponents/UIIconText/UIIconText";
-import { UIIconType } from "uicomponents/UIIcon/UIIcon";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import UICard from "@components/UICard/UICard";
+import UIDivider from "@components/UIDivider/UIDivider";
+import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
+import { UIIconType } from "@components/UIIcon/UIIcon";
+import UIIconText from "@components/UIIconText/UIIconText";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+
+import "./HomeContact.css";
 
 const HomeContact = () => {
   const getInstagramLink = (userId) => {

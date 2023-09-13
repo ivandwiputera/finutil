@@ -1,6 +1,6 @@
-import "uicomponents/UIInput/UIInput.css"
+import "@components/UIInput/UIInput.css"
 import { useState, useEffect } from "react"
-import { isNumber } from "utils/DataTypeUtils"
+import { isNumber } from "@utils/DataTypeUtils"
 
 const UINumberInput = (props) => {
   const id = props.id

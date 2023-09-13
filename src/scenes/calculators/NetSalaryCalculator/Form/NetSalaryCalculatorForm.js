@@ -1,10 +1,11 @@
-import "./NetSalaryCalculatorForm.css"
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
+import UICurrencyInput from "@components/UIInput/UICurrencyInput";
+import UIDropdownInput from "@components/UIInput/UIDropdownInput";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
-import { Validation } from "utils/Validation";
 import { PTKPType } from "../NetSalaryCalculatorService";
-import Localise, { LocaliseKey } from "localisation/Localise";
-import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput";
+
+import "./NetSalaryCalculatorForm.css";
 
 const NetSalaryCalculatorForm = (props) => {
   const monthlyBasicSalaryParam = props.monthlyBasicSalary

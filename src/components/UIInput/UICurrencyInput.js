@@ -1,7 +1,7 @@
-import "uicomponents/UIInput/UIInput.css"
-import { Formatter } from "utils/Formatter"
+import "@components/UIInput/UIInput.css"
+import { Formatter } from "@utils/Formatter"
 import { useEffect, useState } from "react"
-import { isValidNumber } from "utils/DataTypeUtils"
+import { isValidNumber } from "@utils/DataTypeUtils"
 
 const UICurrencyInput = (props) => {
   const id = props.id

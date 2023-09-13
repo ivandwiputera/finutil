@@ -1,9 +1,10 @@
-import "./GoalContributionCalculatorForm.css"
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
+import UICurrencyInput from "@components/UIInput/UICurrencyInput";
+import UINumberInput from "@components/UIInput/UINumberInput";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
-import { Validation } from "utils/Validation";
-import Localise, { LocaliseKey } from "localisation/Localise";
-import UINumberInput from "uicomponents/UIInput/UINumberInput";
+
+import "./GoalContributionCalculatorForm.css";
 
 const GoalContributionCalculatorForm = (props) => {
   const goalAmountParam = props.goalAmount

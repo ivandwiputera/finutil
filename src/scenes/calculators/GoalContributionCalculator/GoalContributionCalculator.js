@@ -1,10 +1,11 @@
-import "./GoalContributionCalculator.css"
+import { UIUtils } from "@utils/UIUtils";
 import { useEffect, useState } from "react";
-import { UIUtils } from "utils/UIUtils";
-import GoalContributionCalculatorIntroduction from "../GoalContributionCalculator/Introduction/GoalContributionCalculatorIntroduction";
-import GoalContributionCalculatorForm from "../GoalContributionCalculator/Form/GoalContributionCalculatorForm";
+
+import "./GoalContributionCalculator.css";
 import { GoalContributionCalculatorService } from "./GoalContributionCalculatorService";
-import GoalContributionCalculatorResult from "../GoalContributionCalculator/Result/GoalContributionCalculatorResult";
+import GoalContributionCalculatorForm from "./Form/GoalContributionCalculatorForm";
+import GoalContributionCalculatorIntroduction from "./Introduction/GoalContributionCalculatorIntroduction";
+import GoalContributionCalculatorResult from "./Result/GoalContributionCalculatorResult";
 
 const GoalContributionCalculator = () => {
 

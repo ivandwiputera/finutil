@@ -1,10 +1,11 @@
-import "./EmergencyFundsCalculatorForm.css"
-import { OccupationRiskType } from "../EmergencyFundsConstants";
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
-import UIDropdownInput from "uicomponents/UIInput/UIDropdownInput";
+import UICurrencyInput from "@components/UIInput/UICurrencyInput";
+import UIDropdownInput from "@components/UIInput/UIDropdownInput";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
-import { Validation } from "utils/Validation";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import { OccupationRiskType } from "../EmergencyFundsConstants";
+
+import "./EmergencyFundsCalculatorForm.css";
 
 const EmergencyFundsCalculatorForm = (props) => {
   const monthlyExpensesParam = props.monthlyExpenses

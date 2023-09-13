@@ -1,8 +1,8 @@
-import "./Home.css"
-import HomeContact from "./HomeContact/HomeContact";
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
 import HomeIntroduction from "./HomeIntroduction/HomeIntroduction";
 import HomeTools from "./HomeTools/HomeTools";
-import { useNavigate } from "react-router-dom";
+import HomeContact from "./HomeContact/HomeContact";
 
 const Home = () => {
   const navigate = useNavigate()

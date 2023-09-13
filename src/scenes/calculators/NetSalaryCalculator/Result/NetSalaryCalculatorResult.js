@@ -1,6 +1,7 @@
-import "./NetSalaryCalculatorResult.css"
-import { Formatter } from "utils/Formatter";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Formatter } from "@utils/Formatter";
+
+import "./NetSalaryCalculatorResult.css";
 
 const NetSalaryCalculatorResult = (props) => {
   const result = props.result

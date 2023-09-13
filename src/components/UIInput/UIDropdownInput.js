@@ -1,5 +1,5 @@
-import "uicomponents/UIInput/UIInput.css"
-import "uicomponents/UIInput/UIDropdownInput.css"
+import "@components/UIInput/UIInput.css"
+import "@components/UIInput/UIDropdownInput.css"
 
 import { useEffect, useState } from "react"
 

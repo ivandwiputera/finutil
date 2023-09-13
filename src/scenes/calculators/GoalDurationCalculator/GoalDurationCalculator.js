@@ -1,9 +1,10 @@
-import "./GoalDurationCalculator.css"
+import { UIUtils } from "@utils/UIUtils";
 import { useEffect, useState } from "react";
-import { UIUtils } from "utils/UIUtils";
-import GoalDurationCalculatorIntroduction from "../GoalDurationCalculator/Introduction/GoalDurationCalculatorIntroduction";
-import GoalDurationCalculatorForm from "../GoalDurationCalculator/Form/GoalDurationCalculatorForm";
+
+import "./GoalDurationCalculator.css";
 import { GoalDurationCalculatorService } from "./GoalDurationCalculatorService";
+import GoalDurationCalculatorForm from "../GoalDurationCalculator/Form/GoalDurationCalculatorForm";
+import GoalDurationCalculatorIntroduction from "../GoalDurationCalculator/Introduction/GoalDurationCalculatorIntroduction";
 import GoalDurationCalculatorResult from "../GoalDurationCalculator/Result/GoalDurationCalculatorResult";
 
 const GoalDurationCalculator = () => {

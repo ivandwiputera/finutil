@@ -1,9 +1,10 @@
-import "./HouseAffordabilityCalculatorForm.css"
-import UICurrencyInput from "uicomponents/UIInput/UICurrencyInput";
-import UINumberInput from "uicomponents/UIInput/UINumberInput";
+import UICurrencyInput from "@components/UIInput/UICurrencyInput";
+import UINumberInput from "@components/UIInput/UINumberInput";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
-import { Validation } from "utils/Validation";
-import Localise, { LocaliseKey } from "localisation/Localise";
+
+import "./HouseAffordabilityCalculatorForm.css";
 
 const HouseAffordabilityCalculatorForm = (props) => {
   const monthlyIncomeParam = props.monthlyIncome

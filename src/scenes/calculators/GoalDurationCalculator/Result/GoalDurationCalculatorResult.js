@@ -1,6 +1,7 @@
-import "./GoalDurationCalculatorResult.css"
-import { Formatter } from "utils/Formatter";
-import Localise, { LocaliseKey } from "localisation/Localise";
+import Localise, { LocaliseKey } from "@localisation/Localise";
+import { Formatter } from "@utils/Formatter";
+
+import "./GoalDurationCalculatorResult.css";
 
 const GoalDurationCalculatorResult = (props) => {
   const result = props.result

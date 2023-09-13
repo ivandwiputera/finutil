@@ -1,8 +1,9 @@
-import "./NetSalaryCalculator.css"
+import { UIUtils } from "@utils/UIUtils";
 import { useEffect, useState } from "react";
-import { UIUtils } from "utils/UIUtils";
-import NetSalaryCalculatorIntroduction from "./Introduction/NetSalaryCalculatorIntroduction";
+
+import "./NetSalaryCalculator.css";
 import NetSalaryCalculatorForm from "./Form/NetSalaryCalculatorForm";
+import NetSalaryCalculatorIntroduction from "./Introduction/NetSalaryCalculatorIntroduction";
 import { NetSalaryCalculatorService } from "./NetSalaryCalculatorService";
 import NetSalaryCalculatorResult from "./Result/NetSalaryCalculatorResult";
 

@@ -1,10 +1,11 @@
-import "./RetirementCalculator.css"
-import { UIUtils } from "utils/UIUtils";
-import { useState, useEffect } from "react";
-import RetirementCalculatorIntroduction from "./Introduction/RetirementCalculatorIntroduction";
-import RetirementCalculatorForm from "./Form/RetirementCalculatorForm";
-import RetirementCalculatorResult from "./Result/RetirementCalculatorResult";
+import { UIUtils } from "@utils/UIUtils";
+import { useEffect, useState } from "react";
+
+import "./RetirementCalculator.css";
 import { RetirementCalculatorService } from "./RetirementCalculatorService";
+import RetirementCalculatorForm from "./Form/RetirementCalculatorForm";
+import RetirementCalculatorIntroduction from "./Introduction/RetirementCalculatorIntroduction";
+import RetirementCalculatorResult from "./Result/RetirementCalculatorResult";
 
 const RetirementCalculator = () => {
 

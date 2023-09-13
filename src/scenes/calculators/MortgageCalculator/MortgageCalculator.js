@@ -1,9 +1,10 @@
-import "./MortgageCalculator.css"
+import { UIUtils } from "@utils/UIUtils";
 import { useEffect, useState } from "react";
-import { UIUtils } from "utils/UIUtils";
+
+import "./MortgageCalculator.css";
 import { MortgageCalculatorService } from "./MortgageCalculatorService";
-import MortgageCalculatorIntroduction from "./Introduction/MortgageCalculatorIntroduction";
 import MortgageCalculatorForm from "./Form/MortgageCalculatorForm";
+import MortgageCalculatorIntroduction from "./Introduction/MortgageCalculatorIntroduction";
 import MortgageCalculatorResult from "./Result/MortgageCalculatorResult";
 
 const MortgageCalculator = () => {

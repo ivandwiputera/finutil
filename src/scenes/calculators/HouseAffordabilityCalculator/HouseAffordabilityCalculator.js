@@ -1,9 +1,10 @@
-import "./HouseAffordabilityCalculator.css"
+import { UIUtils } from "@utils/UIUtils";
 import { useEffect, useState } from "react";
-import { UIUtils } from "utils/UIUtils";
+
+import "./HouseAffordabilityCalculator.css";
 import { HouseAffordabilityCalculatorService } from "./HouseAffordabilityCalculatorService";
-import HouseAffordabilityCalculatorIntroduction from "./Introduction/HouseAffordabilityCalculatorIntroduction";
 import HouseAffordabilityCalculatorForm from "./Form/HouseAffordabilityCalculatorForm";
+import HouseAffordabilityCalculatorIntroduction from "./Introduction/HouseAffordabilityCalculatorIntroduction";
 import HouseAffordabilityCalculatorResult from "./Result/HouseAffordabilityCalculatorResult";
 
 const HouseAffordabilityCalculator = () => {

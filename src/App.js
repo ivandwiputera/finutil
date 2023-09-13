@@ -1,15 +1,15 @@
-import Home from "scenes/Home/Home";
+import Home from "@scenes/Home/Home";
 import { HashRouter  as Router, Routes, Route } from "react-router-dom";
 import { ScreenType } from "ScreenType";
-import EmergencyFundsCalculator from "scenes/calculators/EmergencyFundsCalculator/EmergencyFundsCalculator";
-import Budget503020Calculator from "scenes/calculators/Budget503020Calculator/Budget503020Calculator";
-import InvestmentReturnCalculator from "scenes/calculators/InvestmentReturnCalculator/InvestmentReturnCalculator";
-import RetirementCalculator from "scenes/calculators/RetirementCalculator/RetirementCalculator";
-import GoalContributionCalculator from "scenes/calculators/GoalContributionCalculator/GoalContributionCalculator";
-import GoalDurationCalculator from "scenes/calculators/GoalDurationCalculator/GoalDurationCalculator";
-import MortgageCalculator from "scenes/calculators/MortgageCalculator/MortgageCalculator";
-import HouseAffordabilityCalculator from "scenes/calculators/HouseAffordabilityCalculator/HouseAffordabilityCalculator";
-import NetSalaryCalculator from "scenes/calculators/NetSalaryCalculator/NetSalaryCalculator";
+import EmergencyFundsCalculator from "@scenes/calculators/EmergencyFundsCalculator/EmergencyFundsCalculator";
+import Budget503020Calculator from "@scenes/calculators/Budget503020Calculator/Budget503020Calculator";
+import InvestmentReturnCalculator from "@scenes/calculators/InvestmentReturnCalculator/InvestmentReturnCalculator";
+import RetirementCalculator from "@scenes/calculators/RetirementCalculator/RetirementCalculator";
+import GoalContributionCalculator from "@scenes/calculators/GoalContributionCalculator/GoalContributionCalculator";
+import GoalDurationCalculator from "@scenes/calculators/GoalDurationCalculator/GoalDurationCalculator";
+import MortgageCalculator from "@scenes/calculators/MortgageCalculator/MortgageCalculator";
+import HouseAffordabilityCalculator from "@scenes/calculators/HouseAffordabilityCalculator/HouseAffordabilityCalculator";
+import NetSalaryCalculator from "@scenes/calculators/NetSalaryCalculator/NetSalaryCalculator";
 
 function App() {
   return (

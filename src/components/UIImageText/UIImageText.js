@@ -1,6 +1,6 @@
-import "uicomponents/UIImageText/UIImageText.css"
-import UIButton from "uicomponents/UIButton/UIButton";
-import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
+import "@components/UIImageText/UIImageText.css"
+import UIButton from "@components/UIButton/UIButton";
+import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
 
 const UIImageTextColumn = (props) => {
   const className = props.className

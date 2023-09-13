@@ -1,10 +1,12 @@
-import "./EmergencyFundsCalculator.css"
-import { useState, useEffect } from "react";
+import { UIUtils } from "@utils/UIUtils";
+import { useEffect, useState } from "react";
+
+import "./EmergencyFundsCalculator.css";
+import { EmergencyFundsCalculatorService } from "./EmergencyFundsCalculatorService";
 import EmergencyFundsCalculatorForm from "./Form/EmergencyFundsCalculatorForm";
 import EmergencyFundsCalculatorIntroduction from "./Introduction/EmergencyFundsCalculatorIntroduction";
-import { EmergencyFundsCalculatorService } from "./EmergencyFundsCalculatorService";
 import EmergencyFundsCalculatorResult from "./Result/EmergencyFundsCalculatorResult";
-import { UIUtils } from "utils/UIUtils";
+
 const EmergencyFundsCalculator = () => {
 
   const [result, setResult] = useState(undefined)

@@ -1,9 +1,10 @@
-import "./HomeTools.css"
-import UIHeaderText from "uicomponents/UIHeaderText/UIHeaderText";
-import UIIconTextCard from "uicomponents/UIIconTextCard/UIIconTextCard";
-import { UIIconType } from "uicomponents/UIIcon/UIIcon";
+import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
+import { UIIconType } from "@components/UIIcon/UIIcon";
+import UIIconTextCard from "@components/UIIconTextCard/UIIconTextCard";
+import Localise, { LocaliseKey } from "@localisation/Localise";
 import { ScreenType } from "ScreenType";
-import Localise, { LocaliseKey } from "localisation/Localise";
+
+import "./HomeTools.css";
 
 const HomeTools = (props) => {
   const onItemClick = props.onItemClick

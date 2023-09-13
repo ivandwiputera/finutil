@@ -1,4 +1,4 @@
-import { TVMCalculator } from "utils/TVMCalculator"
+import { TVMCalculator } from "@utils/TVMCalculator"
 
 export class GoalContributionCalculatorService {
   static calculateGoal = (input) => {
