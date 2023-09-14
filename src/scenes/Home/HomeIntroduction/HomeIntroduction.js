@@ -1,6 +1,6 @@
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import UIImageTextColumn from "@components/UIImageText/UIImageText";
-import Localise, { LocaliseKey } from "@localisation/Localise";
+import Localise, { LocaliseKey } from "@localisations/Localise";
 import image from "@images/img-profile.jpg";
 
 import "./HomeIntroduction.css";

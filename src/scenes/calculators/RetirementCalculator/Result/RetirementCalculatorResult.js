@@ -1,6 +1,6 @@
 import "./RetirementCalculatorResult.css"
 import { Formatter } from "@utils/Formatter";
-import Localise, { LocaliseKey } from "@localisation/Localise";
+import Localise, { LocaliseKey } from "@localisations/Localise";
 
 const RetirementCalculatorResult = (props) => {
   const result = props.result

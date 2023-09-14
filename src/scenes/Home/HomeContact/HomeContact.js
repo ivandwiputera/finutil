@@ -3,7 +3,7 @@ import UIDivider from "@components/UIDivider/UIDivider";
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import UIIconText from "@components/UIIconText/UIIconText";
-import Localise, { LocaliseKey } from "@localisation/Localise";
+import Localise, { LocaliseKey } from "@localisations/Localise";
 
 import "./HomeContact.css";
 

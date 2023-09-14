@@ -1,6 +1,6 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
 import UIDropdownInput from "@components/UIInput/UIDropdownInput";
-import Localise, { LocaliseKey } from "@localisation/Localise";
+import Localise, { LocaliseKey } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 import { OccupationRiskType } from "../EmergencyFundsConstants";

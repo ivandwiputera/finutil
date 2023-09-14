@@ -1,4 +1,4 @@
-import Localise, { LocaliseKey } from "@localisation/Localise";
+import Localise, { LocaliseKey } from "@localisations/Localise";
 import { Formatter } from "@utils/Formatter";
 
 import "./Budget503020CalculatorResult.css";

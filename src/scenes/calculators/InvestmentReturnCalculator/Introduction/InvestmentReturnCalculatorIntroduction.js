@@ -1,5 +1,5 @@
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
-import Localise, { LocaliseKey } from "@localisation/Localise";
+import Localise, { LocaliseKey } from "@localisations/Localise";
 
 import "./InvestmentReturnCalculatorIntroduction.css";
 

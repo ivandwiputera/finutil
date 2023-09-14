@@ -12,7 +12,7 @@ module.exports = {
           "@scenes": "./scenes",
           "@images": "./assets/images",
           "@utils": "./utils",
-          "@localisation": "./localisation"
+          "@localisations": "./localisations"
         }
       }
     }
