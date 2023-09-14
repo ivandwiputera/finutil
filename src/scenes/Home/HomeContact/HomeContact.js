@@ -4,17 +4,11 @@ import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import UIIconText from "@components/UIIconText/UIIconText";
 import Localise, { LocaliseKey } from "@localisations/Localise";
+import { LinkUtils } from "utils/LinkUtils";
 
 import "./HomeContact.css";
 
 const HomeContact = () => {
-  const getInstagramLink = (userId) => {
-    return `https://www.instagram.com/${userId}`
-  }
-
-  const getMailToLink = (email) => {
-    return `mailto:${email}`
-  }
   return (
     <div id="home-contact" className="home-contact-container">
       <UIHeaderText
@@ -28,7 +22,7 @@ const HomeContact = () => {
             icon={UIIconType.envelope}
             label={Localise(LocaliseKey.homeContactEmailLabel)}
             title={Localise(LocaliseKey.homeContactEmailValue)}
-            link={getMailToLink(Localise(LocaliseKey.homeContactEmailValue))} />
+            link={LinkUtils.getMailToLink(Localise(LocaliseKey.homeContactEmailValue))} />
         </div>
         <UIDivider />
         <div className="home-contact-card-item">
@@ -36,7 +30,7 @@ const HomeContact = () => {
             icon={UIIconType.atSymbol}
             label={Localise(LocaliseKey.homeContactInstagramLabel)}
             title={Localise(LocaliseKey.homeContactInstagramValue)}
-            link={getInstagramLink(Localise(LocaliseKey.homeContactInstagramValue))} />
+            link={LinkUtils.getInstagramLink(Localise(LocaliseKey.homeContactInstagramValue))} />
         </div>
       </UICard>
     </div>
