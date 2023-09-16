@@ -1,12 +1,14 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
 import UINumberInput from "@components/UIInput/UINumberInput";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 
 import "./HouseAffordabilityCalculatorForm.css";
 
 const HouseAffordabilityCalculatorForm = (props) => {
+  const { localise } = useLocalise()
+  
   const monthlyIncomeParam = props.monthlyIncome
   const savedAmountParam = props.savedAmount
   const mortgageTenorParam = props.mortgageTenor
@@ -43,7 +45,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
 
   const validateMonthlyIncome = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.houseAffordabilityCalculatorFormErrorMonthlyIncomeEmpty)
+      return localise(Copy.houseAffordabilityCalculatorFormErrorMonthlyIncomeEmpty)
     } else {
       return null
     }
@@ -51,7 +53,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
 
   const validateMortgageTenor = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.houseAffordabilityCalculatorFormErrorMortgageTenorEmpty)
+      return localise(Copy.houseAffordabilityCalculatorFormErrorMortgageTenorEmpty)
     } else {
       return null
     }
@@ -59,7 +61,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
 
   const validateMortgageInterestRate = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.houseAffordabilityCalculatorFormErrorMortgageInterestEmpty)
+      return localise(Copy.houseAffordabilityCalculatorFormErrorMortgageInterestEmpty)
     } else {
       return null
     }
@@ -67,7 +69,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
 
   const validateSavedAmount = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.houseAffordabilityCalculatorFormErrorSavedAmountEmpty)
+      return localise(Copy.houseAffordabilityCalculatorFormErrorSavedAmountEmpty)
     } else {
       return null
     }
@@ -89,8 +91,8 @@ const HouseAffordabilityCalculatorForm = (props) => {
       <UICurrencyInput
         id="monthlyIncome"
         defaultValue={monthlyIncome}
-        label={Localise(LocaliseKey.houseAffordabilityCalculatorFormMonthlyIncomeLabel)}
-        note={Localise(LocaliseKey.houseAffordabilityCalculatorFormMonthlyIncomeHelperText)}
+        label={localise(Copy.houseAffordabilityCalculatorFormMonthlyIncomeLabel)}
+        note={localise(Copy.houseAffordabilityCalculatorFormMonthlyIncomeHelperText)}
         error={validateMonthlyIncome(monthlyIncome)}
         onChange={(e) => { onMonthlyIncomeChanged(e) }}
       />
@@ -98,8 +100,8 @@ const HouseAffordabilityCalculatorForm = (props) => {
       <UINumberInput
         id="mortgageTenor"
         defaultValue={mortgageTenor}
-        label={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageTenorLabel)}
-        note={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageTenorHelperText)}
+        label={localise(Copy.houseAffordabilityCalculatorFormMortgageTenorLabel)}
+        note={localise(Copy.houseAffordabilityCalculatorFormMortgageTenorHelperText)}
         error={validateMortgageTenor(mortgageTenor)}
         onChange={(e) => { onMortgageTenorChanged(e) }}
       />
@@ -107,8 +109,8 @@ const HouseAffordabilityCalculatorForm = (props) => {
       <UINumberInput
         id="mortgageInterestRate"
         defaultValue={mortgageInterestRate}
-        label={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageInterestLabel)}
-        note={Localise(LocaliseKey.houseAffordabilityCalculatorFormMortgageInterestHelperText)}
+        label={localise(Copy.houseAffordabilityCalculatorFormMortgageInterestLabel)}
+        note={localise(Copy.houseAffordabilityCalculatorFormMortgageInterestHelperText)}
         error={validateMortgageInterestRate(mortgageInterestRate)}
         onChange={(e) => { onMortgageInterestRateChanged(e) }}
       />
@@ -116,7 +118,7 @@ const HouseAffordabilityCalculatorForm = (props) => {
       <UICurrencyInput
         id="savedAmount"
         defaultValue={savedAmount}
-        label={Localise(LocaliseKey.houseAffordabilityCalculatorFormSavedAmountLabel)}
+        label={localise(Copy.houseAffordabilityCalculatorFormSavedAmountLabel)}
         error={validateSavedAmount(savedAmount)}
         onChange={(e) => { onSavedAmountChanged(e) }}
       />

@@ -1,14 +1,16 @@
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 
 import "./GoalContributionCalculatorIntroduction.css";
 
 const GoalContributionCalculatorIntroduction = () => {
+  const { localise } = useLocalise()
+  
   return ( 
     <div className="goal-contribution-calculator-introduction-container">
       <UIHeaderText
-        title={Localise(LocaliseKey.goalContributionCalculatorTitle)}
-        description={Localise(LocaliseKey.goalContributionCalculatorDescription)}
+        title={localise(Copy.goalContributionCalculatorTitle)}
+        description={localise(Copy.goalContributionCalculatorDescription)}
       /> 
     </div>
   );

@@ -1,14 +1,16 @@
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 
 import "./Budget503020CalculatorIntroduction.css";
 
 const Budget503020CalculatorIntroduction = () => {
+  const { localise } = useLocalise()
+
   return ( 
     <div className="budget-503020-calculator-introduction-container">
       <UIHeaderText
-        title={Localise(LocaliseKey.budget503020CalculatorTitle)}
-        description={Localise(LocaliseKey.budget503020CalculatorDescription)}
+        title={localise(Copy.budget503020CalculatorTitle)}
+        description={localise(Copy.budget503020CalculatorDescription)}
       />
     </div>
   );

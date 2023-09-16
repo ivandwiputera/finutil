@@ -1,11 +1,13 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 
 import "./Budget503020CalculatorForm.css";
 
 const Budget503020CalculatorForm = (props) => {
+  const { localise } = useLocalise()
+  
   const montlyIncomeParam = props.monthlyIncome
   const onChange = props.onChange
 
@@ -21,7 +23,7 @@ const Budget503020CalculatorForm = (props) => {
 
   const validateMonthlyIncome = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.budget503020CalculatorFormErrorMonthlyIncomeEmpty)
+      return localise(Copy.budget503020CalculatorFormErrorMonthlyIncomeEmpty)
     } else {
       return null
     }
@@ -40,8 +42,8 @@ const Budget503020CalculatorForm = (props) => {
       <UICurrencyInput
         id="monthlyIncome"
         defaultValue={monthlyIncome}
-        label={Localise(LocaliseKey.budget503020CalculatorFormMonthlyIncomeLabel)}
-        note={Localise(LocaliseKey.budget503020CalculatorFormMonthlyIncomeHelperText)}
+        label={localise(Copy.budget503020CalculatorFormMonthlyIncomeLabel)}
+        note={localise(Copy.budget503020CalculatorFormMonthlyIncomeHelperText)}
         error={validateMonthlyIncome(monthlyIncome)}
         onChange={(e) => { onMonthlyIncomeChanged(e) }}
       />

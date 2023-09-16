@@ -1,12 +1,14 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
 import UINumberInput from "@components/UIInput/UINumberInput";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 
 import "./GoalContributionCalculatorForm.css";
 
 const GoalContributionCalculatorForm = (props) => {
+  const { localise } = useLocalise()
+  
   const goalAmountParam = props.goalAmount
   const durationParam = props.duration
   const rateOfReturnParam = props.rateOfReturn
@@ -50,7 +52,7 @@ const GoalContributionCalculatorForm = (props) => {
 
   const validateGoalAmount = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.goalContributionCalculatorFormErrorGoalAmountEmpty)
+      return localise(Copy.goalContributionCalculatorFormErrorGoalAmountEmpty)
     } else {
       return null
     }
@@ -58,7 +60,7 @@ const GoalContributionCalculatorForm = (props) => {
 
   const validateDuration = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.goalContributionCalculatorFormErrorDurationEmpty)
+      return localise(Copy.goalContributionCalculatorFormErrorDurationEmpty)
     } else {
       return null
     }
@@ -66,7 +68,7 @@ const GoalContributionCalculatorForm = (props) => {
 
   const validateRateOfReturn = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.goalContributionCalculatorFormErrorRateOfReturnEmpty)
+      return localise(Copy.goalContributionCalculatorFormErrorRateOfReturnEmpty)
     } else {
       return null
     }
@@ -74,7 +76,7 @@ const GoalContributionCalculatorForm = (props) => {
 
   const validateInflation = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.goalContributionCalculatorFormErrorInflationEmpty)
+      return localise(Copy.goalContributionCalculatorFormErrorInflationEmpty)
     } else {
       return null
     }
@@ -82,7 +84,7 @@ const GoalContributionCalculatorForm = (props) => {
 
   const validateSavedAmount = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.goalContributionCalculatorFormErrorSavedAmountEmpty)
+      return localise(Copy.goalContributionCalculatorFormErrorSavedAmountEmpty)
     } else {
       return null
     }
@@ -105,8 +107,8 @@ const GoalContributionCalculatorForm = (props) => {
       <UICurrencyInput
         id="goalAmount"
         defaultValue={goalAmount}
-        label={Localise(LocaliseKey.goalContributionCalculatorFormGoalAmountLabel)}
-        note={Localise(LocaliseKey.goalContributionCalculatorFormGoalAmountHelperText)}
+        label={localise(Copy.goalContributionCalculatorFormGoalAmountLabel)}
+        note={localise(Copy.goalContributionCalculatorFormGoalAmountHelperText)}
         error={validateGoalAmount(goalAmount)}
         onChange={(e) => { onGoalAmountChanged(e) }}
       />
@@ -114,8 +116,8 @@ const GoalContributionCalculatorForm = (props) => {
       <UINumberInput
         id="duration"
         defaultValue={duration}
-        label={Localise(LocaliseKey.goalContributionCalculatorFormDurationLabel)}
-        note={Localise(LocaliseKey.goalContributionCalculatorFormDurationHelperText)}
+        label={localise(Copy.goalContributionCalculatorFormDurationLabel)}
+        note={localise(Copy.goalContributionCalculatorFormDurationHelperText)}
         error={validateDuration(duration)}
         onChange={(e) => { onDurationChanged(e) }}
       />
@@ -123,8 +125,8 @@ const GoalContributionCalculatorForm = (props) => {
       <UINumberInput
         id="rateOfReturn"
         defaultValue={rateOfReturn}
-        label={Localise(LocaliseKey.goalContributionCalculatorFormRateOfReturnLabel)}
-        note={Localise(LocaliseKey.goalContributionCalculatorFormRateOfReturnHelperText)}
+        label={localise(Copy.goalContributionCalculatorFormRateOfReturnLabel)}
+        note={localise(Copy.goalContributionCalculatorFormRateOfReturnHelperText)}
         error={validateRateOfReturn(rateOfReturn)}
         onChange={(e) => { onRateOfReturnChanged(e) }}
       />
@@ -132,8 +134,8 @@ const GoalContributionCalculatorForm = (props) => {
       <UINumberInput
         id="inflation"
         defaultValue={inflation}
-        label={Localise(LocaliseKey.goalContributionCalculatorFormInflationLabel)}
-        note={Localise(LocaliseKey.goalContributionCalculatorFormInflationHelperText)}
+        label={localise(Copy.goalContributionCalculatorFormInflationLabel)}
+        note={localise(Copy.goalContributionCalculatorFormInflationHelperText)}
         error={validateInflation(inflation)}
         onChange={(e) => { onInflationChanged(e) }}
       />
@@ -141,7 +143,7 @@ const GoalContributionCalculatorForm = (props) => {
       <UICurrencyInput
         id="savedAmount"
         defaultValue={savedAmount}
-        label={Localise(LocaliseKey.goalContributionCalculatorFormSavedAmountLabel)}
+        label={localise(Copy.goalContributionCalculatorFormSavedAmountLabel)}
         error={validateSavedAmount(savedAmount)}
         onChange={(e) => { onSavedAmountChanged(e) }}
       />

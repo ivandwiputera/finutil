@@ -1,12 +1,14 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
 import UINumberInput from "@components/UIInput/UINumberInput";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 
 import "./InvestmentReturnCalculatorForm.css";
 
 const InvestmentReturnCalculatorForm = (props) => {
+  const { localise } = useLocalise()
+  
   const initialAmountParam = props.initialAmount
   const durationParam = props.duration
   const rateOfReturnParam = props.rateOfReturn
@@ -43,7 +45,7 @@ const InvestmentReturnCalculatorForm = (props) => {
 
   const validateInitialAmount = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.investmentReturnCalculatorFormErrorInitialAmountEmpty)
+      return localise(Copy.investmentReturnCalculatorFormErrorInitialAmountEmpty)
     } else {
       return null
     }
@@ -51,7 +53,7 @@ const InvestmentReturnCalculatorForm = (props) => {
 
   const validateDuration = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.investmentReturnCalculatorFormErrorDurationEmpty)
+      return localise(Copy.investmentReturnCalculatorFormErrorDurationEmpty)
     } else {
       return null
     }
@@ -59,7 +61,7 @@ const InvestmentReturnCalculatorForm = (props) => {
 
   const validateRateOfReturn = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.investmentReturnCalculatorFormErrorRateOfReturnEmpty)
+      return localise(Copy.investmentReturnCalculatorFormErrorRateOfReturnEmpty)
     } else {
       return null
     }
@@ -67,7 +69,7 @@ const InvestmentReturnCalculatorForm = (props) => {
 
   const validateContribution = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.investmentReturnCalculatorFormErrorContributionEmpty)
+      return localise(Copy.investmentReturnCalculatorFormErrorContributionEmpty)
     } else {
       return null
     }
@@ -89,8 +91,8 @@ const InvestmentReturnCalculatorForm = (props) => {
       <UICurrencyInput
         id="initialAmount"
         defaultValue={initialAmount}
-        label={Localise(LocaliseKey.investmentReturnCalculatorFormInitialAmountLabel)}
-        note={Localise(LocaliseKey.investmentReturnCalculatorFormInitialAmountHelperText)}
+        label={localise(Copy.investmentReturnCalculatorFormInitialAmountLabel)}
+        note={localise(Copy.investmentReturnCalculatorFormInitialAmountHelperText)}
         error={validateInitialAmount(initialAmount)}
         onChange={(e) => { onInitialAmountChanged(e) }}
       />
@@ -98,8 +100,8 @@ const InvestmentReturnCalculatorForm = (props) => {
       <UINumberInput
         id="duration"
         defaultValue={duration}
-        label={Localise(LocaliseKey.investmentReturnCalculatorFormDurationLabel)}
-        note={Localise(LocaliseKey.investmentReturnCalculatorFormDurationHelperText)}
+        label={localise(Copy.investmentReturnCalculatorFormDurationLabel)}
+        note={localise(Copy.investmentReturnCalculatorFormDurationHelperText)}
         error={validateDuration(duration)}
         onChange={(e) => { onDurationChanged(e) }}
       />
@@ -107,8 +109,8 @@ const InvestmentReturnCalculatorForm = (props) => {
       <UINumberInput
         id="rateOfReturn"
         defaultValue={rateOfReturn}
-        label={Localise(LocaliseKey.investmentReturnCalculatorFormRateOfReturnLabel)}
-        note={Localise(LocaliseKey.investmentReturnCalculatorFormRateOfReturnHelperText)}
+        label={localise(Copy.investmentReturnCalculatorFormRateOfReturnLabel)}
+        note={localise(Copy.investmentReturnCalculatorFormRateOfReturnHelperText)}
         error={validateRateOfReturn(rateOfReturn)}
         onChange={(e) => { onRateOfReturnChanged(e) }}
       />
@@ -116,8 +118,8 @@ const InvestmentReturnCalculatorForm = (props) => {
       <UICurrencyInput
         id="contribution"
         defaultValue={contribution}
-        label={Localise(LocaliseKey.investmentReturnCalculatorFormContributionLabel)}
-        note={Localise(LocaliseKey.investmentReturnCalculatorFormContributionHelperText)}
+        label={localise(Copy.investmentReturnCalculatorFormContributionLabel)}
+        note={localise(Copy.investmentReturnCalculatorFormContributionHelperText)}
         error={validateContribution(contribution)}
         onChange={(e) => { onContributionChanged(e) }}
       />

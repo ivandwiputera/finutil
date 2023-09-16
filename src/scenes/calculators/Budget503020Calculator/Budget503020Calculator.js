@@ -8,7 +8,6 @@ import Budget503020CalculatorIntroduction from "./Introduction/Budget503020Calcu
 import Budget503020CalculatorResult from "./Result/Budget503020CalculatorResult";
 
 const Budget503020Calculator = () => {
-
   const [result, setResult] = useState(undefined)
 
   const onInputChange = (input) => {

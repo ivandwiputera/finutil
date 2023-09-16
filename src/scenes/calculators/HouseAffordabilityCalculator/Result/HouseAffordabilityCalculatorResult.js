@@ -1,9 +1,11 @@
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Formatter } from "@utils/Formatter";
 
 import "./HouseAffordabilityCalculatorResult.css";
 
 const HouseAffordabilityCalculatorResult = (props) => {
+  const { localise } = useLocalise()
+  
   const result = props.result
 
   const housePrice = result?.housePrice
@@ -16,12 +18,12 @@ const HouseAffordabilityCalculatorResult = (props) => {
 
   return (
     <div className="house-affordability-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{Localise(LocaliseKey.houseAffordabilityResultTitle)}</div>
+      <div className="font-size-body font-weight-medium">{localise(Copy.houseAffordabilityResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{housePriceDisplayText}</h1>
-      <p className="mt-100">{Localise(LocaliseKey.houseAffordabilityResultDescription)}</p>
-      <div className="mt-150 font-size-small">{Localise(LocaliseKey.houseAffordabilityResultTotalMortgageAmountLabel)}</div>
+      <p className="mt-100">{localise(Copy.houseAffordabilityResultDescription)}</p>
+      <div className="mt-150 font-size-small">{localise(Copy.houseAffordabilityResultTotalMortgageAmountLabel)}</div>
       <div className="color-text font-weight-semibold">{totalMortgageAmountDisplayText}</div>
-      <div className="mt-150 font-size-small">{Localise(LocaliseKey.houseAffordabilityResultMortgageMonthlyPaymentLabel)}</div>
+      <div className="mt-150 font-size-small">{localise(Copy.houseAffordabilityResultMortgageMonthlyPaymentLabel)}</div>
       <div className="color-text font-weight-semibold">{monthlyPaymentDisplayText}</div>
     </div>
   );

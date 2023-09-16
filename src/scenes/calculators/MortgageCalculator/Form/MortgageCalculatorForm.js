@@ -1,12 +1,14 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
 import UINumberInput from "@components/UIInput/UINumberInput";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 
 import "./MortgageCalculatorForm.css";
 
 const MortgageCalculatorForm = (props) => {
+  const { localise } = useLocalise()
+  
   const housePriceParam = props.housePrice
   const downPaymentParam = props.downPayment
   const mortgageTenorParam = props.mortgageTenor
@@ -43,7 +45,7 @@ const MortgageCalculatorForm = (props) => {
 
   const validateHousePrice = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.mortgageCalculatorFormErrorHousePriceEmpty)
+      return localise(Copy.mortgageCalculatorFormErrorHousePriceEmpty)
     } else {
       return null
     }
@@ -51,7 +53,7 @@ const MortgageCalculatorForm = (props) => {
 
   const validateDownPayment = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.mortgageCalculatorFormErrorDownPaymentEmpty)
+      return localise(Copy.mortgageCalculatorFormErrorDownPaymentEmpty)
     } else {
       return null
     }
@@ -59,7 +61,7 @@ const MortgageCalculatorForm = (props) => {
 
   const validateMortgageTenor = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.mortgageCalculatorFormErrorMortgageTenorEmpty)
+      return localise(Copy.mortgageCalculatorFormErrorMortgageTenorEmpty)
     } else {
       return null
     }
@@ -67,7 +69,7 @@ const MortgageCalculatorForm = (props) => {
 
   const validateMortgageInterestRate = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.mortgageCalculatorFormErrorMortgageInterestEmpty)
+      return localise(Copy.mortgageCalculatorFormErrorMortgageInterestEmpty)
     } else {
       return null
     }
@@ -89,8 +91,8 @@ const MortgageCalculatorForm = (props) => {
       <UICurrencyInput
         id="housePrice"
         defaultValue={housePrice}
-        label={Localise(LocaliseKey.mortgageCalculatorFormHousePriceLabel)}
-        note={Localise(LocaliseKey.mortgageCalculatorFormHousePriceHelperText)}
+        label={localise(Copy.mortgageCalculatorFormHousePriceLabel)}
+        note={localise(Copy.mortgageCalculatorFormHousePriceHelperText)}
         error={validateHousePrice(housePrice)}
         onChange={(e) => { onHousePriceChanged(e) }}
       />
@@ -98,8 +100,8 @@ const MortgageCalculatorForm = (props) => {
       <UINumberInput
         id="downPayment"
         defaultValue={downPayment}
-        label={Localise(LocaliseKey.mortgageCalculatorFormDownPaymentLabel)}
-        note={Localise(LocaliseKey.mortgageCalculatorFormDownPaymentHelperText)}
+        label={localise(Copy.mortgageCalculatorFormDownPaymentLabel)}
+        note={localise(Copy.mortgageCalculatorFormDownPaymentHelperText)}
         error={validateDownPayment(downPayment)}
         onChange={(e) => { onDownPaymentChanged(e) }}
       />
@@ -107,8 +109,8 @@ const MortgageCalculatorForm = (props) => {
       <UINumberInput
         id="mortgageTenor"
         defaultValue={mortgageTenor}
-        label={Localise(LocaliseKey.mortgageCalculatorFormMortgageTenorLabel)}
-        note={Localise(LocaliseKey.mortgageCalculatorFormMortgageTenorHelperText)}
+        label={localise(Copy.mortgageCalculatorFormMortgageTenorLabel)}
+        note={localise(Copy.mortgageCalculatorFormMortgageTenorHelperText)}
         error={validateMortgageTenor(mortgageTenor)}
         onChange={(e) => { onMortgageTenorChanged(e) }}
       />
@@ -116,8 +118,8 @@ const MortgageCalculatorForm = (props) => {
       <UINumberInput
         id="mortgageInterestRate"
         defaultValue={mortgageInterestRate}
-        label={Localise(LocaliseKey.mortgageCalculatorFormMortgageInterestLabel)}
-        note={Localise(LocaliseKey.mortgageCalculatorFormMortgageInterestHelperText)}
+        label={localise(Copy.mortgageCalculatorFormMortgageInterestLabel)}
+        note={localise(Copy.mortgageCalculatorFormMortgageInterestHelperText)}
         error={validateMortgageInterestRate(mortgageInterestRate)}
         onChange={(e) => { onMortgageInterestRateChanged(e) }}
       />

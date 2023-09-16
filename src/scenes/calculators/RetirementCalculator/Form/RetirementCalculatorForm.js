@@ -1,11 +1,13 @@
 import UICurrencyInput from "@components/UIInput/UICurrencyInput";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Validation } from "@utils/Validation";
 import { useCallback, useEffect, useState } from "react";
 
 import "./RetirementCalculatorForm.css";
 
 const RetirementCalculatorForm = (props) => {
+  const { localise } = useLocalise()
+  
   const monthlyExpensesParam = props.monthlyExpenses
   const onChange = props.onChange
 
@@ -21,7 +23,7 @@ const RetirementCalculatorForm = (props) => {
 
   const validateMonthlyExpenses = (value) => {
     if (!Validation.validateNotEmpty(value)) {
-      return Localise(LocaliseKey.retirementCalculatorFormErrorMonthlyExpensesEmpty)
+      return localise(Copy.retirementCalculatorFormErrorMonthlyExpensesEmpty)
     } else {
       return null
     }
@@ -40,8 +42,8 @@ const RetirementCalculatorForm = (props) => {
       <UICurrencyInput
         id="monthlyExpenses"
         defaultValue={monthlyExpenses}
-        label={Localise(LocaliseKey.retirementCalculatorFormMonthlyExpensesLabel)}
-        note={Localise(LocaliseKey.retirementCalculatorFormMonthlyExpensesHelperText)}
+        label={localise(Copy.retirementCalculatorFormMonthlyExpensesLabel)}
+        note={localise(Copy.retirementCalculatorFormMonthlyExpensesHelperText)}
         error={validateMonthlyExpenses(monthlyExpenses)}
         onChange={(e) => { onMonthlyExpensesChanged(e) }}
       />

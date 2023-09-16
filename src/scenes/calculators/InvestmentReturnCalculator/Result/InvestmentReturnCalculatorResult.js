@@ -1,9 +1,11 @@
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Formatter } from "@utils/Formatter";
 
 import "./InvestmentReturnCalculatorResult.css";
 
 const InvestmentReturnCalculatorResult = (props) => {
+  const { localise } = useLocalise()
+  
   const result = props.result
   const totalInvestmentAmount = result?.totalInvestmentAmount
   const totalPrincipalAmount = result?.totalPrincipalAmount
@@ -15,12 +17,12 @@ const InvestmentReturnCalculatorResult = (props) => {
 
   return (
     <div className="investment-return-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{Localise(LocaliseKey.investmentReturnCalculatorResultTitle)}</div>
+      <div className="font-size-body font-weight-medium">{localise(Copy.investmentReturnCalculatorResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{totalInvestmentAmountDisplayText}</h1>
-      <p className="mt-100">{Localise(LocaliseKey.investmentReturnCalculatorResultDescription)}</p>
-      <div className="mt-150 font-size-small">{Localise(LocaliseKey.investmentReturnCalculatorResultTotalPrincipalLabel)}</div>
+      <p className="mt-100">{localise(Copy.investmentReturnCalculatorResultDescription)}</p>
+      <div className="mt-150 font-size-small">{localise(Copy.investmentReturnCalculatorResultTotalPrincipalLabel)}</div>
       <div className="color-text font-weight-semibold">{totalPrincipalAmountDisplayText}</div>
-      <div className="mt-150 font-size-small">{Localise(LocaliseKey.investmentReturnCalculatorResultTotalInterestGainLabel)}</div>
+      <div className="mt-150 font-size-small">{localise(Copy.investmentReturnCalculatorResultTotalInterestGainLabel)}</div>
       <div className="color-text font-weight-semibold">{totalInterestGainDisplayText}</div>
     </div>
   );

@@ -1,9 +1,11 @@
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { Formatter } from "@utils/Formatter";
 
 import "./Budget503020CalculatorResult.css";
 
 const Budget503020CalculatorResult = (props) => {
+  const { localise } = useLocalise()
+
   const result = props.result
 
   const needs = Formatter.getCurrencyText(result?.needs)
@@ -12,15 +14,15 @@ const Budget503020CalculatorResult = (props) => {
 
   return ( 
     <div className="budget-503020-calculator-result-container">
-      <div className="font-weight-semibold">{Localise(LocaliseKey.budget503020CalculatorResultNeedsLabel)}</div>
+      <div className="font-weight-semibold">{localise(Copy.budget503020CalculatorResultNeedsLabel)}</div>
       <h2 className="color-text-colored">{needs}</h2>
-      <div className="mt-50 color-text-light font-size-small">{Localise(LocaliseKey.budget503020CalculatorResultNeedsDescription)}</div>
-      <div className="mt-150 font-weight-semibold">{Localise(LocaliseKey.budget503020CalculatorResultWantsLabel)}</div>
+      <div className="mt-50 color-text-light font-size-small">{localise(Copy.budget503020CalculatorResultNeedsDescription)}</div>
+      <div className="mt-150 font-weight-semibold">{localise(Copy.budget503020CalculatorResultWantsLabel)}</div>
       <h2 className="color-text-colored">{wants}</h2>
-      <div className="mt-50 color-text-light font-size-small">{Localise(LocaliseKey.budget503020CalculatorResultWantsDescription)}</div>
-      <div className="mt-150 font-weight-semibold">{Localise(LocaliseKey.budget503020CalculatorResultSavingsLabel)}</div>
+      <div className="mt-50 color-text-light font-size-small">{localise(Copy.budget503020CalculatorResultWantsDescription)}</div>
+      <div className="mt-150 font-weight-semibold">{localise(Copy.budget503020CalculatorResultSavingsLabel)}</div>
       <h2 className="color-text-colored">{savings}</h2>
-      <div className="mt-50 color-text-light font-size-small">{Localise(LocaliseKey.budget503020CalculatorResultSavingsDescription)}</div>
+      <div className="mt-50 color-text-light font-size-small">{localise(Copy.budget503020CalculatorResultSavingsDescription)}</div>
     </div>
   );
 }

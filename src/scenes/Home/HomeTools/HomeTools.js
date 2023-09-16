@@ -1,82 +1,84 @@
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import UIIconTextCard from "@components/UIIconTextCard/UIIconTextCard";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 import { ScreenType } from "ScreenType";
 
 import "./HomeTools.css";
 
 const HomeTools = (props) => {
+  const { localise } = useLocalise()
+  
   const onItemClick = props.onItemClick
 
   return (
     <div className="home-tools-container">
       <UIHeaderText
         className="text-align-center"
-        title={Localise(LocaliseKey.homeToolsTitle)}
-        description={Localise(LocaliseKey.homeToolsDescription)}
+        title={localise(Copy.homeToolsTitle)}
+        description={localise(Copy.homeToolsDescription)}
       />
       <div className="home-tools-grid">
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.chartPie}
-          text={Localise(LocaliseKey.homeToolsBudgeting503020Calculator)}
+          text={localise(Copy.homeToolsBudgeting503020Calculator)}
           onClick={() => { onItemClick(ScreenType.budget503020Calculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.exclamationTriangle}
-          text={Localise(LocaliseKey.homeToolsEmergencyFundsCalculator)}
+          text={localise(Copy.homeToolsEmergencyFundsCalculator)}
           onClick={() => { onItemClick(ScreenType.emergencyFundsCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.rocketLaunch}
-          text={Localise(LocaliseKey.homeToolsInvestmentReturnCalculator)}
+          text={localise(Copy.homeToolsInvestmentReturnCalculator)}
           onClick={() => { onItemClick(ScreenType.investmentReturnCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.faceSmile}
-          text={Localise(LocaliseKey.homeToolsRetirementCalculator)}
+          text={localise(Copy.homeToolsRetirementCalculator)}
           onClick={() => { onItemClick(ScreenType.retirementCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.flag}
-          text={Localise(LocaliseKey.homeToolsGoalContributionCalculator)}
+          text={localise(Copy.homeToolsGoalContributionCalculator)}
           onClick={() => { onItemClick(ScreenType.goalContributionCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
-          icon={UIIconType.flag}
-          text={Localise(LocaliseKey.homeToolsGoalDurationCalculator)}
+          icon={UIIconType.clock}
+          text={localise(Copy.homeToolsGoalDurationCalculator)}
           onClick={() => { onItemClick(ScreenType.goalDurationCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.bank}
-          text={Localise(LocaliseKey.homeToolsMortgageCalculator)}
+          text={localise(Copy.homeToolsMortgageCalculator)}
           onClick={() => { onItemClick(ScreenType.mortgageCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.home}
-          text={Localise(LocaliseKey.homeToolsHouseAffordabilityCalculator)}
+          text={localise(Copy.homeToolsHouseAffordabilityCalculator)}
           onClick={() => { onItemClick(ScreenType.houseAffordabilityCalculator) }}
         />
 
         <UIIconTextCard
           className="home-tools-grid-item"
           icon={UIIconType.banknotes}
-          text={Localise(LocaliseKey.homeToolsNetSalaryCalculator)}
+          text={localise(Copy.homeToolsNetSalaryCalculator)}
           onClick={() => { onItemClick(ScreenType.netSalaryCalculator) }}
         />
 

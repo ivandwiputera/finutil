@@ -1,14 +1,16 @@
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
-import Localise, { LocaliseKey } from "@localisations/Localise";
+import { useLocalise, Copy } from "@localisations/Localise";
 
 import "./HouseAffordabilityCalculatorIntroduction.css";
 
 const HouseAffordabilityCalculatorIntroduction = () => {
+  const { localise } = useLocalise()
+  
   return (
     <div className="house-affordability-calculator-introduction-container">
       <UIHeaderText
-        title={Localise(LocaliseKey.houseAffordabilityCalculatorTitle)}
-        description={Localise(LocaliseKey.houseAffordabilityCalculatorDescription)}
+        title={localise(Copy.houseAffordabilityCalculatorTitle)}
+        description={localise(Copy.houseAffordabilityCalculatorDescription)}
       />
     </div>
   );

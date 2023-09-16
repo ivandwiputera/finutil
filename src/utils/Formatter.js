@@ -1,4 +1,4 @@
-import Localise, { LocaliseKey } from "@localisations/Localise"
+import { useLocalise, Copy } from "@localisations/Localise"
 import { isNumber, isString, isValidNumber } from "./DataTypeUtils"
 
 export class Formatter {
@@ -45,6 +45,8 @@ export class Formatter {
   }
 
   static getNumYearsText = (value) => {
+    const { localise } = useLocalise()
+    
     // Returns immediately if value is invalid
     if (!isValidNumber(value)) {
       return null
@@ -53,8 +55,8 @@ export class Formatter {
     var numYears = value|0;
     var numMonths = Math.ceil(((value*10%10)/10)*12); 
 
-    var unitYears = numYears === 1 ? Localise(LocaliseKey.formatterYear) : Localise(LocaliseKey.formatterYears)
-    var unitMonths = numMonths === 1 ? Localise(LocaliseKey.formatterMonth) : Localise(LocaliseKey.formatterMonths)
+    var unitYears = numYears === 1 ? localise(Copy.formatterYear) : localise(Copy.formatterYears)
+    var unitMonths = numMonths === 1 ? localise(Copy.formatterMonth) : localise(Copy.formatterMonths)
 
     var displayText = `${numYears} ${unitYears}`
     if (numMonths > 0) {
