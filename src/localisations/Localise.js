@@ -9,11 +9,25 @@ export const useLocalise = () => {
   return { localise }
 }
 
+export const useLanguage = () => {
+  const { i18n } = useTranslation()
+
+  const language = i18n.language
+  const setLanguage = (value) => {
+    return i18n.changeLanguage(value)
+  }
+
+  return { language, setLanguage }
+}
+
 export const Copy = {
   formatterYear: "formatterYear",
   formatterYears: "formatterYears",
   formatterMonth: "formatterMonth",
   formatterMonths: "formatterMonths",
+
+  languageSwitcherEnglish: "languageSwitcherEnglish",
+  languageSwitcherBahasa: "languageSwitcherBahasa",
 
   homeIntroductionTitle: "homeIntroductionTitle",
   homeIntroductionSubtitle: "homeIntroductionSubtitle",

@@ -3,6 +3,10 @@
   "formatterYears": "Tahun",
   "formatterMonth": "Bulan",
   "formatterMonths": "Bulan",
+
+  "languageSwitcherEnglish": "english",
+  "languageSwitcherBahasa": "bahasa",
+
   "homeIntroductionTitle": "Ivan Dwiputera",
   "homeIntroductionSubtitle": "Penggemar Keuangan Pribadi",
   "homeIntroductionDescription": "Seseorang yang suka dan peduli tentang budgeting & keuangan pribadi. Silakan kirim pesan jika kamu punya feedback atau ingin ngobrol seputar tentang keuangan pribadi",
@@ -24,6 +28,7 @@
   "homeContactEmailValue": "ivan.dwiputera@gmail.com",
   "homeContactInstagramLabel": "Instagram",
   "homeContactInstagramValue": "ivandwiputera",
+  
   "budget503020CalculatorTitle": "Kalkulator Budgeting 50-30-20",
   "budget503020CalculatorDescription": "Budgeting 50-30-20 adalah salah satu cara sederhana untuk mengelola keuangan kamu.\n\nAturan ini menyarankan agar kamu membagi pendapatan menjadi tiga kategori pengeluaran: 50% untuk kebutuhan, 30% untuk keinginan, 20% untuk tabungan dan investasi.",
   "budget503020CalculatorFormMonthlyIncomeLabel": "Berapa rata-rata penghasilan bulanan kamu? ($)",
@@ -35,6 +40,7 @@
   "budget503020CalculatorResultWantsDescription": "Kategori ini mencakup pengeluaran yang tidak harus ada, tapi dapat menambah nilai untuk hidup kamu, seperti makan di luar, liburan, belanja, dll. Semua itu disarankan tidak melebihi 30% dari pendapatan kamu.",
   "budget503020CalculatorResultSavingsLabel": "Tabungan dan Investasi (20%):",
   "budget503020CalculatorResultSavingsDescription": "Kategori ini mencakup uang yang kamu simpan untuk masa depan seperti keadaan darurat, pensiun, atau tujuan jangka panjang lainnya. Disarankan agar kamu mengalokasikan setidaknya 20% dari pendapatan pendapatan kamu untuk tabungan dan investasi.",
+  
   "emergencyFundsCalculatorTitle": "Kalkulator Dana Darurat",
   "emergencyFundsCalculatorDescription": "Dana darurat adalah dana yang kita sengaja sisihkan untuk digunakan pada saat terjadi kesulitan keuangan, seperti kehilangan pekerjaan, sakit mendadak, atau kejadian tak terduga lainnya.",
   "emergencyFundsCalculatorFormMonthlyExpensesLabel": "Berapa rata-rata pengeluaran kamu dalam sebulan? ($)",
@@ -50,6 +56,7 @@
   "emergencyFundsCalculatorResultDescription": "Jumlah di atas adalah jumlah total yang perlu kamu simpan untuk keadaan darurat. Sebaiknya gunakan uang ini hanya ketika kamu berada dalam situasi darurat.",
   "emergencyFundsCalculatorResultNumMonthsToCoverLabel": "Jumlah pengeluaran bulanan yang ditanggung dana darurat:",
   "emergencyFundsCalculatorResultNumMonthsToCoverUnit": "bulan",
+  
   "investmentReturnCalculatorTitle": "Kalkulator Hasil Investasi",
   "investmentReturnCalculatorDescription": "Hasil investasi adalah potensi keuntungan atas investasi kamu selama jangka waktu tertentu.",
   "investmentReturnCalculatorFormInitialAmountLabel": "Berapa banyak uang yang kamu rencanakan untuk investasi? ($)",
@@ -68,6 +75,7 @@
   "investmentReturnCalculatorResultDescription": "Compound interest (bunga majemuk) adalah alat ampuh yang dapat membantu investor meningkatkan kekayaannya seiring berjalannya waktu.\n\nTidak seperti bunga sederhana, yang dihitung hanya berdasarkan jumlah pokok, bunga majemuk dihitung berdasarkan pokok awal dan akumulasi bunga dari periode sebelumnya. Artinya, bunga yang diperoleh dalam satu periode ditambahkan ke jumlah pokok, dan bunga untuk periode berikutnya dihitung berdasarkan total yang baru.\n\nProses ini berlanjut untuk setiap periode, sehingga menghasilkan pertumbuhan investasi kamu secara eksponensial.",
   "investmentReturnCalculatorResultTotalPrincipalLabel": "Total uang yang kamu masukkan:",
   "investmentReturnCalculatorResultTotalInterestGainLabel": "Total uang yang Anda peroleh dari keuntungan saja:",
+  
   "retirementCalculatorTitle": "Kalkulator Pensiun 4%",
   "retirementCalculatorDescription": "Pensiun 4% adalah pedoman yang digunakan oleh beberapa perencana keuangan dan pensiunan untuk memperkirakan pendapatan yang nyaman dan aman untuk masa pensiun.\n\nAturan ini menunjukkan bahwa pensiunan disarankan untuk menarik tidak melebihi 4% dari tabungan pensiun setiap tahunnya.",
   "retirementCalculatorFormMonthlyExpensesLabel": "Berapa rata-rata pengeluaran kamu dalam sebulan? ($)",
@@ -76,6 +84,7 @@
   "retirementCalculatorResultTitle": "Kamu akan perlu:",
   "retirementCalculatorResultDescription": "Jumlah uang di atas adalah perkiraan jumlah yang kamu perlukan untuk masa pensiun kamu.\nKamu dapat ambil 4% dari jumlah ini setiap bulannya, ini akan cukup untuk selama kurang lebih 25 hingga 50 tahun masa pensiun.",
   "retirementCalculatorResultWithdrawalAmountLabel": "Jumlah yang kamu bisa ambil setiap bulannya:",
+  
   "goalContributionCalculatorTitle": "Kalkulator Tujuan Finansial - Kontribusi",
   "goalContributionCalculatorDescription": "Mencapai tujuan finansial yang besar tidaklah mudah.\n\nMulailah dengan cari tau apa tujuan finansial kamu, misalnya membeli rumah, menabung untuk masa pensiun, atau melunasi utang. Setelah itu, kita bisa membagi menjadi langkah-langkah yang lebih kecil dan lebih mudah dikelola.\n\nGunakan kalkulator ini untuk menentukan berapa banyak kamu perlu menabung setiap bulannya untuk mencapai tujuan finansial kamu.",
   "goalContributionCalculatorFormGoalAmountLabel": "Berapa jumlah uang untuk tujuan finansial kamu? ($)",
@@ -95,6 +104,7 @@
   "goalContributionCalculatorResultTitle": "Kamu harus nabung setiap bulannya kira-kira:",
   "goalContributionCalculatorResultDescription": "Penting untuk kita tau bahwa konsistensi adalah kunci untuk mencapai tujuan kamu, terutama untuk tujuan yang jumlahnya besar.\n\nJika jumlah yang disebutkan di atas terlalu besar untuk kamu, Kamu dapat memperpanjang jangka waktunya, atau mungkin menyesuaikan kembali jumlah uang untuk tujuan kamu.",
   "goalContributionCalculatorResultGoalAmountInFutureLabel": "Tujuan finansial setelah inflasi:",
+  
   "goalDurationCalculatorTitle": "Kalkulator Tujuan Finansial - Jangka Waktu",
   "goalDurationCalculatorDescription": "Mencapai tujuan finansial yang besar tidaklah mudah.\n\nMulailah dengan mengidentifikasi tujuan finansial kamu, seperti membeli rumah, menabung untuk masa pensiun, atau melunasi utang. Setelah itu, bagilah menjadi langkah-langkah yang lebih kecil dan lebih mudah dikelola.\n\nGunakan kalkulator ini untuk menentukan berapa lama kamu perlu tetap berinvestasi hingga tujuan finansial kamu tercapai.",
   "goalDurationCalculatorFormGoalAmountLabel": "Berapa jumlah uang untuk tujuan finansial kamu? ($)",
@@ -110,6 +120,7 @@
   "goalDurationCalculatorFormErrorSavedAmountEmpty": "Jumlah uang yang sudah ditabung tidak boleh kosong.",
   "goalDurationCalculatorResultTitle": "Kamu harus tetap menabung selama:",
   "goalDurationCalculatorResultDescription": "Penting untuk diingat bahwa konsistensi adalah kunci untuk mencapai tujuan kamu, terutama untuk tujuan finansial yang besar. Jika jangka waktu di atas terlalu lama buat kamu, kamu dapat menabung lebih banyak setiap bulannya, atau mungkin menyesuaikan kembali tujuan finansial kamu.",
+ 
   "mortgageCalculatorTitle": "Kalkulator KPR/KPA",
   "mortgageCalculatorDescription": "Perkirakan cicilan bulanan yang harus kamu bayar dengan mempertimbangkan jumlah pokok, tingkat bunga, jangka waktu pinjaman, dan faktor lainnya.",
   "mortgageCalculatorFormHousePriceLabel": "Berapa harga rumah yang ingin kamu beli? ($)",
@@ -128,6 +139,7 @@
   "mortgageCalculatorResultDescription": "Untuk menjaga arus kas yang sehat, disarankan untuk menjaga jumlah yang disebutkan di atas maksimum 30% dari pendapatan bulanan kamu.",
   "mortgageCalculatorResultTotalMortgageAmountLabel": "Total uang yang kamu pinjam:",
   "mortgageCalculatorResultTotalAmountLabel": "Total harga rumah beserta bunga KPR/KPA:",
+ 
   "houseAffordabilityCalculatorTitle": "Kalkulator Harga Rumah Terjangkau",
   "houseAffordabilityCalculatorDescription": "Untuk menentukan harga rumah yang mampu kamu beli, kamu perlu mempertimbangkan pendapatan, utang, dan uang muka yang kamu bisa bayarkan.\n\nDisarankan untuk tidak mencicil lebih dari 30% pendapatan bulanan kamu, untuk semua utang kamu, mulai dari cicilan KPR/KPA, kartu kredit, dan pinjaman lainnya.",
   "houseAffordabilityCalculatorFormMonthlyIncomeLabel": "Berapa rata-rata penghasilan bulanan kamu? ($)",
@@ -145,6 +157,7 @@
   "houseAffordabilityResultDescription": "Jumlah di atas dihitung dengan menghitung perkiraan total pembayaran KPR/KPA yang mampu kamu bayar dengan tidak melebihi 30% dari pendapatan bulanan kamu.",
   "houseAffordabilityResultTotalMortgageAmountLabel": "Total uang yang kamu pinjam:",
   "houseAffordabilityResultMortgageMonthlyPaymentLabel": "Cicilan KPR/KPA per bulan:",
+
   "netSalaryCalculatorTitle": "Kalkulator Gaji Bersih",
   "netSalaryCalculatorDescription": "Gunakan kalkulator ini untuk menghitung perkiraan gaji bersih dari gaji kotor.",
   "netSalaryCalculatorFormMonthlyBasicSalaryLabel": "Berapa gaji pokok bulanan kamu? ($)",

@@ -3,7 +3,7 @@ import UIDivider from "@components/UIDivider/UIDivider";
 import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import UIIconText from "@components/UIIconText/UIIconText";
-import { useLocalise, Copy } from "@localisations/Localise";
+import { Copy, useLocalise } from "@localisations/Localise";
 import { LinkUtils } from "@utils/LinkUtils";
 
 import "./HomeContact.css";
@@ -36,7 +36,6 @@ const HomeContact = () => {
         </div>
       </UICard>
     </div>
-
   );
 }
 

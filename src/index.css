@@ -1,8 +1,6 @@
 /* MARK: Global Variables */
 
 :root {
-  --header-height: 3rem;
-
   /* Colors */
   --hue-val: 150;
   --hue-error-val: 0;
@@ -17,6 +15,7 @@
   --color-background        : hsl(var(--hue-val), 0%, 100%);
   --color-background-alt    : hsl(var(--hue-val), 0%, 95%);
   --color-border            : hsl(var(--hue-val), 0%, 75%);
+  --color-border-light      : hsl(var(--hue-val), 0%, 90%);
   --color-shadow            : hsl(var(--hue-val), 0%, 85%);
   --color-error             : hsl(var(--hue-error-val), 52%, 60%);
 
@@ -65,7 +64,7 @@ input, select, textarea {
 }
 
 body {
-  margin            : 0 0 var(--header-height) 0;
+  margin            : 0;
   font-family       : var(--font-name);
   font-size         : var(--font-size-body);
   background-color  : var(--color-background);
@@ -97,12 +96,6 @@ h3 {
 p {
   font-size: var(--font-size-body);
   color: var(--color-text);
-}
-
-.app {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
 }
 
 /* MARK: Margin */

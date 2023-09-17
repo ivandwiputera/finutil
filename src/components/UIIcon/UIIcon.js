@@ -2,6 +2,7 @@ import { AtSymbolIcon } from '@heroicons/react/24/outline'
 import { BanknotesIcon } from '@heroicons/react/24/outline'
 import { BuildingLibraryIcon } from '@heroicons/react/24/outline'
 import { ChartPieIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import { ClockIcon } from '@heroicons/react/24/outline'
 import { CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { EnvelopeIcon } from '@heroicons/react/24/outline'
@@ -13,6 +14,10 @@ import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
 import { RocketLaunchIcon } from '@heroicons/react/24/outline'
 import { ShieldCheckIcon } from '@heroicons/react/24/outline'
 import { UserIcon } from '@heroicons/react/24/outline'
+
+import flagIconUS from '@icons/flag-us-32.png'
+import flagIconID from '@icons/flag-id-32.png'
+
 import "./UIIcon.css"
 
 const UIIcon = (props) => {
@@ -33,6 +38,9 @@ const UIIcon = (props) => {
     case UIIconType.chartPie:
       component = <ChartPieIcon />
       break
+    case UIIconType.chevronDown:
+      component = <ChevronDownIcon />
+      break
     case UIIconType.clock:
       component = <ClockIcon />
       break
@@ -50,6 +58,12 @@ const UIIcon = (props) => {
       break
     case UIIconType.flag:
       component = <FlagIcon />
+      break
+    case UIIconType.flagUS:
+      component = <img src={flagIconUS}/>
+      break
+    case UIIconType.flagID:
+      component = <img src={flagIconID}/>
       break
     case UIIconType.home:
       component = <HomeIcon />
@@ -72,7 +86,7 @@ const UIIcon = (props) => {
   }
 
   return (
-    <div className={className}>
+    <div className={`ui-icon ${className}`}>
       {component}
     </div>
   )
@@ -83,12 +97,15 @@ export const UIIconType = {
   bank: 'bank',
   banknotes: 'banknotes',
   chartPie: 'chartPie',
+  chevronDown: 'chevronDown',
   clock: 'clock',
   currencyDollar: 'currencyDollar',
   envelope: 'envelope',
   exclamationTriangle: 'exclamationTriangle',
   faceSmile: 'faceSmile',
   flag: 'flag',
+  flagUS: 'flagUS',
+  flagID: 'flagID',
   home: 'home',
   paperAirplane: 'paperAirplane',
   rocketLaunch: 'rocketLaunch',

@@ -2,7 +2,7 @@ import UIHeaderText from "@components/UIHeaderText/UIHeaderText";
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import UIIconTextCard from "@components/UIIconTextCard/UIIconTextCard";
 import { useLocalise, Copy } from "@localisations/Localise";
-import { ScreenType } from "ScreenType";
+import { ScreenType } from "common/ScreenType";
 
 import "./HomeTools.css";
 

@@ -11,7 +11,7 @@ const EmergencyFundsCalculatorForm = (props) => {
   const { localise } = useLocalise()
   
   const monthlyExpensesParam = props.monthlyExpenses
-  const occupationRiskParam = props.monthlyExpenses
+  const occupationRiskParam = props.occupationRisk
   const onChange = props.onChange
 
   const occupationRiskOptions = [

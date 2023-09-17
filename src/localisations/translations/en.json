@@ -3,10 +3,15 @@
   "formatterYears": "Years",
   "formatterMonth": "Month",
   "formatterMonths": "Months",
+
+  "languageSwitcherEnglish": "english",
+  "languageSwitcherBahasa": "bahasa",
+
   "homeIntroductionTitle": "Ivan Dwiputera",
   "homeIntroductionSubtitle": "Personal Finance Enthusiasts",
   "homeIntroductionDescription": "Someone who loves and cares about budgeting & personal finance. Send me a message if you have any feedbacks or need someone to talk about personal finance.",
   "homeIntroductionButtonTitle": "Contact me",
+
   "homeToolsTitle": "Tools",
   "homeToolsDescription": "Use these tools to help with budgeting and managing your finance",
   "homeToolsBudgeting503020Calculator": "Budgeting 50-30-20 Calculator",
@@ -19,12 +24,14 @@
   "homeToolsHouseAffordabilityCalculator": "House Affordability Calculator",
   "homeToolsLifeInsuranceCoverageCalculator": "Life Insurance Coverage Calculator",
   "homeToolsNetSalaryCalculator": "Net Salary Calculator",
+
   "homeContactTitle": "Contact Me",
   "homeContactDescription": "Feel free to contact me if you have any feedbacks",
   "homeContactEmailLabel": "Email",
   "homeContactEmailValue": "ivan.dwiputera@gmail.com",
   "homeContactInstagramLabel": "Instagram",
   "homeContactInstagramValue": "ivandwiputera",
+
   "budget503020CalculatorTitle": "Budget 50-30-20 Calculator",
   "budget503020CalculatorDescription": "50-30-20 budgeting rule is a simple and intuitive way to manage your finance.\n\nThe rule suggests that you divide your after-tax income into three categories of spending: 50% on needs, 30% on wants, and 20% on savings.",
   "budget503020CalculatorFormMonthlyIncomeLabel": "How much is your average monthly income? ($)",
@@ -36,6 +43,7 @@
   "budget503020CalculatorResultWantsDescription": "This category includes expenses that are not essential but add value to your life, such as dining out, entertainment, travel, and shopping. The rule suggests that you should spend up to 30% of your after-tax income on these discretionary expenses.",
   "budget503020CalculatorResultSavingsLabel": "Savings (20%):",
   "budget503020CalculatorResultSavingsDescription": "This category includes money that you save for emergencies, retirement, or other long-term goals. The rule suggests that you should allocate at least 20% of your after-tax income to savings and investments.",
+  
   "emergencyFundsCalculatorTitle": "Emergency Funds Calculator",
   "emergencyFundsCalculatorDescription": "Emergency funds are the funds that we set aside to use in times of financial distress, such as job loss, sudden illness, or other unexpected events.",
   "emergencyFundsCalculatorFormMonthlyExpensesLabel": "How much do you usually spend in a month? ($)",
@@ -51,6 +59,7 @@
   "emergencyFundsCalculatorResultDescription": "Amount mentioned above is the total amount you need to put away for emergency.\n\nIt is important to note that you should only use the money when you are in emergency situations.",
   "emergencyFundsCalculatorResultNumMonthsToCoverLabel": "Number of covered monthly expenses:",
   "emergencyFundsCalculatorResultNumMonthsToCoverUnit": "months",
+  
   "investmentReturnCalculatorTitle": "Investment Return Calculator",
   "investmentReturnCalculatorDescription": "Investment return is the potential returns on your investments over a certain period of time.",
   "investmentReturnCalculatorFormInitialAmountLabel": "How much money are you planning to invest? ($)",
@@ -69,6 +78,7 @@
   "investmentReturnCalculatorResultDescription": "Compound interest is a powerful tool that can help investors grow their wealth over time.\n\nUnlike simple interest, which is calculated only on the principal amount, compound interest is calculated on both the initial principal and the accumulated interest from previous periods. This means that the interest earned in one period is added to the principal amount, and the interest for the next period is calculated on the new total.\n\nThis process continues for each period, resulting in exponential growth of your investment.",
   "investmentReturnCalculatorResultTotalPrincipalLabel": "Total money you put in:",
   "investmentReturnCalculatorResultTotalInterestGainLabel": "Total money you get from interests only:",
+  
   "retirementCalculatorTitle": "Retirement 4% Calculator",
   "retirementCalculatorDescription": "The 4% rule is a guideline used by some financial planners and retirees to estimate a comfortable but safe income for retirement.\n\nIt suggests that retirees are safe to withdraw 4% from retirement savings each year.",
   "retirementCalculatorFormMonthlyExpensesLabel": "How much do you usually spend in a month? ($)",
@@ -77,6 +87,7 @@
   "retirementCalculatorResultTitle": "You will need:",
   "retirementCalculatorResultDescription": "The sum of money mentioned above is an estimated amount that you will need for your retirement.\n\nYou can withdraw 4% of this amount every month, which should last you for approximately 25 to 50 years of retirement.",
   "retirementCalculatorResultWithdrawalAmountLabel": "Monthly withdrawal amount:",
+  
   "goalContributionCalculatorTitle": "Goal Contribution Calculator",
   "goalContributionCalculatorDescription": "Achieving a big financial goal can be challenging.\n\nStart by identifying your financial goals, such as buying a house, saving for retirement, or paying off debt. Once you have identified your financial goals, break them down into smaller, more manageable steps.\n\nUse this calculator to determine how much you need to contribute monthly to achieve your goal.",
   "goalContributionCalculatorFormGoalAmountLabel": "What is your financial goal amount? ($)",
@@ -96,6 +107,7 @@
   "goalContributionCalculatorResultTitle": "You must make a monthly contribution of at least:",
   "goalContributionCalculatorResultDescription": "It is important to note that consistency is the key to achieve your goals, especially the big one.\n\nIf the amount mentioned above is too much for you, you can extend the duration and give more time, or maybe readjust your goal amount.",
   "goalContributionCalculatorResultGoalAmountInFutureLabel": "Goal amount after inflation:",
+  
   "goalDurationCalculatorTitle": "Goal Duration Calculator",
   "goalDurationCalculatorDescription": "Achieving a big financial goal can be challenging.\n\nStart by identifying your financial goals, such as buying a house, saving for retirement, or paying off debt. Once you have identified your financial goals, break them down into smaller, more manageable steps.\n\nUse this calculator to determine how long you need to stay invested until you achieve your goal.",
   "goalDurationCalculatorFormGoalAmountLabel": "What is your financial goal amount? ($)",
@@ -111,6 +123,7 @@
   "goalDurationCalculatorFormErrorSavedAmountEmpty": "Saved amount cannot be empty.",
   "goalDurationCalculatorResultTitle": "You need to stay invested for at least:",
   "goalDurationCalculatorResultDescription": "It is important to note that consistency is the key to achieve your goals, especially the big one. If the number mentioned above is too long for you, you can contribute more, or maybe readjust your goal amount.",
+  
   "mortgageCalculatorTitle": "Mortgage Calculator",
   "mortgageCalculatorDescription": "Estimate your monthly mortgage payments by considering the principal amount, interest rate, loan term, and other factors.",
   "mortgageCalculatorFormHousePriceLabel": "What is the cost of the home? ($)",
@@ -129,6 +142,7 @@
   "mortgageCalculatorResultDescription": "To maintain a healthy cash flow, it is advisable to keep the amount mentioned above below 30% of your monthly income.",
   "mortgageCalculatorResultTotalMortgageAmountLabel": "Total mortgage amount:",
   "mortgageCalculatorResultTotalAmountLabel": "Total amount of both your house price and mortgage:",
+  
   "houseAffordabilityCalculatorTitle": "House Affordability Calculator",
   "houseAffordabilityCalculatorDescription": "To determine the house price you can afford, you need to consider your income, debts, and down payment.\n\nA good rule of thumb is to spend no more than 30% of your monthly income for total debts, including your mortgage, credit cards, and other loans",
   "houseAffordabilityCalculatorFormMonthlyIncomeLabel": "How much is your average monthly income? ($)",
@@ -146,6 +160,7 @@
   "houseAffordabilityResultDescription": "The above amount is calculated by calculating the estimated total mortgage payment you can safely afford with 30% of your monthly income. And on top of it, adding the saved amount you already have.",
   "houseAffordabilityResultTotalMortgageAmountLabel": "Total mortgage amount:",
   "houseAffordabilityResultMortgageMonthlyPaymentLabel": "Mortgage monthly payment:",
+  
   "netSalaryCalculatorTitle": "Net Salary Calculator",
   "netSalaryCalculatorDescription": "Use this calculator to calculate estimated net salary from your gross salary.",
   "netSalaryCalculatorFormMonthlyBasicSalaryLabel": "What is your monthly basic salary? ($)",
