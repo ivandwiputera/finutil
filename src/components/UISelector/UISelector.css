@@ -9,7 +9,7 @@
 
 .ui-selector-view-icon {
   border-width: 1px;
-  border-color: var(--color-border-light);
+  border-color: var(--color-border);
   border-radius: 0.125rem;
   border-style: solid;
   color: var(--color-text);
@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: stretch;
   border-width: 1px;
-  border-color: var(--color-border-light);
+  border-color: var(--color-border);
   border-radius: 0.5rem;
   border-style: solid;
   box-shadow: 0.1rem 0.1rem 0.1rem var(--color-shadow);
@@ -40,7 +40,7 @@
   background-color: var(--color-background);
   border: 0;
   border-top: 1px;
-  border-color: var(--color-border-light);
+  border-color: var(--color-border);
   border-style: solid;
 }
 
