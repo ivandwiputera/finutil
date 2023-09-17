@@ -1,7 +1,7 @@
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import { LanguageType } from "@common/LanguageType";
 import { useLocalise, useLanguage, Copy } from "@localisations/Localise";
-import UISelector from "@components/UISelector/UISelector";
+import UIToggle from "@components/UIToggle/UIToggle";
 
 const LanguageSwitcher = () => {
   const { localise } = useLocalise()
@@ -32,10 +32,11 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="language-switcher">
-      <UISelector
+      <UIToggle
         options={options}
         defaultValue={getOption(language)}
-        onChange={onChange} />
+        onChange={onChange}
+      />
     </div>
   );
 }

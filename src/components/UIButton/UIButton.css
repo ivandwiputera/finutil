@@ -12,7 +12,6 @@
   font-size: var(--font-size-body);
   color: #FFF;
   box-shadow: 0.125rem 0.125rem 0.125rem var(--color-shadow);
-  transition: background-color 200ms;
 }
 
 .ui-button:hover {

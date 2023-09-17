@@ -53,6 +53,7 @@
   padding: 0;
   margin: 0;
   user-select: none;
+  transition: all 200ms;
 }
 
 div {
@@ -183,4 +184,8 @@ p {
 
 .user-interaction-disabled {
   pointer-events: none;
+}
+
+.hidden {
+  visibility: hidden;
 }

@@ -1,13 +1,36 @@
-import UIIcon from "@components/UIIcon/UIIcon";
+import UIToggle from "@components/UIToggle/UIToggle";
 import { LocalStorageType } from "@common/LocalStorageType";
 import { ThemeType } from "@common/ThemeType";
 import { UIIconType } from "@components/UIIcon/UIIcon";
 import { useLocalStorage } from "@uidotdev/usehooks";
 import { useEffect } from "react";
 
+import "./DarkModeToggle.css";
+
 const DarkModeToggle = () => {
 
   const [theme, setTheme] = useLocalStorage(LocalStorageType.theme)
+
+  const options = [
+    {
+      icon: UIIconType.sun,
+      value: ThemeType.light
+    },
+    {
+      icon: UIIconType.moon,
+      value: ThemeType.dark
+    }
+  ]
+
+  const getOption = (value) => {
+    const filteredOptions = options.filter((option) => { return option.value === value })
+    return filteredOptions.length > 0 ? filteredOptions[0] : null
+  }
+
+  const onChange = (option) => {
+    if (option.value == null) { return }
+    setTheme(option.value)
+  }
 
   useEffect(() => {
     if (theme === ThemeType.dark) {
@@ -17,21 +40,14 @@ const DarkModeToggle = () => {
     }
   }, [theme]);
 
-  const getIconType = () => {
-    return theme === ThemeType.dark ? UIIconType.moon : UIIconType.sun
-  }
-
-  const onClick = () => {
-    const newTheme = (theme === ThemeType.dark ? ThemeType.light : ThemeType.dark)
-    setTheme(newTheme)
-  }
-
   return (
-    <UIIcon
-      className="ui-icon-small color-text"
-      icon={getIconType()}
-      onClick={onClick}
-    />
+    <div className="dark-mode-toggle">
+      <UIToggle
+        options={options}
+        defaultValue={getOption(theme)}
+        onChange={onChange}
+      />
+    </div>
   );
 }
 
