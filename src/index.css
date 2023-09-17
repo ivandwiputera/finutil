@@ -41,7 +41,7 @@
   --color-text              : hsl(var(--hue-val), 0%, 90%);
   --color-text-light        : hsl(var(--hue-val), 0%, 75%);
   --color-text-colored      : hsl(var(--hue-val), 52%, 44%);
-  --color-background        : hsl(var(--hue-val), 0%, 15%);
+  --color-background        : hsl(var(--hue-val), 0%, 10%);
   --color-background-alt    : hsl(var(--hue-val), 0%, 20%);
   --color-border            : hsl(var(--hue-val), 0%, 20%);
   --color-border-light      : hsl(var(--hue-val), 0%, 30%);

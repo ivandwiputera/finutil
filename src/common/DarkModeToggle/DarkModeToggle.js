@@ -11,7 +11,7 @@ const DarkModeToggle = () => {
 
   useEffect(() => {
     if (theme === ThemeType.dark) {
-      document.body.style.backgroundColor = "#262626"
+      document.body.style.backgroundColor = "#1a1a1a"
     } else {
       document.body.style.backgroundColor = "#ffffff"
     }
@@ -22,14 +22,13 @@ const DarkModeToggle = () => {
   }
 
   const onClick = () => {
-    console.log("clicked")
     const newTheme = (theme === ThemeType.dark ? ThemeType.light : ThemeType.dark)
     setTheme(newTheme)
   }
 
   return (
     <UIIcon
-      className="ui-icon-medium color-text"
+      className="ui-icon-small color-text"
       icon={getIconType()}
       onClick={onClick}
     />

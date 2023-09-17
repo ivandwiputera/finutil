@@ -20,12 +20,13 @@
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text);
-  transition: all 200ms;
   background-color: var(--color-background);
+  outline-style: none;
 }
 
 .ui-input-field:focus {
-  outline-color: var(--color-primary);
+  border-style: solid;
+  border-color: var(--color-primary);
 }
 
 .ui-input-note {
