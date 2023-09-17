@@ -1,0 +1,7 @@
+.navigation-bar {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

@@ -1,12 +1,10 @@
 import i18next from "i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from "react-i18next";
-
+import { getCachedLanguage } from "@localisations/Localise";
 import translationEn from "./translations/en.json";
 import translationId from "./translations/id.json";
 
 i18next
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -18,7 +16,7 @@ i18next
       }
     },
     fallbackLng: 'en',
-    lng: 'en',
+    lng: getCachedLanguage() || 'en',
     debug: true,
     interpolation: {
       escapeValue: false

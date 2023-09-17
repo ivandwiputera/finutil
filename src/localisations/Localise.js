@@ -1,3 +1,4 @@
+import { LocalStorageType } from "common/LocalStorageType"
 import { useTranslation } from "react-i18next"
 
 export const useLocalise = () => {
@@ -14,10 +15,19 @@ export const useLanguage = () => {
 
   const language = i18n.language
   const setLanguage = (value) => {
+    setCachedLanguage(value)
     return i18n.changeLanguage(value)
   }
 
   return { language, setLanguage }
+}
+
+export const getCachedLanguage = () => {
+  return localStorage.getItem(LocalStorageType.language)
+}
+
+export const setCachedLanguage = (value) => {
+  return localStorage.setItem(LocalStorageType.language, value)
 }
 
 export const Copy = {

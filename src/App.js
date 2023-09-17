@@ -1,22 +1,24 @@
-import Home from "@scenes/Home/Home";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import NavigationBar from "@common/NavigationBar/NavigationBar";
 import { ScreenType } from "@common/ScreenType";
-import EmergencyFundsCalculator from "@scenes/calculators/EmergencyFundsCalculator/EmergencyFundsCalculator";
+import Home from "@scenes/Home/Home";
 import Budget503020Calculator from "@scenes/calculators/Budget503020Calculator/Budget503020Calculator";
-import InvestmentReturnCalculator from "@scenes/calculators/InvestmentReturnCalculator/InvestmentReturnCalculator";
-import RetirementCalculator from "@scenes/calculators/RetirementCalculator/RetirementCalculator";
+import EmergencyFundsCalculator from "@scenes/calculators/EmergencyFundsCalculator/EmergencyFundsCalculator";
 import GoalContributionCalculator from "@scenes/calculators/GoalContributionCalculator/GoalContributionCalculator";
 import GoalDurationCalculator from "@scenes/calculators/GoalDurationCalculator/GoalDurationCalculator";
-import MortgageCalculator from "@scenes/calculators/MortgageCalculator/MortgageCalculator";
 import HouseAffordabilityCalculator from "@scenes/calculators/HouseAffordabilityCalculator/HouseAffordabilityCalculator";
+import InvestmentReturnCalculator from "@scenes/calculators/InvestmentReturnCalculator/InvestmentReturnCalculator";
+import MortgageCalculator from "@scenes/calculators/MortgageCalculator/MortgageCalculator";
 import NetSalaryCalculator from "@scenes/calculators/NetSalaryCalculator/NetSalaryCalculator";
+import RetirementCalculator from "@scenes/calculators/RetirementCalculator/RetirementCalculator";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 
-import "./App.css"
+import "./App.css";
 
 function App() {
   return (
     <div className="app">
       <div className="app-container">
+        <NavigationBar />
         <Router baseName={process.env.PUBLIC_URL}>
           <Routes>
             <Route path={ScreenType.budget503020Calculator} element={<Budget503020Calculator />} />
