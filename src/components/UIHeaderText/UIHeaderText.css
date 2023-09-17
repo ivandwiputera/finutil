@@ -7,10 +7,12 @@
 
 .ui-header-subtitle {
   font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
 }
 
 .ui-header-description {
   margin-top: 0.5rem;
+  color: var(--color-text);
 }
 
 .ui-header-subtitle ~ .ui-header-description {

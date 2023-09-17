@@ -4,6 +4,7 @@
   align-items: center;
   padding: 0.5rem;
   gap: 0.25rem;
+  color: var(--color-text);
 }
 
 .ui-selector-view-icon {
@@ -11,6 +12,7 @@
   border-color: var(--color-border-light);
   border-radius: 0.125rem;
   border-style: solid;
+  color: var(--color-text);
 }
 
 .ui-selector-dropdown-view {
@@ -31,6 +33,7 @@
   align-items: center;
   padding: 0.5rem;
   gap: 0.5rem;
+  color: var(--color-text);
 }
 
 .ui-selector-dropdown-li {

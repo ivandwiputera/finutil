@@ -10,9 +10,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import { FaceSmileIcon } from '@heroicons/react/24/outline'
 import { FlagIcon } from '@heroicons/react/24/outline'
 import { HomeIcon } from '@heroicons/react/24/outline'
+import { MoonIcon } from '@heroicons/react/24/outline'
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
 import { RocketLaunchIcon } from '@heroicons/react/24/outline'
 import { ShieldCheckIcon } from '@heroicons/react/24/outline'
+import { SunIcon } from '@heroicons/react/24/outline'
 import { UserIcon } from '@heroicons/react/24/outline'
 
 import flagIconUS from '@icons/flag-us-32.png'
@@ -23,6 +25,7 @@ import "./UIIcon.css"
 const UIIcon = (props) => {
   const className = props.className
   const icon = props.icon
+  const onClick = props.onClick
 
   var component = null
   switch (icon) {
@@ -60,13 +63,16 @@ const UIIcon = (props) => {
       component = <FlagIcon />
       break
     case UIIconType.flagUS:
-      component = <img src={flagIconUS}/>
+      component = <img src={flagIconUS} />
       break
     case UIIconType.flagID:
-      component = <img src={flagIconID}/>
+      component = <img src={flagIconID} />
       break
     case UIIconType.home:
       component = <HomeIcon />
+      break
+    case UIIconType.moon:
+      component = <MoonIcon />
       break
     case UIIconType.paperAirplane:
       component = <PaperAirplaneIcon />
@@ -77,6 +83,9 @@ const UIIcon = (props) => {
     case UIIconType.shieldCheck:
       component = <ShieldCheckIcon />
       break
+    case UIIconType.sun:
+      component = <SunIcon />
+      break
     case UIIconType.user:
       component = <UserIcon />
       break
@@ -86,7 +95,7 @@ const UIIcon = (props) => {
   }
 
   return (
-    <div className={`ui-icon ${className}`}>
+    <div className={`ui-icon ${className}`} onClick={onClick}>
       {component}
     </div>
   )
@@ -107,9 +116,11 @@ export const UIIconType = {
   flagUS: 'flagUS',
   flagID: 'flagID',
   home: 'home',
+  moon: 'moon',
   paperAirplane: 'paperAirplane',
   rocketLaunch: 'rocketLaunch',
   shieldCheck: 'shieldCheck',
+  sun: 'sun',
   user: 'user'
 }
 

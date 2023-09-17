@@ -23,6 +23,7 @@ const UITextInput = (props) => {
       <input
         className="ui-input-field"
         type="text"
+        autocomplete="off"
         value={displayText}
         placeholder={placeholder}
         onChange={(e) => {onInputChange(e)}} />

@@ -42,6 +42,7 @@ const UIDropdownInput = (props) => {
           id={id ? id : ""}
           className="ui-input-field user-interaction-disabled"
           type="text"
+          autocomplete="off"
           value={selectedItem ? selectedItem.label : ""}
           placeholder={placeholder}
           onFocus={onFocus}

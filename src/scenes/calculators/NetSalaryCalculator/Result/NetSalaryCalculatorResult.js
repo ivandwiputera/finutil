@@ -17,18 +17,18 @@ const NetSalaryCalculatorResult = (props) => {
 
   return (
     <div className="net-salary-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{localise(Copy.netSalaryCalculatorResultTitle)}</div>
+      <div className="font-size-body font-weight-medium color-text">{localise(Copy.netSalaryCalculatorResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{netSalary}</h1>
       <p className="mt-100">{localise(Copy.netSalaryCalculatorResultDescription)}</p>
-      <div className="mt-150 font-size-small">{localise(Copy.netSalaryCalculatorResultBpjsJHTLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.netSalaryCalculatorResultBpjsJHTLabel)}</div>
       <div className="color-text font-weight-semibold">{bpjsJaminanHariTua}</div>
-      <div className="mt-150 font-size-small">{localise(Copy.netSalaryCalculatorResultBpjsJPLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.netSalaryCalculatorResultBpjsJPLabel)}</div>
       <div className="color-text font-weight-semibold">{bpjsJaminanPensiun}</div>
-      <div className="mt-150 font-size-small">{localise(Copy.netSalaryCalculatorResultBpjsKesehatanLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.netSalaryCalculatorResultBpjsKesehatanLabel)}</div>
       <div className="color-text font-weight-semibold">{bpjsKesehatan}</div>
-      <div className="mt-150 font-size-small">{localise(Copy.netSalaryCalculatorResultTotalTaxLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.netSalaryCalculatorResultTotalTaxLabel)}</div>
       <div className="color-text font-weight-semibold">{totalTaxes}</div>
-      <div className="mt-150 font-size-small">{localise(Copy.netSalaryCalculatorResultTotalNetSalaryLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.netSalaryCalculatorResultTotalNetSalaryLabel)}</div>
       <div className="color-text font-weight-semibold">{annualNetSalary}</div>
     </div>
   );

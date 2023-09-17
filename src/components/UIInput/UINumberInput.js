@@ -90,6 +90,7 @@ const UINumberInput = (props) => {
         className="ui-input-field"
         type="text"
         inputMode="decimal"
+        autocomplete="off"
         value={inputValue != null ? inputValue : ""}
         placeholder={placeholder}
         onChange={(e) => {onInputChange(e.target.value)}}

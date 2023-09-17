@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  background-color: var(--color-background);
   border-width: 1px;
   border-color: var(--color-border);
   border-radius: 0.5rem;
@@ -43,5 +44,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  color: var(--color-text);
   font-size: var(--font-size-small);
 }

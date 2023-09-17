@@ -1,3 +1,4 @@
+import { LocalStorageType } from "@common/LocalStorageType";
 import NavigationBar from "@common/NavigationBar/NavigationBar";
 import { ScreenType } from "@common/ScreenType";
 import Home from "@scenes/Home/Home";
@@ -10,13 +11,15 @@ import InvestmentReturnCalculator from "@scenes/calculators/InvestmentReturnCalc
 import MortgageCalculator from "@scenes/calculators/MortgageCalculator/MortgageCalculator";
 import NetSalaryCalculator from "@scenes/calculators/NetSalaryCalculator/NetSalaryCalculator";
 import RetirementCalculator from "@scenes/calculators/RetirementCalculator/RetirementCalculator";
+import { useLocalStorage } from "@uidotdev/usehooks";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
+  const [theme] = useLocalStorage(LocalStorageType.theme)
   return (
-    <div className="app">
+    <div className="app" theme={theme}>
       <div className="app-container">
         <NavigationBar />
         <Router baseName={process.env.PUBLIC_URL}>

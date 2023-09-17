@@ -16,10 +16,10 @@ const EmergencyFundsCalculatorResult = (props) => {
 
   return ( 
     <div className="emergency-funds-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{localise(Copy.emergencyFundsCalculatorResultTitle)}</div>
+      <div className="font-size-body font-weight-medium color-text">{localise(Copy.emergencyFundsCalculatorResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{totalEmergencyFundsDisplayText}</h1>
       <p className="mt-100">{localise(Copy.emergencyFundsCalculatorResultDescription)}</p>
-      <div className="mt-150 font-size-small">{localise(Copy.emergencyFundsCalculatorResultNumMonthsToCoverLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.emergencyFundsCalculatorResultNumMonthsToCoverLabel)}</div>
       <div className="color-text font-weight-semibold">{numMonthsToCoverDisplayText}</div>
     </div>
   );

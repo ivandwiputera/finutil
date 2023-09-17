@@ -1,3 +1,4 @@
 export const LocalStorageType = {
-  language: "language"
+  language: "language",
+  theme: "theme"
 }

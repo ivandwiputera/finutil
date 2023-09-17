@@ -18,12 +18,12 @@ const HouseAffordabilityCalculatorResult = (props) => {
 
   return (
     <div className="house-affordability-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{localise(Copy.houseAffordabilityResultTitle)}</div>
+      <div className="font-size-body font-weight-medium color-text">{localise(Copy.houseAffordabilityResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{housePriceDisplayText}</h1>
       <p className="mt-100">{localise(Copy.houseAffordabilityResultDescription)}</p>
-      <div className="mt-150 font-size-small">{localise(Copy.houseAffordabilityResultTotalMortgageAmountLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.houseAffordabilityResultTotalMortgageAmountLabel)}</div>
       <div className="color-text font-weight-semibold">{totalMortgageAmountDisplayText}</div>
-      <div className="mt-150 font-size-small">{localise(Copy.houseAffordabilityResultMortgageMonthlyPaymentLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.houseAffordabilityResultMortgageMonthlyPaymentLabel)}</div>
       <div className="color-text font-weight-semibold">{monthlyPaymentDisplayText}</div>
     </div>
   );

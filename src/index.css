@@ -33,6 +33,22 @@
   --font-weight-semibold: 600;
 }
 
+[theme="dark"] {
+  --color-primary           : hsl(var(--hue-val), 52%, 44%);
+  --color-primary-alt       : hsl(var(--hue-val), 52%, 60%);
+  --color-primary-light     : hsl(var(--hue-val), 52%, 92%);
+  --color-title             : hsl(var(--hue-val), 0%, 100%);
+  --color-text              : hsl(var(--hue-val), 0%, 90%);
+  --color-text-light        : hsl(var(--hue-val), 0%, 75%);
+  --color-text-colored      : hsl(var(--hue-val), 52%, 44%);
+  --color-background        : hsl(var(--hue-val), 0%, 15%);
+  --color-background-alt    : hsl(var(--hue-val), 0%, 20%);
+  --color-border            : hsl(var(--hue-val), 0%, 20%);
+  --color-border-light      : hsl(var(--hue-val), 0%, 30%);
+  --color-shadow            : hsl(var(--hue-val), 0%, 25%);
+  --color-error             : hsl(var(--hue-error-val), 52%, 60%);
+}
+
 /* MARK: Base */
 * {
   box-sizing: border-box;

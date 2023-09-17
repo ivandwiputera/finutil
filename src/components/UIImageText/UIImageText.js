@@ -16,8 +16,7 @@ const UIImageTextColumn = (props) => {
   return (
     <div className={`ui-image-text ${className}`}>
       {imageSrc && <img className={`ui-image-text__image m-100 ${imageClassModifiers}`} src={imageSrc} alt="" />}
-      <div className="ui-image-text__text-container">
-
+      <div>
         <UIHeaderText
           className="mt-200 ml-25"
           title={title}

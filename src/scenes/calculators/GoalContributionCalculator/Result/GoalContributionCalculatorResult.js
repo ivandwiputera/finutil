@@ -15,10 +15,10 @@ const GoalContributionCalculatorResult = (props) => {
 
   return (
     <div className="goal-contribution-calculator-result-container">
-      <div className="font-size-body font-weight-medium">{localise(Copy.goalContributionCalculatorResultTitle)}</div>
+      <div className="font-size-body font-weight-medium color-text">{localise(Copy.goalContributionCalculatorResultTitle)}</div>
       <h1 className="mt-25 color-text-colored">{monthlyContributionDisplayText}</h1>
       <p className="mt-100">{localise(Copy.goalContributionCalculatorResultDescription)}</p>
-      <div className="mt-150 font-size-small">{localise(Copy.goalContributionCalculatorResultGoalAmountInFutureLabel)}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.goalContributionCalculatorResultGoalAmountInFutureLabel)}</div>
       <div className="color-text font-weight-semibold">{goalAmountInFutureDisplayText}</div>
     </div>
   );
