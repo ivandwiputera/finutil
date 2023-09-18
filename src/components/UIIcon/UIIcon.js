@@ -3,6 +3,7 @@ import { BanknotesIcon } from '@heroicons/react/24/outline'
 import { BuildingLibraryIcon } from '@heroicons/react/24/outline'
 import { ChartPieIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import { ChevronLeftIcon } from '@heroicons/react/24/outline'
 import { ChevronUpIcon } from '@heroicons/react/24/outline'
 import { ClockIcon } from '@heroicons/react/24/outline'
 import { CurrencyDollarIcon } from '@heroicons/react/24/outline'
@@ -45,6 +46,9 @@ const UIIcon = (props) => {
     case UIIconType.chevronDown:
       component = <ChevronDownIcon />
       break
+    case UIIconType.chevronLeft:
+      component = <ChevronLeftIcon />
+      break
     case UIIconType.chevronUp:
       component = <ChevronUpIcon />
       break
@@ -67,10 +71,10 @@ const UIIcon = (props) => {
       component = <FlagIcon />
       break
     case UIIconType.flagUS:
-      component = <img src={flagIconUS} />
+      component = <img src={flagIconUS} alt=""/>
       break
     case UIIconType.flagID:
-      component = <img src={flagIconID} />
+      component = <img src={flagIconID} alt=""/>
       break
     case UIIconType.home:
       component = <HomeIcon />
@@ -111,6 +115,7 @@ export const UIIconType = {
   banknotes: 'banknotes',
   chartPie: 'chartPie',
   chevronDown: 'chevronDown',
+  chevronLeft: 'chevronLeft',
   chevronUp: 'chevronUp',
   clock: 'clock',
   currencyDollar: 'currencyDollar',

@@ -1,0 +1,12 @@
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-background);
+}
+
+.back-button:hover {
+  background-color: var(--color-background-alt);
+}

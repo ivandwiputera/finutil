@@ -21,8 +21,8 @@ function App() {
   return (
     <div className="app" theme={theme}>
       <div className="app-container">
-        <NavigationBar />
         <Router baseName={process.env.PUBLIC_URL}>
+          <NavigationBar />
           <Routes>
             <Route path={ScreenType.budget503020Calculator} element={<Budget503020Calculator />} />
             <Route path={ScreenType.emergencyFundsCalculator} element={<EmergencyFundsCalculator />} />
@@ -30,9 +30,9 @@ function App() {
             <Route path={ScreenType.retirementCalculator} element={<RetirementCalculator />} />
             <Route path={ScreenType.goalContributionCalculator} element={<GoalContributionCalculator />} />
             <Route path={ScreenType.goalDurationCalculator} element={<GoalDurationCalculator />} />
-            <Route path={ScreenType.mortgageCalculator} element={<MortgageCalculator />}/>
-            <Route path={ScreenType.houseAffordabilityCalculator} element={<HouseAffordabilityCalculator />}/>
-            <Route path={ScreenType.netSalaryCalculator} element={<NetSalaryCalculator />}/>
+            <Route path={ScreenType.mortgageCalculator} element={<MortgageCalculator />} />
+            <Route path={ScreenType.houseAffordabilityCalculator} element={<HouseAffordabilityCalculator />} />
+            <Route path={ScreenType.netSalaryCalculator} element={<NetSalaryCalculator />} />
             <Route path={ScreenType.home} element={<Home />} />
           </Routes>
         </Router>
