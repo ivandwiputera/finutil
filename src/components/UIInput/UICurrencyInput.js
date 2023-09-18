@@ -68,7 +68,7 @@ const UICurrencyInput = (props) => {
         className="ui-input-field"
         type="text"
         inputMode="numeric"
-        autocomplete="off"
+        autoComplete="off"
         value={inputValue != null ? Formatter.getCurrencyText(inputValue) : ""}
         placeholder={placeholder}
         onChange={(e) => {onInputChange(e.target.value)}}

@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom";
 import UIIcon, { UIIconType } from "@components/UIIcon/UIIcon";
+import { useNavigation } from "@utils/Navigation";
 
 import "./BackButton.css";
 
 const BackButton = () => {
-  const navigate = useNavigate()
+  const { navigateBack } = useNavigation()
 
   const onClick = () => {
-    navigate(-1)
+    navigateBack()
   }
 
   return (
