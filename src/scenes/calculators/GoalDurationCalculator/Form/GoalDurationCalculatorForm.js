@@ -92,7 +92,6 @@ const GoalDurationCalculatorForm = (props) => {
         id="goalAmount"
         defaultValue={goalAmount}
         label={localise(Copy.goalDurationCalculatorFormGoalAmountLabel)}
-        note={localise(Copy.goalDurationCalculatorFormGoalAmountHelperText)}
         error={validateGoalAmount(goalAmount)}
         onChange={(e) => { onGoalAmountChanged(e) }}
       />
@@ -101,7 +100,6 @@ const GoalDurationCalculatorForm = (props) => {
         id="contribution"
         defaultValue={contribution}
         label={localise(Copy.goalDurationCalculatorFormContributionLabel)}
-        note={localise(Copy.goalDurationCalculatorFormContributionHelperText)}
         error={validateContribution(contribution)}
         onChange={(e) => { onContributionChanged(e) }}
       />

@@ -92,7 +92,6 @@ const MortgageCalculatorForm = (props) => {
         id="housePrice"
         defaultValue={housePrice}
         label={localise(Copy.mortgageCalculatorFormHousePriceLabel)}
-        note={localise(Copy.mortgageCalculatorFormHousePriceHelperText)}
         error={validateHousePrice(housePrice)}
         onChange={(e) => { onHousePriceChanged(e) }}
       />
