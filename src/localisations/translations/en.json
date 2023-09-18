@@ -81,7 +81,7 @@
   "investmentReturnCalculatorResultTotalInterestGainLabel": "Total money you get from interests only:",
   
   "retirementCalculatorTitle": "Retirement 4% Calculator",
-  "retirementCalculatorDescription": "The 4% rule is a guideline used by some financial planners and retirees to estimate a comfortable but safe income for retirement.\n\nIt suggests that retirees are safe to withdraw 4% from retirement savings each year.",
+  "retirementCalculatorDescription": "The 4% rule is a guideline used by some financial planners and retirees to estimate a comfortable but safe income for retirement. It suggests that retirees are safe to withdraw 4% from retirement savings each year.",
   "retirementCalculatorFormMonthlyExpensesLabel": "How much do you usually spend in a month? ($)",
   "retirementCalculatorFormMonthlyExpensesHelperText": "This will be the amount you withdraw from retirement savings every month during your retirement.",
   "retirementCalculatorFormErrorMonthlyExpensesEmpty": "Monthly expenses cannot be empty.",

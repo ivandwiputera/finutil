@@ -78,12 +78,12 @@
   "investmentReturnCalculatorResultTotalInterestGainLabel": "Total uang yang Anda peroleh dari keuntungan saja:",
   
   "retirementCalculatorTitle": "Kalkulator Pensiun 4%",
-  "retirementCalculatorDescription": "Pensiun 4% adalah pedoman yang digunakan oleh beberapa perencana keuangan dan pensiunan untuk memperkirakan pendapatan yang nyaman dan aman untuk masa pensiun.\n\nAturan ini menunjukkan bahwa pensiunan disarankan untuk menarik tidak melebihi 4% dari tabungan pensiun setiap tahunnya.",
+  "retirementCalculatorDescription": "Pensiun 4% adalah pedoman yang digunakan oleh beberapa perencana keuangan dan pensiunan untuk memperkirakan pendapatan yang nyaman dan aman untuk masa pensiun. Aturan ini menunjukkan bahwa pensiunan disarankan untuk menarik tidak melebihi 4% dari tabungan pensiun setiap tahunnya.",
   "retirementCalculatorFormMonthlyExpensesLabel": "Berapa rata-rata pengeluaran kamu dalam sebulan? ($)",
   "retirementCalculatorFormMonthlyExpensesHelperText": "Ini adalah jumlah yang kamu ingin pakai setiap bulannya selama masa pensiun.",
   "retirementCalculatorFormErrorMonthlyExpensesEmpty": "Pengeluaran bulanan tidak boleh kosong.",
   "retirementCalculatorResultTitle": "Kamu akan perlu:",
-  "retirementCalculatorResultDescription": "Jumlah uang di atas adalah perkiraan jumlah yang kamu perlukan untuk masa pensiun kamu.\nKamu dapat ambil 4% dari jumlah ini setiap bulannya, ini akan cukup untuk selama kurang lebih 25 hingga 50 tahun masa pensiun.",
+  "retirementCalculatorResultDescription": "Jumlah uang di atas adalah perkiraan jumlah uang yang kamu perlukan untuk masa pensiun kamu.\n\nKamu dapat ambil 4% dari jumlah ini setiap bulannya, ini akan cukup untuk selama kurang lebih 25 hingga 50 tahun masa pensiun.",
   "retirementCalculatorResultWithdrawalAmountLabel": "Jumlah yang kamu bisa ambil setiap bulannya:",
   
   "goalContributionCalculatorTitle": "Kalkulator Tujuan Finansial - Kontribusi",
