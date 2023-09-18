@@ -75,6 +75,7 @@ export const Copy = {
   budget503020CalculatorResultWantsDescription: "budget503020CalculatorResultWantsDescription",
   budget503020CalculatorResultSavingsLabel: "budget503020CalculatorResultSavingsLabel",
   budget503020CalculatorResultSavingsDescription: "budget503020CalculatorResultSavingsDescription",
+  budget503020CalculatorResultNote: "budget503020CalculatorResultNote",
 
   emergencyFundsCalculatorTitle: "emergencyFundsCalculatorTitle",
   emergencyFundsCalculatorDescription: "emergencyFundsCalculatorDescription",
