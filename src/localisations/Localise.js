@@ -92,7 +92,8 @@ export const Copy = {
   emergencyFundsCalculatorResultDescription: "emergencyFundsCalculatorResultDescription",
   emergencyFundsCalculatorResultNumMonthsToCoverLabel: "emergencyFundsCalculatorResultNumMonthsToCoverLabel",
   emergencyFundsCalculatorResultNumMonthsToCoverUnit: "emergencyFundsCalculatorResultNumMonthsToCoverUnit",
-
+  emergencyFundsCalculatorResultNote: "emergencyFundsCalculatorResultNote",
+  
   investmentReturnCalculatorTitle: "investmentReturnCalculatorTitle",
   investmentReturnCalculatorDescription: "investmentReturnCalculatorDescription",
   investmentReturnCalculatorFormInitialAmountLabel: "investmentReturnCalculatorFormInitialAmountLabel",

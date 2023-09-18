@@ -21,6 +21,7 @@ const EmergencyFundsCalculatorResult = (props) => {
       <p className="mt-100">{localise(Copy.emergencyFundsCalculatorResultDescription)}</p>
       <div className="mt-150 font-size-small color-text">{localise(Copy.emergencyFundsCalculatorResultNumMonthsToCoverLabel)}</div>
       <div className="color-text font-weight-semibold">{numMonthsToCoverDisplayText}</div>
+      <div className="mt-150 font-size-small color-text">{localise(Copy.emergencyFundsCalculatorResultNote)}</div>
     </div>
   );
 }

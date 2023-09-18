@@ -23,7 +23,7 @@ const Budget503020CalculatorResult = (props) => {
       <div className="mt-150 font-weight-semibold color-text">{localise(Copy.budget503020CalculatorResultSavingsLabel)}</div>
       <h2 className="color-text-colored">{savings}</h2>
       <div className="mt-50 color-text-light font-size-small">{localise(Copy.budget503020CalculatorResultSavingsDescription)}</div>
-      <div className="mt-200 color-text font-size-small">{localise(Copy.budget503020CalculatorResultNote)}</div>
+      <p className="mt-200">{localise(Copy.budget503020CalculatorResultNote)}</p>
     </div>
   );
 }

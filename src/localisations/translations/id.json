@@ -30,7 +30,7 @@
   "homeContactInstagramValue": "ivandwiputera",
   
   "budget503020CalculatorTitle": "Kalkulator Budgeting 50-30-20",
-  "budget503020CalculatorDescription": "Budgeting 50-30-20 adalah salah satu cara sederhana untuk mengelola keuangan kamu.\n\nAturan ini menyarankan agar kamu membagi pendapatan menjadi tiga kategori pengeluaran: 50% untuk kebutuhan, 30% untuk keinginan, 20% untuk tabungan dan investasi.",
+  "budget503020CalculatorDescription": "Budgeting 50-30-20 adalah salah satu cara sederhana untuk mengelola keuangan kamu. Aturan ini menyarankan agar kamu membagi pendapatan menjadi tiga kategori pengeluaran: 50% untuk kebutuhan, 30% untuk keinginan, 20% untuk tabungan dan investasi.",
   "budget503020CalculatorFormMonthlyIncomeLabel": "Berapa rata-rata penghasilan bulanan kamu? ($)",
   "budget503020CalculatorFormMonthlyIncomeHelperText": "Ini termasuk pendapatan utama kamu dan pendapatan dari pekerjaan sampingan lainnya.",
   "budget503020CalculatorFormErrorMonthlyIncomeEmpty": "Penghasilan bulanan tidak boleh kosong.",
@@ -57,7 +57,8 @@
   "emergencyFundsCalculatorResultDescription": "Jumlah di atas adalah jumlah total yang perlu kamu simpan untuk keadaan darurat. Sebaiknya gunakan uang ini hanya ketika kamu berada dalam situasi darurat.",
   "emergencyFundsCalculatorResultNumMonthsToCoverLabel": "Jumlah pengeluaran bulanan yang ditanggung dana darurat:",
   "emergencyFundsCalculatorResultNumMonthsToCoverUnit": "bulan",
-  
+  "emergencyFundsCalculatorResultNote": "Jika kamu merasa jumlah diatas tidak cukup untuk situasi finansial kamu, jangan ragu untuk menyisihkan jumlah yang lebih banyak untuk dana darurat kamu.",
+
   "investmentReturnCalculatorTitle": "Kalkulator Hasil Investasi",
   "investmentReturnCalculatorDescription": "Hasil investasi adalah potensi keuntungan atas investasi kamu selama jangka waktu tertentu.",
   "investmentReturnCalculatorFormInitialAmountLabel": "Berapa banyak uang yang kamu rencanakan untuk investasi? ($)",
