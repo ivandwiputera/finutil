@@ -1,3 +1,4 @@
+import { ArrowSmallLeftIcon } from '@heroicons/react/24/outline'
 import { AtSymbolIcon } from '@heroicons/react/24/outline'
 import { BanknotesIcon } from '@heroicons/react/24/outline'
 import { BuildingLibraryIcon } from '@heroicons/react/24/outline'
@@ -31,6 +32,9 @@ const UIIcon = (props) => {
 
   var component = null
   switch (icon) {
+    case UIIconType.arrowLeft:
+      component = <ArrowSmallLeftIcon />
+      break
     case UIIconType.atSymbol:
       component = <AtSymbolIcon />
       break
@@ -110,6 +114,7 @@ const UIIcon = (props) => {
 }
 
 export const UIIconType = {
+  arrowLeft: 'arrowLeft',
   atSymbol: 'atSymbol',
   bank: 'bank',
   banknotes: 'banknotes',

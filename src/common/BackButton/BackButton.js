@@ -13,8 +13,8 @@ const BackButton = () => {
   return (
     <div className="back-button" onClick={onClick}>
       <UIIcon
-        className="ui-icon-small color-text"
-        icon={UIIconType.chevronLeft}
+        className="ui-icon-medium color-text"
+        icon={UIIconType.arrowLeft}
       />
     </div>
   );
