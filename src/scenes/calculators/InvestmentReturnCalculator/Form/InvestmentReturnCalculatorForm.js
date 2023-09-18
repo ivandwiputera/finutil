@@ -119,7 +119,6 @@ const InvestmentReturnCalculatorForm = (props) => {
         id="contribution"
         defaultValue={contribution}
         label={localise(Copy.investmentReturnCalculatorFormContributionLabel)}
-        note={localise(Copy.investmentReturnCalculatorFormContributionHelperText)}
         error={validateContribution(contribution)}
         onChange={(e) => { onContributionChanged(e) }}
       />
