@@ -53,7 +53,7 @@ export class Formatter {
     }
 
     var numYears = value|0;
-    var numMonths = Math.ceil(((value*10%10)/10)*12); 
+    var numMonths = Math.floor(((value*10%10)/10)*12); 
 
     var unitYears = numYears === 1 ? localise(Copy.formatterYear) : localise(Copy.formatterYears)
     var unitMonths = numMonths === 1 ? localise(Copy.formatterMonth) : localise(Copy.formatterMonths)
